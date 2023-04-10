@@ -1,11 +1,17 @@
 
 #Credits
-#https://subscription.packtpub.com/book/application-development/9781785283932/3/ch03lvl1sec28/accessing-the-webcam
 # CV_Bridge installed from guide: https://index.ros.org/p/cv_bridge/
 
 import cv2
 
-cap = cv2.VideoCapture(0)
+#Add function to find port
+port = 0
+print("Connecting to camera")
+cap = cv2.VideoCapture(-1,cv2.CAP_V4L2) #Find port
+#cap = cv2.VideoCapture(1,cv2.CAP_FFMPEG) #Find port
+#cap = cv2.VideoCapture(-1) #Find port
+cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'))
+print("Video Capture has started")
 
 # Check if the webcam is opened correctly
 
@@ -14,11 +20,14 @@ if not cap.isOpened():
     raise IOError("Cannot open webcam")
 
 while True:
-    ret, frame = cap.read()
+    print("This has run")
+    ret, frame = cap.read(cv2.CAP_V4L2)
+    print("This has run 2")
     frame = cv2.resize(frame, None, fx=0.5, fy=0.5, interpolation=cv2.INTER_AREA)
     #opencv code goes here
-    frame = visionProcessing(frame)
+    #frame = visionProcessing(frame)
     cv2.imshow('Input', frame)
+    print("Frame Displayed")
 
     c = cv2.waitKey(1)
     if c == 27: #escape key will close imshow window
