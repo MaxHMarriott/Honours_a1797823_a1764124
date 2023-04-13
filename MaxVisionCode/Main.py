@@ -1,4 +1,3 @@
-
 #Credits
 # CV_Bridge installed from guide: https://index.ros.org/p/cv_bridge/
 
@@ -7,7 +6,7 @@ import cv2
 #Add function to find port
 port = 0
 print("Connecting to camera")
-cap = cv2.VideoCapture(-1,cv2.CAP_V4L2) #Find port
+cap = cv2.VideoCapture(port,cv2.CAP_V4L2) #Find port
 #cap = cv2.VideoCapture(1,cv2.CAP_FFMPEG) #Find port
 #cap = cv2.VideoCapture(-1) #Find port
 cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'))
@@ -37,5 +36,5 @@ cap.release()
 cv2.destroyAllWindows()
 
 def visionProcessing(frame):
-    #
+    #vision code goes here
     return frame
