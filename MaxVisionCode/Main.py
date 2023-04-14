@@ -2,6 +2,9 @@
 # CV_Bridge installed from guide: https://index.ros.org/p/cv_bridge/
 
 import cv2
+from picamera.array import PiRGBArray
+from picamera import PiCamera
+import time
 
 def savePhoto(frame,location,framecount):
 	cv2.imwrite(location,frame)
