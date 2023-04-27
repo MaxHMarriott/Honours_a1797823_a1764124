@@ -1,0 +1,53 @@
+[0.000000] (-) TimerEvent: {}
+[0.001968] (cameraPub) JobQueued: {'identifier': 'cameraPub', 'dependencies': OrderedDict()}
+[0.002023] (cameraPub) JobStarted: {'identifier': 'cameraPub'}
+[0.100551] (-) TimerEvent: {}
+[0.201120] (-) TimerEvent: {}
+[0.301498] (-) TimerEvent: {}
+[0.402474] (-) TimerEvent: {}
+[0.503051] (-) TimerEvent: {}
+[0.603586] (-) TimerEvent: {}
+[0.704195] (-) TimerEvent: {}
+[0.804631] (-) TimerEvent: {}
+[0.905188] (-) TimerEvent: {}
+[1.005704] (-) TimerEvent: {}
+[1.106139] (-) TimerEvent: {}
+[1.206703] (-) TimerEvent: {}
+[1.308019] (-) TimerEvent: {}
+[1.386604] (cameraPub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/build/cameraPub/build', '--no-deps', 'install_data'], 'cwd': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/build/cameraPub', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_AU:en', 'USER': 'max', 'SSH_AGENT_PID': '1571', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib', 'HOME': '/home/max', 'OLDPWD': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/cameraPub', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1403', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=3bc5a6f96423b44f262e1f88644a1852', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'max', 'JOURNAL_STREAM': '8:35335', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'max', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ROS2:@/tmp/.ICE-unix/1641,unix/ROS2:/tmp/.ICE-unix/1641', 'INVOCATION_ID': '2930cc553d154e76a3cc4f945dba5d84', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e6198d61_0cc9_469a_849d_4c033204547f', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.87', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '30', 'AMENT_PREFIX_PATH': '/opt/ros/foxy:/opt/ros/galactic', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/build/cameraPub', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=3bc5a6f96423b44f262e1f88644a1852', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/build/cameraPub/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/install/cameraPub/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[1.408186] (-) TimerEvent: {}
+[1.509052] (-) TimerEvent: {}
+[1.609754] (-) TimerEvent: {}
+[1.710179] (-) TimerEvent: {}
+[1.778362] (cameraPub) StdoutLine: {'line': b'running develop\n'}
+[1.811118] (-) TimerEvent: {}
+[1.912174] (-) TimerEvent: {}
+[2.012676] (-) TimerEvent: {}
+[2.036462] (cameraPub) StdoutLine: {'line': b'running egg_info\n'}
+[2.036990] (cameraPub) StdoutLine: {'line': b'creating cameraPub.egg-info\n'}
+[2.037251] (cameraPub) StdoutLine: {'line': b'writing cameraPub.egg-info/PKG-INFO\n'}
+[2.037440] (cameraPub) StdoutLine: {'line': b'writing dependency_links to cameraPub.egg-info/dependency_links.txt\n'}
+[2.037674] (cameraPub) StdoutLine: {'line': b'writing entry points to cameraPub.egg-info/entry_points.txt\n'}
+[2.037890] (cameraPub) StdoutLine: {'line': b'writing requirements to cameraPub.egg-info/requires.txt\n'}
+[2.038094] (cameraPub) StdoutLine: {'line': b'writing top-level names to cameraPub.egg-info/top_level.txt\n'}
+[2.091822] (cameraPub) StdoutLine: {'line': b"writing manifest file 'cameraPub.egg-info/SOURCES.txt'\n"}
+[2.112944] (-) TimerEvent: {}
+[2.153387] (cameraPub) StdoutLine: {'line': b"reading manifest file 'cameraPub.egg-info/SOURCES.txt'\n"}
+[2.154197] (cameraPub) StdoutLine: {'line': b"writing manifest file 'cameraPub.egg-info/SOURCES.txt'\n"}
+[2.213337] (-) TimerEvent: {}
+[2.214425] (cameraPub) StdoutLine: {'line': b'running build_ext\n'}
+[2.220368] (cameraPub) StdoutLine: {'line': b'Creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/install/cameraPub/lib/python3.8/site-packages/site.py\n'}
+[2.223807] (cameraPub) StdoutLine: {'line': b'Creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/install/cameraPub/lib/python3.8/site-packages/cameraPub.egg-link (link to .)\n'}
+[2.224757] (cameraPub) StdoutLine: {'line': b'Installing publisher script to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/install/cameraPub/lib/cameraPub\n'}
+[2.225085] (cameraPub) StdoutLine: {'line': b'\n'}
+[2.225200] (cameraPub) StdoutLine: {'line': b'Installed /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/build/cameraPub\n'}
+[2.225383] (cameraPub) StdoutLine: {'line': b'running install_data\n'}
+[2.225484] (cameraPub) StdoutLine: {'line': b'creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/install/cameraPub/share/ament_index\n'}
+[2.225570] (cameraPub) StdoutLine: {'line': b'creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/install/cameraPub/share/ament_index/resource_index\n'}
+[2.225793] (cameraPub) StdoutLine: {'line': b'creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/install/cameraPub/share/ament_index/resource_index/packages\n'}
+[2.225908] (cameraPub) StdoutLine: {'line': b'copying resource/cameraPub -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/install/cameraPub/share/ament_index/resource_index/packages\n'}
+[2.226007] (cameraPub) StdoutLine: {'line': b'copying package.xml -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/install/cameraPub/share/cameraPub\n'}
+[2.283190] (cameraPub) CommandEnded: {'returncode': 0}
+[2.316021] (-) TimerEvent: {}
+[2.325081] (cameraPub) JobEnded: {'identifier': 'cameraPub', 'rc': 0}
+[2.325518] (-) EventReactorShutdown: {}
