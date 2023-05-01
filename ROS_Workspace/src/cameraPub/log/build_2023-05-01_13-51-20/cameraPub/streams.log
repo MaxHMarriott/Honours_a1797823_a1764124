@@ -1,0 +1,17 @@
+[1.029s] Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/build/cameraPub': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/build/cameraPub/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/install/cameraPub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/build/cameraPub/build --no-deps install_data
+[1.393s] running develop
+[1.637s] running egg_info
+[1.637s] writing cameraPub.egg-info/PKG-INFO
+[1.638s] writing dependency_links to cameraPub.egg-info/dependency_links.txt
+[1.638s] writing entry points to cameraPub.egg-info/entry_points.txt
+[1.638s] writing requirements to cameraPub.egg-info/requires.txt
+[1.638s] writing top-level names to cameraPub.egg-info/top_level.txt
+[1.699s] reading manifest file 'cameraPub.egg-info/SOURCES.txt'
+[1.700s] writing manifest file 'cameraPub.egg-info/SOURCES.txt'
+[1.760s] running build_ext
+[1.760s] Creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/install/cameraPub/lib/python3.8/site-packages/cameraPub.egg-link (link to .)
+[1.761s] Installing cameraPub script to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/install/cameraPub/lib/cameraPub
+[1.762s] 
+[1.762s] Installed /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/build/cameraPub
+[1.762s] running install_data
+[1.811s] Invoked command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/build/cameraPub' returned '0': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/build/cameraPub/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/install/cameraPub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/build/cameraPub/build --no-deps install_data
