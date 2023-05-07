@@ -1,0 +1,27 @@
+[1.110s] Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub/build/cameraPub': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub/build/cameraPub/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub/install/cameraPub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub/build/cameraPub/build
+[1.501s] running develop
+[1.802s] Invoked command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub/build/cameraPub' returned '0': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub/build/cameraPub/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub/install/cameraPub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub/build/cameraPub/build
+[1.805s] Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub/build/cameraPub/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub/install/cameraPub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/cameraPub build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub/build/cameraPub/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub/build/cameraPub/install.log --install-scripts $base/lib/cameraPub --single-version-externally-managed
+[2.154s] running egg_info
+[2.155s] writing build/cameraPub/cameraSub.egg-info/PKG-INFO
+[2.155s] writing dependency_links to build/cameraPub/cameraSub.egg-info/dependency_links.txt
+[2.157s] writing entry points to build/cameraPub/cameraSub.egg-info/entry_points.txt
+[2.157s] writing requirements to build/cameraPub/cameraSub.egg-info/requires.txt
+[2.157s] writing top-level names to build/cameraPub/cameraSub.egg-info/top_level.txt
+[2.222s] reading manifest file 'build/cameraPub/cameraSub.egg-info/SOURCES.txt'
+[2.224s] writing manifest file 'build/cameraPub/cameraSub.egg-info/SOURCES.txt'
+[2.225s] running build
+[2.225s] running build_py
+[2.225s] copying cameraSub/cameraSubscriber.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub/build/cameraPub/build/lib/cameraSub
+[2.225s] running install
+[2.227s] running install_lib
+[2.228s] copying /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub/build/cameraPub/build/lib/cameraSub/cameraSubscriber.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub/install/cameraPub/lib/python3.8/site-packages/cameraSub
+[2.229s] byte-compiling /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub/install/cameraPub/lib/python3.8/site-packages/cameraSub/cameraSubscriber.py to cameraSubscriber.cpython-38.pyc
+[2.233s] running install_data
+[2.234s] running install_egg_info
+[2.236s] removing '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub/install/cameraPub/lib/python3.8/site-packages/cameraSub-0.0.0-py3.8.egg-info' (and everything under it)
+[2.236s] Copying build/cameraPub/cameraSub.egg-info to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub/install/cameraPub/lib/python3.8/site-packages/cameraSub-0.0.0-py3.8.egg-info
+[2.237s] running install_scripts
+[2.263s] Installing cameraSub script to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub/install/cameraPub/lib/cameraPub
+[2.263s] writing list of installed files to '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub/build/cameraPub/install.log'
+[2.304s] Invoked command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub' returned '0': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub/build/cameraPub/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub/install/cameraPub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/cameraPub build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub/build/cameraPub/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub/build/cameraPub/install.log --install-scripts $base/lib/cameraPub --single-version-externally-managed
