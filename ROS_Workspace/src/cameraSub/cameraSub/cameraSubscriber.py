@@ -8,8 +8,7 @@ import cv2
 
 
 
-class CameraSubscriber(Node):
-  		
+class CameraSubscriber(Node):	
   	#hello world example:      
         #msg = String()
         #msg.data = 'Hello World: %d' % self.i        
@@ -22,23 +21,30 @@ class CameraSubscriber(Node):
                 print('This has run')
                 topic_name = '/camera_topic'
                 self.subscription = self.create_subscription(Image, topic_name,self.subscribe_message, qos_profile_sensor_data)
-
                 self.subscription
                 self.br = CvBridge()
                 print('Topic: ' + topic_name)
 
         def subscribe_message(self,data):
                 print('displaying image')
-                print(data)
                 current_frame = self.br.imgmsg_to_cv2(data)
-
+        #perform processing on captured frame
+                image = self.imageProcess(current_frame)
                 #displaying image
-                cv2.imshow("Camera",current_frame)
+                cv2.imshow("Camera",image)
 
                 cv2.waitKey(1)
 
                 return
 
+        #function for performing image processing
+        def imageProcess(self,image):
+                start_point = (5,5)
+                end_point = (50,50)
+                colour = (255,0,0)
+                thickness = 1
+                image = cv2.rectangle(image, start_point, end_point, colour, thickness)
+                return image   
 
 def main (args=None):
     rclpy.init(args=args)
