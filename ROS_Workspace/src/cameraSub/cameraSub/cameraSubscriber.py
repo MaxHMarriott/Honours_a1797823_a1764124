@@ -9,12 +9,6 @@ import cv2
 
 
 class CameraSubscriber(Node):	
-  	#hello world example:      
-        #msg = String()
-        #msg.data = 'Hello World: %d' % self.i        
-        #self.subscriber.publish(msg)
-        #self.get_logger().info('Publishing: "%s"' % msg.data)
-        #self.i = self.i + 1
 
         def __init__(self):
                 super().__init__("camera_sub_topic")
