@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+cameraSub/__init__.py
+cameraSub/cameraSubscriber.py
+cameraSub.egg-info/PKG-INFO
+cameraSub.egg-info/SOURCES.txt
+cameraSub.egg-info/dependency_links.txt
+cameraSub.egg-info/entry_points.txt
+cameraSub.egg-info/requires.txt
+cameraSub.egg-info/top_level.txt
+cameraSub.egg-info/zip-safe
+resource/cameraSub
