@@ -209,13 +209,12 @@ def visionProcessing(frame2):
         print("LED DETECTED IN ZONE 4")
     return   
     
-    
-    
+cap = cv2.VideoCapture(0,cv2.CAP_V4L2) #Find port 
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, 240)
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 160)
 while(1):
-	print("This has run")
-	cap = cv2.VideoCapture(0,cv2.CAP_V4L2) #Find port
-	ret, frame = cap.read(cv2.CAP_V4L2)
 
+	ret, frame = cap.read(cv2.CAP_V4L2)    
 	#opencv code goes here
 	#frame = visionProcessing(frame)
 	cv2.imshow('Input', frame)
@@ -227,6 +226,5 @@ while(1):
 	cv2.imshow('Detected image',frame2)
 
 	print("Frame Displayed")
-	c = cv2.waitKey(0)
-	wait(10)
+	c = cv2.waitKey(1)
 cv2.destroyAllWindows()
