@@ -1,0 +1,24 @@
+[1.004s] Invoking command in '/home/vboxuser/turtlebot3_ws/src/turtlebot3_navigation': PYTHONPATH=/home/vboxuser/turtlebot3_ws/src/turtlebot3_navigation/build/turtlebot3_navigation/prefix_override:/home/vboxuser/turtlebot3_ws/src/turtlebot3_navigation/install/turtlebot3_navigation/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/turtlebot3_navigation build --build-base /home/vboxuser/turtlebot3_ws/src/turtlebot3_navigation/build/turtlebot3_navigation/build install --record /home/vboxuser/turtlebot3_ws/src/turtlebot3_navigation/build/turtlebot3_navigation/install.log --install-scripts $base/lib/turtlebot3_navigation --single-version-externally-managed
+[1.352s] running egg_info
+[1.353s] writing build/turtlebot3_navigation/turtlebot3_navigation.egg-info/PKG-INFO
+[1.355s] writing dependency_links to build/turtlebot3_navigation/turtlebot3_navigation.egg-info/dependency_links.txt
+[1.356s] writing entry points to build/turtlebot3_navigation/turtlebot3_navigation.egg-info/entry_points.txt
+[1.356s] writing requirements to build/turtlebot3_navigation/turtlebot3_navigation.egg-info/requires.txt
+[1.357s] writing top-level names to build/turtlebot3_navigation/turtlebot3_navigation.egg-info/top_level.txt
+[1.421s] reading manifest file 'build/turtlebot3_navigation/turtlebot3_navigation.egg-info/SOURCES.txt'
+[1.423s] writing manifest file 'build/turtlebot3_navigation/turtlebot3_navigation.egg-info/SOURCES.txt'
+[1.423s] running build
+[1.423s] running build_py
+[1.423s] copying turtlebot3_navigation/move_robot.py -> /home/vboxuser/turtlebot3_ws/src/turtlebot3_navigation/build/turtlebot3_navigation/build/lib/turtlebot3_navigation
+[1.424s] running install
+[1.425s] running install_lib
+[1.426s] copying /home/vboxuser/turtlebot3_ws/src/turtlebot3_navigation/build/turtlebot3_navigation/build/lib/turtlebot3_navigation/move_robot.py -> /home/vboxuser/turtlebot3_ws/src/turtlebot3_navigation/install/turtlebot3_navigation/lib/python3.8/site-packages/turtlebot3_navigation
+[1.427s] byte-compiling /home/vboxuser/turtlebot3_ws/src/turtlebot3_navigation/install/turtlebot3_navigation/lib/python3.8/site-packages/turtlebot3_navigation/move_robot.py to move_robot.cpython-38.pyc
+[1.429s] running install_data
+[1.430s] running install_egg_info
+[1.432s] removing '/home/vboxuser/turtlebot3_ws/src/turtlebot3_navigation/install/turtlebot3_navigation/lib/python3.8/site-packages/turtlebot3_navigation-0.0.0-py3.8.egg-info' (and everything under it)
+[1.433s] Copying build/turtlebot3_navigation/turtlebot3_navigation.egg-info to /home/vboxuser/turtlebot3_ws/src/turtlebot3_navigation/install/turtlebot3_navigation/lib/python3.8/site-packages/turtlebot3_navigation-0.0.0-py3.8.egg-info
+[1.434s] running install_scripts
+[1.461s] Installing move_robot script to /home/vboxuser/turtlebot3_ws/src/turtlebot3_navigation/install/turtlebot3_navigation/lib/turtlebot3_navigation
+[1.462s] writing list of installed files to '/home/vboxuser/turtlebot3_ws/src/turtlebot3_navigation/build/turtlebot3_navigation/install.log'
+[1.491s] Invoked command in '/home/vboxuser/turtlebot3_ws/src/turtlebot3_navigation' returned '0': PYTHONPATH=/home/vboxuser/turtlebot3_ws/src/turtlebot3_navigation/build/turtlebot3_navigation/prefix_override:/home/vboxuser/turtlebot3_ws/src/turtlebot3_navigation/install/turtlebot3_navigation/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/turtlebot3_navigation build --build-base /home/vboxuser/turtlebot3_ws/src/turtlebot3_navigation/build/turtlebot3_navigation/build install --record /home/vboxuser/turtlebot3_ws/src/turtlebot3_navigation/build/turtlebot3_navigation/install.log --install-scripts $base/lib/turtlebot3_navigation --single-version-externally-managed

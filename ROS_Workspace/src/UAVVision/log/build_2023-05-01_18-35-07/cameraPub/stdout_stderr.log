@@ -1,0 +1,22 @@
+running develop
+running egg_info
+writing build/cameraPub/cameraPub.egg-info/PKG-INFO
+writing dependency_links to build/cameraPub/cameraPub.egg-info/dependency_links.txt
+writing entry points to build/cameraPub/cameraPub.egg-info/entry_points.txt
+writing requirements to build/cameraPub/cameraPub.egg-info/requires.txt
+writing top-level names to build/cameraPub/cameraPub.egg-info/top_level.txt
+reading manifest file 'build/cameraPub/cameraPub.egg-info/SOURCES.txt'
+writing manifest file 'build/cameraPub/cameraPub.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+byte-compiling /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/install/cameraPub/lib/python3.8/site-packages/cameraPub/cameraPublisher.py to cameraPublisher.cpython-38.pyc
+running install_data
+Sorry: IndentationError: unindent does not match any outer indentation level (cameraPublisher.py, line 25)
+running install_egg_info
+removing '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/install/cameraPub/lib/python3.8/site-packages/cameraPub-0.0.0-py3.8.egg-info' (and everything under it)
+Copying build/cameraPub/cameraPub.egg-info to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/install/cameraPub/lib/python3.8/site-packages/cameraPub-0.0.0-py3.8.egg-info
+running install_scripts
+Installing cameraPub script to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/install/cameraPub/lib/cameraPub
+writing list of installed files to '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/build/cameraPub/install.log'

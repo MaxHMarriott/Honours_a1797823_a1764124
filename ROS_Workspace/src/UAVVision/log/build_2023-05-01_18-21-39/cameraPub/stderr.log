@@ -1,0 +1,5 @@
+  File "/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub/install/cameraPub/lib/python3.8/site-packages/cameraPub/cameraPublisher.py", line 16
+    self.publisher = self.create_publisher(,topic_name,10)
+                                           ^
+SyntaxError: invalid syntax
+
