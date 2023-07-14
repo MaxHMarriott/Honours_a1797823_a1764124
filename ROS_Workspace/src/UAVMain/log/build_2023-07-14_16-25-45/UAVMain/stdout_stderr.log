@@ -1,0 +1,26 @@
+running egg_info
+creating build/UAVMain/UAVMain.egg-info
+writing build/UAVMain/UAVMain.egg-info/PKG-INFO
+writing dependency_links to build/UAVMain/UAVMain.egg-info/dependency_links.txt
+writing entry points to build/UAVMain/UAVMain.egg-info/entry_points.txt
+writing requirements to build/UAVMain/UAVMain.egg-info/requires.txt
+writing top-level names to build/UAVMain/UAVMain.egg-info/top_level.txt
+writing manifest file 'build/UAVMain/UAVMain.egg-info/SOURCES.txt'
+reading manifest file 'build/UAVMain/UAVMain.egg-info/SOURCES.txt'
+writing manifest file 'build/UAVMain/UAVMain.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVMain/build/UAVMain/build
+creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVMain/build/UAVMain/build/lib
+creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVMain/build/UAVMain/build/lib/UAVMain
+copying UAVMain/__init__.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVMain/build/UAVMain/build/lib/UAVMain
+copying UAVMain/UAVVision.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVMain/build/UAVMain/build/lib/UAVMain
+running install
+running install_lib
+creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVMain/install/UAVMain/lib/python3.8/site-packages/UAVMain
+copying /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVMain/build/UAVMain/build/lib/UAVMain/__init__.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVMain/install/UAVMain/lib/python3.8/site-packages/UAVMain
+copying /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVMain/build/UAVMain/build/lib/UAVMain/UAVVision.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVMain/install/UAVMain/lib/python3.8/site-packages/UAVMain
+byte-compiling /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVMain/install/UAVMain/lib/python3.8/site-packages/UAVMain/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVMain/install/UAVMain/lib/python3.8/site-packages/UAVMain/UAVVision.py to UAVVision.cpython-38.pyc
+running install_data
+error: can't copy 'resource/UAVMain': doesn't exist or not a regular file
