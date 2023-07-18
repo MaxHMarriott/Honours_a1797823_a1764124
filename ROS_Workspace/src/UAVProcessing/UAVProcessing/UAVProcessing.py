@@ -15,7 +15,7 @@ import cv2
 class CameraSubscriber(Node):	
 
     def __init__(self):
-        super().__init__("camera_sub_topic")
+        super().__init__("UAVProcessing")
         print('This has run')
         topic_name = '/UAVFrame'
         self.subscription = self.create_subscription(Image, topic_name,self.subscribe_message, qos_profile_sensor_data)
