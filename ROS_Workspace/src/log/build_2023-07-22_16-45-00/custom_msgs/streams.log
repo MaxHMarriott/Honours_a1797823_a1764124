@@ -1,0 +1,55 @@
+[0.978s] Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy:/opt/ros/galactic /usr/bin/cmake --build /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs -- -j8 -l8
+[0.998s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.013s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.013s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.141s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[1.145s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.145s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.256s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.273s] -- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)
+[1.315s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.488s] CMake Error at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):
+[1.488s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[1.488s]   custom_msgs --arguments-file
+[1.488s]   /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_adapter__arguments__custom_msgs.json
+[1.488s]   --output-dir
+[1.488s]   /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_adapter/custom_msgs
+[1.488s]   --output-file
+[1.488s]   /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_adapter/custom_msgs.idls)
+[1.488s]   returned error code 1:
+[1.488s] 
+[1.489s]   Error processing 'float32 LEDx' of 'custom_msgs/LEDLocations': ''LEDx' is
+[1.489s]   an invalid field name.  It should have the pattern
+[1.489s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$''
+[1.489s] 
+[1.489s]   Traceback (most recent call last):
+[1.489s] 
+[1.489s]     File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+[1.489s]       return _run_code(code, main_globals, None,
+[1.489s]     File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+[1.489s]       exec(code, run_globals)
+[1.489s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[1.489s]       sys.exit(main())
+[1.489s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/main.py", line 53, in main
+[1.489s]       abs_idl_file = convert_to_idl(
+[1.489s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[1.489s]       return convert_msg_to_idl(
+[1.489s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[1.489s]       msg = parse_message_string(package_name, input_file.stem, content)
+[1.489s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 515, in parse_message_string
+[1.489s]       fields.append(Field(
+[1.489s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 353, in __init__
+[1.489s]       raise NameError(
+[1.489s] 
+[1.490s]   NameError: 'LEDx' is an invalid field name.  It should have the pattern
+[1.490s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$'
+[1.490s] 
+[1.490s] Call Stack (most recent call first):
+[1.490s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[1.490s]   CMakeLists.txt:26 (rosidl_generate_interfaces)
+[1.490s] 
+[1.490s] 
+[1.499s] -- Configuring incomplete, errors occurred!
+[1.499s] See also "/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/CMakeFiles/CMakeOutput.log".
+[1.500s] make: *** [Makefile:748: cmake_check_build_system] Error 1
+[1.516s] Invoked command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy:/opt/ros/galactic /usr/bin/cmake --build /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs -- -j8 -l8

@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_msgs/msg/BBox.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/String.idl"
+
+module custom_msgs {
+  module msg {
+    struct BBox {
+      uint32 top_left_x;
+
+      uint32 top_left_y;
+
+      uint32 bottom_right_x;
+
+      uint32 bottom_right_y;
+
+      float score;
+
+      std_msgs::msg::String class_label;
+
+      float px_to_mm;
+
+      float px_to_ms;
+
+      uint64 timestamp_ms;
+
+      std_msgs::msg::String box_id;
+    };
+  };
+};

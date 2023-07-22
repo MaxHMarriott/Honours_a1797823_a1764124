@@ -1,0 +1,37 @@
+[2.612s] Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Vision': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UGV1Vision build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/install.log --install-scripts $base/lib/UGV1Vision --single-version-externally-managed
+[2.934s] running egg_info
+[2.935s] creating ../build/UGV1Vision/UGV1Vision.egg-info
+[2.936s] writing ../build/UGV1Vision/UGV1Vision.egg-info/PKG-INFO
+[2.936s] writing dependency_links to ../build/UGV1Vision/UGV1Vision.egg-info/dependency_links.txt
+[2.937s] writing entry points to ../build/UGV1Vision/UGV1Vision.egg-info/entry_points.txt
+[2.937s] writing requirements to ../build/UGV1Vision/UGV1Vision.egg-info/requires.txt
+[2.938s] writing top-level names to ../build/UGV1Vision/UGV1Vision.egg-info/top_level.txt
+[2.939s] writing manifest file '../build/UGV1Vision/UGV1Vision.egg-info/SOURCES.txt'
+[2.978s] reading manifest file '../build/UGV1Vision/UGV1Vision.egg-info/SOURCES.txt'
+[2.980s] writing manifest file '../build/UGV1Vision/UGV1Vision.egg-info/SOURCES.txt'
+[2.981s] running build
+[2.982s] running build_py
+[2.983s] creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/build
+[2.983s] creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/build/lib
+[2.983s] creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/build/lib/UGV1Vision
+[2.984s] copying UGV1Vision/UGV1Vision.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/build/lib/UGV1Vision
+[2.984s] copying UGV1Vision/__init__.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/build/lib/UGV1Vision
+[2.984s] running install
+[2.985s] running install_lib
+[2.986s] creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/lib/python3.8/site-packages/UGV1Vision
+[2.987s] copying /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/build/lib/UGV1Vision/UGV1Vision.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/lib/python3.8/site-packages/UGV1Vision
+[2.987s] copying /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/build/lib/UGV1Vision/__init__.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/lib/python3.8/site-packages/UGV1Vision
+[2.987s] byte-compiling /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/lib/python3.8/site-packages/UGV1Vision/UGV1Vision.py to UGV1Vision.cpython-38.pyc
+[2.991s] byte-compiling /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/lib/python3.8/site-packages/UGV1Vision/__init__.py to __init__.cpython-38.pyc
+[2.991s] running install_data
+[2.992s] creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/share/ament_index
+[2.993s] creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/share/ament_index/resource_index
+[2.993s] creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/share/ament_index/resource_index/packages
+[2.993s] copying resource/UGV1Vision -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/share/ament_index/resource_index/packages
+[2.994s] copying package.xml -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/share/UGV1Vision
+[2.994s] running install_egg_info
+[2.996s] Copying ../build/UGV1Vision/UGV1Vision.egg-info to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/lib/python3.8/site-packages/UGV1Vision-0.0.0-py3.8.egg-info
+[2.997s] running install_scripts
+[3.031s] Installing UGV1Vision script to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/lib/UGV1Vision
+[3.032s] writing list of installed files to '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/install.log'
+[3.110s] Invoked command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Vision' returned '0': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UGV1Vision build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/install.log --install-scripts $base/lib/UGV1Vision --single-version-externally-managed

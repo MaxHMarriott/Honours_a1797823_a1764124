@@ -1,0 +1,242 @@
+[0.982s] Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy:/opt/ros/galactic /usr/bin/cmake /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/custom_msgs -DCMAKE_INSTALL_PREFIX=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs
+[1.201s] -- The C compiler identification is GNU 9.4.0
+[1.505s] -- The CXX compiler identification is GNU 9.4.0
+[1.560s] -- Check for working C compiler: /usr/bin/cc
+[1.737s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.749s] -- Detecting C compiler ABI info
+[1.905s] -- Detecting C compiler ABI info - done
+[1.927s] -- Detecting C compile features
+[1.928s] -- Detecting C compile features - done
+[1.945s] -- Check for working CXX compiler: /usr/bin/c++
+[2.040s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.040s] -- Detecting CXX compiler ABI info
+[2.155s] -- Detecting CXX compiler ABI info - done
+[2.169s] -- Detecting CXX compile features
+[2.170s] -- Detecting CXX compile features - done
+[2.179s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[2.213s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.213s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.454s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[2.460s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.470s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.575s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[2.600s] -- Found FastRTPS: /opt/ros/foxy/include  
+[2.680s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.712s] -- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)
+[2.767s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[2.879s] -- Found ament_cmake_cppcheck: 0.9.7 (/opt/ros/foxy/share/ament_cmake_cppcheck/cmake)
+[2.882s] -- Found ament_cmake_cpplint: 0.9.7 (/opt/ros/foxy/share/ament_cmake_cpplint/cmake)
+[2.884s] -- Found ament_cmake_uncrustify: 0.9.7 (/opt/ros/foxy/share/ament_cmake_uncrustify/cmake)
+[2.888s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[3.023s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.070s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.089s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[3.091s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[3.114s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[3.114s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.114s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[3.114s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[3.129s] -- Found PythonExtra: .so  
+[3.173s] -- Found ament_cmake_flake8: 0.9.7 (/opt/ros/foxy/share/ament_cmake_flake8/cmake)
+[3.175s] -- Found ament_cmake_pep257: 0.9.7 (/opt/ros/foxy/share/ament_cmake_pep257/cmake)
+[3.192s] -- Configuring done
+[3.226s] -- Generating done
+[3.228s] -- Build files have been written to: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs
+[3.238s] Invoked command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:/opt/ros/galactic /usr/bin/cmake /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/custom_msgs -DCMAKE_INSTALL_PREFIX=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs
+[3.241s] Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy:/opt/ros/galactic /usr/bin/cmake --build /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs -- -j8 -l8
+[3.272s] [35m[1mScanning dependencies of target custom_msgs__cpp[0m
+[3.273s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.281s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.465s] [  5%] Built target custom_msgs__cpp
+[3.473s] [  7%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.478s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.478s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.484s] [35m[1mScanning dependencies of target custom_msgs__rosidl_generator_c[0m
+[3.503s] [ 15%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/custom__functions.c.o[0m
+[3.504s] [ 17%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/b_box__functions.c.o[0m
+[3.563s] [ 20%] [32m[1mLinking C shared library libcustom_msgs__rosidl_generator_c.so[0m
+[3.600s] [ 20%] Built target custom_msgs__rosidl_generator_c
+[3.609s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.609s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.661s] [35m[1mScanning dependencies of target custom_msgs__rosidl_typesupport_cpp[0m
+[3.668s] [35m[1mScanning dependencies of target custom_msgs__rosidl_typesupport_introspection_cpp[0m
+[3.676s] [ 30%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/b_box__type_support.cpp.o[0m
+[3.676s] [ 30%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/custom__type_support.cpp.o[0m
+[3.682s] [ 33%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/custom__type_support.cpp.o[0m
+[3.683s] [ 35%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/b_box__type_support.cpp.o[0m
+[3.683s] [35m[1mScanning dependencies of target custom_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[3.703s] [ 38%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/b_box__type_support.cpp.o[0m
+[3.707s] [ 41%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/custom__type_support.cpp.o[0m
+[3.804s] [35m[1mScanning dependencies of target custom_msgs__rosidl_typesupport_c[0m
+[3.816s] [ 43%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/custom__type_support.cpp.o[0m
+[3.846s] [ 46%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/b_box__type_support.cpp.o[0m
+[3.846s] [35m[1mScanning dependencies of target custom_msgs__rosidl_typesupport_introspection_c[0m
+[3.862s] [ 48%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/custom__type_support.c.o[0m
+[3.903s] [ 51%] [32m[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_c.so[0m
+[3.966s] [ 53%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/b_box__type_support.c.o[0m
+[4.014s] [ 53%] Built target custom_msgs__rosidl_typesupport_c
+[4.038s] [ 56%] [32m[1mLinking C shared library libcustom_msgs__rosidl_typesupport_introspection_c.so[0m
+[4.098s] [ 56%] Built target custom_msgs__rosidl_typesupport_introspection_c
+[4.108s] [ 58%] [32m[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_cpp.so[0m
+[4.121s] [ 61%] [32m[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[4.147s] [ 61%] Built target custom_msgs__rosidl_typesupport_cpp
+[4.177s] [ 61%] Built target custom_msgs__rosidl_typesupport_introspection_cpp
+[4.223s] [ 64%] [32m[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.292s] [ 64%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp
+[4.300s] [ 66%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.470s] [35m[1mScanning dependencies of target custom_msgs__rosidl_typesupport_fastrtps_c[0m
+[4.485s] [ 71%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/custom__type_support_c.cpp.o[0m
+[4.485s] [ 71%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/b_box__type_support_c.cpp.o[0m
+[4.728s] [ 74%] [32m[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[4.794s] [ 74%] Built target custom_msgs__rosidl_typesupport_fastrtps_c
+[4.802s] [35m[1mScanning dependencies of target custom_msgs[0m
+[4.810s] [ 74%] Built target custom_msgs
+[4.817s] [35m[1mScanning dependencies of target custom_msgs__py[0m
+[4.826s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.210s] [ 76%] Built target custom_msgs__py
+[5.218s] [35m[1mScanning dependencies of target custom_msgs__python[0m
+[5.256s] [ 79%] [32mBuilding C object CMakeFiles/custom_msgs__python.dir/rosidl_generator_py/custom_msgs/msg/_custom_s.c.o[0m
+[5.257s] [ 82%] [32mBuilding C object CMakeFiles/custom_msgs__python.dir/rosidl_generator_py/custom_msgs/msg/_b_box_s.c.o[0m
+[5.335s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/custom_msgs/libcustom_msgs__python.so[0m
+[5.370s] [ 84%] Built target custom_msgs__python
+[5.379s] [35m[1mScanning dependencies of target custom_msgs__rosidl_typesupport_c__pyext[0m
+[5.379s] [35m[1mScanning dependencies of target custom_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[5.379s] [35m[1mScanning dependencies of target custom_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[5.392s] [ 89%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[5.392s] [ 89%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.392s] [ 92%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.449s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[5.450s] [ 97%] [32m[1mLinking CXX shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[5.450s] [100%] [32m[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[5.477s] [100%] Built target custom_msgs__rosidl_typesupport_introspection_c__pyext
+[5.478s] [100%] Built target custom_msgs__rosidl_typesupport_c__pyext
+[5.498s] [100%] Built target custom_msgs__rosidl_typesupport_fastrtps_c__pyext
+[5.508s] Invoked command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:/opt/ros/galactic /usr/bin/cmake --build /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs -- -j8 -l8
+[5.570s] Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy:/opt/ros/galactic /usr/bin/cmake --install /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs
+[5.577s] -- Install configuration: ""
+[5.577s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs
+[5.577s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs
+[5.578s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg
+[5.578s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail
+[5.578s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/custom__type_support.h
+[5.578s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/custom__struct.h
+[5.578s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/b_box__type_support.h
+[5.578s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/custom__functions.c
+[5.578s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/b_box__struct.h
+[5.578s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/b_box__functions.c
+[5.579s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/custom__functions.h
+[5.579s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/b_box__functions.h
+[5.579s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/b_box.h
+[5.579s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/custom.h
+[5.579s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/rosidl_generator_c__visibility_control.h
+[5.579s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/environment/library_path.sh
+[5.579s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/environment/library_path.dsv
+[5.579s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so
+[5.579s] -- Set runtime path of "/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so" to ""
+[5.579s] -- Up-to-date: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs
+[5.579s] -- Up-to-date: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg
+[5.579s] -- Up-to-date: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail
+[5.579s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/b_box__rosidl_typesupport_fastrtps_c.h
+[5.579s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/custom__rosidl_typesupport_fastrtps_c.h
+[5.579s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.579s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so
+[5.579s] -- Set runtime path of "/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[5.579s] -- Up-to-date: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs
+[5.580s] -- Up-to-date: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg
+[5.580s] -- Up-to-date: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail
+[5.580s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/custom__rosidl_typesupport_fastrtps_cpp.hpp
+[5.580s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/b_box__rosidl_typesupport_fastrtps_cpp.hpp
+[5.580s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/dds_fastrtps
+[5.580s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.580s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so
+[5.580s] -- Set runtime path of "/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[5.580s] -- Up-to-date: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs
+[5.580s] -- Up-to-date: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg
+[5.580s] -- Up-to-date: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail
+[5.580s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/b_box__rosidl_typesupport_introspection_c.h
+[5.581s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/custom__rosidl_typesupport_introspection_c.h
+[5.581s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/custom__type_support.c
+[5.581s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/b_box__type_support.c
+[5.581s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.581s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so
+[5.581s] -- Set runtime path of "/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so" to ""
+[5.581s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so
+[5.581s] -- Set runtime path of "/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so" to ""
+[5.581s] -- Up-to-date: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs
+[5.581s] -- Up-to-date: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg
+[5.581s] -- Up-to-date: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail
+[5.581s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/custom__traits.hpp
+[5.582s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/b_box__builder.hpp
+[5.582s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/b_box__traits.hpp
+[5.582s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/b_box__struct.hpp
+[5.582s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/custom__struct.hpp
+[5.582s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/custom__builder.hpp
+[5.582s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/b_box.hpp
+[5.582s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/custom.hpp
+[5.582s] -- Up-to-date: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs
+[5.582s] -- Up-to-date: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg
+[5.583s] -- Up-to-date: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail
+[5.583s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/b_box__rosidl_typesupport_introspection_cpp.hpp
+[5.583s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/custom__type_support.cpp
+[5.583s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/b_box__type_support.cpp
+[5.583s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/custom__rosidl_typesupport_introspection_cpp.hpp
+[5.583s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so
+[5.583s] -- Set runtime path of "/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[5.583s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so
+[5.583s] -- Set runtime path of "/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so" to ""
+[5.583s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh
+[5.583s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv
+[5.583s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/__init__.py
+[5.605s] Compiling '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/__init__.py'...
+[5.608s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/msg
+[5.608s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/msg/__init__.py
+[5.608s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/msg/_custom.py
+[5.608s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/msg/_custom_s.c
+[5.608s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/msg/_b_box_s.c
+[5.609s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/msg/_b_box.py
+[5.609s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[5.609s] -- Set runtime path of "/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""
+[5.609s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[5.609s] -- Set runtime path of "/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+[5.609s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[5.610s] -- Set runtime path of "/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+[5.610s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/libcustom_msgs__python.so
+[5.610s] -- Set runtime path of "/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/libcustom_msgs__python.so" to ""
+[5.610s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/msg/Custom.idl
+[5.610s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/msg/BBox.idl
+[5.610s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/msg/Custom.msg
+[5.611s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/msg/BBox.msg
+[5.611s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs
+[5.611s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs
+[5.611s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh
+[5.611s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv
+[5.611s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/environment/path.sh
+[5.611s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/environment/path.dsv
+[5.611s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/local_setup.bash
+[5.611s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/local_setup.sh
+[5.611s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/local_setup.zsh
+[5.611s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/local_setup.dsv
+[5.612s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/package.dsv
+[5.612s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs
+[5.612s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_generator_cExport.cmake
+[5.612s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_generator_cExport-noconfig.cmake
+[5.612s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake
+[5.612s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.612s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake
+[5.612s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[5.612s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_generator_cppExport.cmake
+[5.612s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[5.612s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.613s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake
+[5.613s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[5.613s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake
+[5.613s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.613s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[5.613s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[5.613s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.613s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.613s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.613s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake
+[5.613s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake
+[5.614s] -- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/package.xml
+[5.617s] Invoked command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:/opt/ros/galactic /usr/bin/cmake --install /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs

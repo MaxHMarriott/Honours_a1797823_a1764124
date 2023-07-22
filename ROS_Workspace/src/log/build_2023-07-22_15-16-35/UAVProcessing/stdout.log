@@ -1,0 +1,35 @@
+running egg_info
+creating ../build/UAVProcessing/UAVProcessing.egg-info
+writing ../build/UAVProcessing/UAVProcessing.egg-info/PKG-INFO
+writing dependency_links to ../build/UAVProcessing/UAVProcessing.egg-info/dependency_links.txt
+writing entry points to ../build/UAVProcessing/UAVProcessing.egg-info/entry_points.txt
+writing requirements to ../build/UAVProcessing/UAVProcessing.egg-info/requires.txt
+writing top-level names to ../build/UAVProcessing/UAVProcessing.egg-info/top_level.txt
+writing manifest file '../build/UAVProcessing/UAVProcessing.egg-info/SOURCES.txt'
+reading manifest file '../build/UAVProcessing/UAVProcessing.egg-info/SOURCES.txt'
+writing manifest file '../build/UAVProcessing/UAVProcessing.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVProcessing/build
+creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVProcessing/build/lib
+creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVProcessing/build/lib/UAVProcessing
+copying UAVProcessing/__init__.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVProcessing/build/lib/UAVProcessing
+copying UAVProcessing/UAVProcessing.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVProcessing/build/lib/UAVProcessing
+running install
+running install_lib
+creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/lib/python3.8/site-packages/UAVProcessing
+copying /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVProcessing/build/lib/UAVProcessing/__init__.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/lib/python3.8/site-packages/UAVProcessing
+copying /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVProcessing/build/lib/UAVProcessing/UAVProcessing.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/lib/python3.8/site-packages/UAVProcessing
+byte-compiling /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/lib/python3.8/site-packages/UAVProcessing/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/lib/python3.8/site-packages/UAVProcessing/UAVProcessing.py to UAVProcessing.cpython-38.pyc
+running install_data
+creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/share/ament_index
+creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/share/ament_index/resource_index
+creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/share/ament_index/resource_index/packages
+copying resource/UAVProcessing -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/share/ament_index/resource_index/packages
+copying package.xml -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/share/UAVProcessing
+running install_egg_info
+Copying ../build/UAVProcessing/UAVProcessing.egg-info to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/lib/python3.8/site-packages/UAVProcessing-0.0.0-py3.8.egg-info
+running install_scripts
+Installing UAVProcessing script to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/lib/UAVProcessing
+writing list of installed files to '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVProcessing/install.log'
