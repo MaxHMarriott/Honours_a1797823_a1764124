@@ -1,0 +1,22 @@
+running egg_info
+writing build/UGV1Processing/UGV1Processing.egg-info/PKG-INFO
+writing dependency_links to build/UGV1Processing/UGV1Processing.egg-info/dependency_links.txt
+writing entry points to build/UGV1Processing/UGV1Processing.egg-info/entry_points.txt
+writing requirements to build/UGV1Processing/UGV1Processing.egg-info/requires.txt
+writing top-level names to build/UGV1Processing/UGV1Processing.egg-info/top_level.txt
+reading manifest file 'build/UGV1Processing/UGV1Processing.egg-info/SOURCES.txt'
+writing manifest file 'build/UGV1Processing/UGV1Processing.egg-info/SOURCES.txt'
+running build
+running build_py
+copying UGV1Processing/UGV1Processing.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Processing/build/UGV1Processing/build/lib/UGV1Processing
+running install
+running install_lib
+copying /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Processing/build/UGV1Processing/build/lib/UGV1Processing/UGV1Processing.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Processing/install/UGV1Processing/lib/python3.8/site-packages/UGV1Processing
+byte-compiling /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Processing/install/UGV1Processing/lib/python3.8/site-packages/UGV1Processing/UGV1Processing.py to UGV1Processing.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Processing/install/UGV1Processing/lib/python3.8/site-packages/UGV1Processing-0.0.0-py3.8.egg-info' (and everything under it)
+Copying build/UGV1Processing/UGV1Processing.egg-info to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Processing/install/UGV1Processing/lib/python3.8/site-packages/UGV1Processing-0.0.0-py3.8.egg-info
+running install_scripts
+Installing UGV1Processing script to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Processing/install/UGV1Processing/lib/UGV1Processing
+writing list of installed files to '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Processing/build/UGV1Processing/install.log'

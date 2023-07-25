@@ -1,0 +1,3 @@
+[console_scripts]
+UGV1Processing = UGV1Processing.UGV1Processing:main
+
