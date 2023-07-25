@@ -1,0 +1,22 @@
+running egg_info
+writing build/UAVMain/UGV1Main.egg-info/PKG-INFO
+writing dependency_links to build/UAVMain/UGV1Main.egg-info/dependency_links.txt
+writing entry points to build/UAVMain/UGV1Main.egg-info/entry_points.txt
+writing requirements to build/UAVMain/UGV1Main.egg-info/requires.txt
+writing top-level names to build/UAVMain/UGV1Main.egg-info/top_level.txt
+reading manifest file 'build/UAVMain/UGV1Main.egg-info/SOURCES.txt'
+writing manifest file 'build/UAVMain/UGV1Main.egg-info/SOURCES.txt'
+running build
+running build_py
+copying UGV1Main/UGV1Main.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/build/UAVMain/build/lib/UGV1Main
+running install
+running install_lib
+copying /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/build/UAVMain/build/lib/UGV1Main/UGV1Main.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/install/UAVMain/lib/python3.8/site-packages/UGV1Main
+byte-compiling /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/install/UAVMain/lib/python3.8/site-packages/UGV1Main/UGV1Main.py to UGV1Main.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/install/UAVMain/lib/python3.8/site-packages/UGV1Main-0.0.0-py3.8.egg-info' (and everything under it)
+Copying build/UAVMain/UGV1Main.egg-info to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/install/UAVMain/lib/python3.8/site-packages/UGV1Main-0.0.0-py3.8.egg-info
+running install_scripts
+Installing UGV1Main script to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/install/UAVMain/lib/UGV1Main
+writing list of installed files to '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/build/UAVMain/install.log'

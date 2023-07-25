@@ -1,0 +1,36 @@
+running egg_info
+creating build/UAVMain/UGV1Main.egg-info
+writing build/UAVMain/UGV1Main.egg-info/PKG-INFO
+writing dependency_links to build/UAVMain/UGV1Main.egg-info/dependency_links.txt
+writing entry points to build/UAVMain/UGV1Main.egg-info/entry_points.txt
+writing requirements to build/UAVMain/UGV1Main.egg-info/requires.txt
+writing top-level names to build/UAVMain/UGV1Main.egg-info/top_level.txt
+writing manifest file 'build/UAVMain/UGV1Main.egg-info/SOURCES.txt'
+reading manifest file 'build/UAVMain/UGV1Main.egg-info/SOURCES.txt'
+writing manifest file 'build/UAVMain/UGV1Main.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/build/UAVMain/build/lib/UGV1Main
+copying UGV1Main/UGV1Main.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/build/UAVMain/build/lib/UGV1Main
+copying UGV1Main/__init__.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/build/UAVMain/build/lib/UGV1Main
+running install
+running install_lib
+creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/install/UAVMain/lib/python3.8/site-packages/UGV1Main
+copying /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/build/UAVMain/build/lib/UGV1Main/UGV1Main.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/install/UAVMain/lib/python3.8/site-packages/UGV1Main
+copying /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/build/UAVMain/build/lib/UGV1Main/__init__.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/install/UAVMain/lib/python3.8/site-packages/UGV1Main
+byte-compiling /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/install/UAVMain/lib/python3.8/site-packages/UGV1Main/UGV1Main.py to UGV1Main.cpython-38.pyc
+  File "/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/install/UAVMain/lib/python3.8/site-packages/UGV1Main/UGV1Main.py", line 25
+    self.subscription = self.create_subscription(Int16MultiArray"/UGV1Detections",self.subscribe_message, qos_profile_sensor_data)
+                                                                ^
+SyntaxError: invalid syntax
+
+byte-compiling /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/install/UAVMain/lib/python3.8/site-packages/UGV1Main/__init__.py to __init__.cpython-38.pyc
+running install_data
+copying resource/UGV1Main -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/install/UAVMain/share/ament_index/resource_index/packages
+creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/install/UAVMain/share/UGV1Main
+copying package.xml -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/install/UAVMain/share/UGV1Main
+running install_egg_info
+Copying build/UAVMain/UGV1Main.egg-info to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/install/UAVMain/lib/python3.8/site-packages/UGV1Main-0.0.0-py3.8.egg-info
+running install_scripts
+Installing UGV1Main script to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/install/UAVMain/lib/UGV1Main
+writing list of installed files to '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/build/UAVMain/install.log'

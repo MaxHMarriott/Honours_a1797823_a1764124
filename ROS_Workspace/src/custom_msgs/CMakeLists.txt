@@ -21,6 +21,7 @@ find_package(std_msgs REQUIRED)
 
 set(msg_files
   "msg/LEDLocations.msg"
+  "msg/FireSeverity.msg"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
