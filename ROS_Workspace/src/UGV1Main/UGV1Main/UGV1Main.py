@@ -6,6 +6,7 @@ from cv_bridge import CvBridge
 from sensor_msgs.msg import Image
 from rclpy.qos import qos_profile_sensor_data
 from custom_msgs.msg import FireSeverity as FireSeverityMsg
+from custom_msgs.msg import LEDLocations as LEDLocationsMsg
 import numpy
 import math
 from enum import Enum
@@ -22,18 +23,25 @@ class UGV1Main(Node):
         self.x = 0.0; #this will be the x coodinate of the agent retrieved from the navigation node.
         self.y = 0.0; #this will be the y coodinate of the agent retrieved from the navigation node.
         self.publisher = self.create_publisher(FireSeverityMsg,Publisher_name,10)
-        self.subscription = self.create_subscription(Int16MultiArray,"/UGV1Detections",self.subscribe_message, qos_profile_sensor_data)
+        self.LEDLocationsTopic = self.create_subscription(LEDLocationsMsg,'/LEDLocations',self.LED_message, qos_profile_sensor_data)
+        self.subscription = self.create_subscription(Int16MultiArray,"/UGV1Detections",self.detections_message, qos_profile_sensor_data)
         self.FireSeverity= FireSeverityMsg()
         self.timer_period = 0.5
         self.i = 0
         self.timer = self.create_timer(self.timer_period,self.timer_callback)
 
 
-    def subscribe_message(self,data):
+    def LED_message(self,data):
+        self.LEDLocations = data
+        print("Recieved LED Detections are:")
+        print(self.LEDLocations)
+
+
+    def detections_message(self,data):
         self.UGVDetections = data.data
         print(data)
         print("Determining state of LED")
-        self.FireSeverity.severity = determineSeverity()
+        self.FireSeverity.severity = self.determineSeverity()
         #self.LEDLocations.isled1 = self.LEDState[0]
         self.FireSeverity.fire_x = self.x
         self.FireSeverity.fire_y = self.y

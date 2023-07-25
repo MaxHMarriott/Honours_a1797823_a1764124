@@ -41,11 +41,13 @@ class UAVMain(Node):
         self.UAVDetections = data.data
         print(data)
         print("Determining state of LED")
-        #self.LEDState = self.determineLEDs()
-        self.LEDLocations.isled1 = self.LEDState[0]
+        self.LEDState = self.determineLEDs()
+        #self.LEDLocations.isled1 = self.LEDState[0]
+        self.LEDLocations.isled1 = bool(1)
         self.LEDLocations.led1x = self.LEDState[1]
         self.LEDLocations.led1y = self.LEDState[2]
-        self.LEDLocations.isled2 = self.LEDState[3]
+        #self.LEDLocations.isled2 = (self.LEDState[3])
+        self.LEDLocations.isled2 = bool(1)
         self.LEDLocations.led2x = self.LEDState[4]
         self.LEDLocations.led2y = self.LEDState[5]
         #self.LED1.data = self.LEDState[0:3]
