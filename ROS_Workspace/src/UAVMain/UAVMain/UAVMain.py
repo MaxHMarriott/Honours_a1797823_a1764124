@@ -24,7 +24,8 @@ class UAVMain(Node):
         #self.publisher = self.create_publisher(Float32MultiArray,LED1_name,10)
         #self.publisher2 = self.create_publisher(Float32MultiArray,LED2_name,10)
         self.publisher = self.create_publisher(LEDLocationsMsg,LED_name,10)
-        self.subscription = self.create_subscription(Float32MultiArray,"/UAVDetections",self.subscribe_message, qos_profile_sensor_data)
+        self.subscription = self.create_subscription(Float32MultiArray,"/UAVDetections",self.subscribe_message_UAVDetections, qos_profile_sensor_data)
+        self.UGV1StateSubscription = self.create_subscription(String,"/UGV1State",self.subscribe_message_UGV1State, qos_profile_sensor_data)
         self.LEDLocations = LEDLocationsMsg()
         #self.LED1Location = [0.0,0.0,0.0]
         #self.LED2Location = [0.0,0.0,0.0]
@@ -36,8 +37,12 @@ class UAVMain(Node):
         self.i = 0
         self.timer = self.create_timer(self.timer_period,self.timer_callback)
 
+    def subscribe_message_UGV1State(self,data):
+        print("State of UGV1 Rover is: ")
+        self.UGV1State = data.data
+        print(self.UGV1State)
 
-    def subscribe_message(self,data):
+    def subscribe_message_UAVDetections(self,data):
         self.UAVDetections = data.data
         print(data)
         print("Determining state of LED")
