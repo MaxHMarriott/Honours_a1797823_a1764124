@@ -17,12 +17,23 @@ class UGV1Main(Node):
 
     def __init__(self):
         super().__init__("UGV1Main")
+
+        #define possible states of UGV:
+        self.state = Enum('State', ['Transit','Attending', 'Idle', 'Waiting','Do Not Disturb'])
+        self.state = "Idle"
+        #Transit = Heading to a specific location
+        #Attending = Attending to a given fire
+        #Idle = Is stationary and not completing a given task
+        #Waiting = Waiting for action of other robots
+        #DND = Will not respond to other robots.
+
         #LED1_name = '/LED1Location'
         #LED2_name = '/LED2Location'
         Publisher_name = '/UGV1FireSeverity'
         self.x = 0.0; #this will be the x coodinate of the agent retrieved from the navigation node.
         self.y = 0.0; #this will be the y coodinate of the agent retrieved from the navigation node.
         self.publisher = self.create_publisher(FireSeverityMsg,Publisher_name,10)
+        self.state_publisher = self.create_publisher(String,"/UGV1State",10)
         self.LEDLocationsTopic = self.create_subscription(LEDLocationsMsg,'/LEDLocations',self.LED_message, qos_profile_sensor_data)
         self.subscription = self.create_subscription(Int16MultiArray,"/UGV1Detections",self.detections_message, qos_profile_sensor_data)
         self.FireSeverity= FireSeverityMsg()
@@ -52,6 +63,10 @@ class UGV1Main(Node):
         #self.publisher.publish(self.LED1)
         #self.publisher2.publish(self.LED2)
         self.publisher.publish(self.FireSeverity)
+        #self.state_publisher.publish(self.state)
+        state_topic = String()
+        state_topic.data = self.state
+        self.state_publisher.publish(state_topic)
         self.get_logger().info('Publishing Severity locations')
         
     def determineSeverity(self):
