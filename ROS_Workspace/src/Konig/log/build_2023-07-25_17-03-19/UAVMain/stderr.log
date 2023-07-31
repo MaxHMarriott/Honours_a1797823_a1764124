@@ -1,0 +1,5 @@
+  File "/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/install/UAVMain/lib/python3.8/site-packages/UGV1Main/UGV1Main.py", line 25
+    self.subscription = self.create_subscription(Int16MultiArray"/UGV1Detections",self.subscribe_message, qos_profile_sensor_data)
+                                                                ^
+SyntaxError: invalid syntax
+

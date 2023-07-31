@@ -1,0 +1,24 @@
+[1.099s] Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/build/UAVMain/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/install/UAVMain/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/UAVMain build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/build/UAVMain/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/build/UAVMain/install.log --install-scripts $base/lib/UGV1Main --single-version-externally-managed
+[1.478s] running egg_info
+[1.479s] writing build/UAVMain/UGV1Main.egg-info/PKG-INFO
+[1.480s] writing dependency_links to build/UAVMain/UGV1Main.egg-info/dependency_links.txt
+[1.481s] writing entry points to build/UAVMain/UGV1Main.egg-info/entry_points.txt
+[1.481s] writing requirements to build/UAVMain/UGV1Main.egg-info/requires.txt
+[1.481s] writing top-level names to build/UAVMain/UGV1Main.egg-info/top_level.txt
+[1.546s] reading manifest file 'build/UAVMain/UGV1Main.egg-info/SOURCES.txt'
+[1.548s] writing manifest file 'build/UAVMain/UGV1Main.egg-info/SOURCES.txt'
+[1.548s] running build
+[1.548s] running build_py
+[1.549s] creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/build/UAVMain/build/lib/UGV1Main
+[1.549s] copying UGV1Main/UGV1Main.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/build/UAVMain/build/lib/UGV1Main
+[1.549s] copying UGV1Main/__init__.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/build/UAVMain/build/lib/UGV1Main
+[1.550s] running install
+[1.550s] running install_lib
+[1.553s] running install_data
+[1.554s] running install_egg_info
+[1.557s] removing '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/install/UAVMain/lib/python3.8/site-packages/UGV1Main-0.0.0-py3.8.egg-info' (and everything under it)
+[1.557s] Copying build/UAVMain/UGV1Main.egg-info to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/install/UAVMain/lib/python3.8/site-packages/UGV1Main-0.0.0-py3.8.egg-info
+[1.558s] running install_scripts
+[1.587s] Installing UGV1Main script to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/install/UAVMain/lib/UGV1Main
+[1.589s] writing list of installed files to '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/build/UAVMain/install.log'
+[1.634s] Invoked command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main' returned '0': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/build/UAVMain/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/install/UAVMain/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/UAVMain build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/build/UAVMain/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main/build/UAVMain/install.log --install-scripts $base/lib/UGV1Main --single-version-externally-managed

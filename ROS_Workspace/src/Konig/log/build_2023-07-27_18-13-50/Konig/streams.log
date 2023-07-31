@@ -1,0 +1,37 @@
+[0.625s] Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/build/Konig/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/install/Konig/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/Konig build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/build/Konig/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/build/Konig/install.log --install-scripts $base/lib/Konig --single-version-externally-managed
+[0.829s] running egg_info
+[0.830s] creating build/Konig/Konig.egg-info
+[0.830s] writing build/Konig/Konig.egg-info/PKG-INFO
+[0.830s] writing dependency_links to build/Konig/Konig.egg-info/dependency_links.txt
+[0.830s] writing entry points to build/Konig/Konig.egg-info/entry_points.txt
+[0.830s] writing requirements to build/Konig/Konig.egg-info/requires.txt
+[0.830s] writing top-level names to build/Konig/Konig.egg-info/top_level.txt
+[0.831s] writing manifest file 'build/Konig/Konig.egg-info/SOURCES.txt'
+[0.869s] reading manifest file 'build/Konig/Konig.egg-info/SOURCES.txt'
+[0.869s] writing manifest file 'build/Konig/Konig.egg-info/SOURCES.txt'
+[0.870s] running build
+[0.870s] running build_py
+[0.870s] creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/build/Konig/build
+[0.870s] creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/build/Konig/build/lib
+[0.870s] creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/build/Konig/build/lib/Konig
+[0.870s] copying Konig/__init__.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/build/Konig/build/lib/Konig
+[0.870s] copying Konig/Konig.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/build/Konig/build/lib/Konig
+[0.870s] running install
+[0.871s] running install_lib
+[0.872s] creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/install/Konig/lib/python3.8/site-packages/Konig
+[0.872s] copying /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/build/Konig/build/lib/Konig/__init__.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/install/Konig/lib/python3.8/site-packages/Konig
+[0.872s] copying /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/build/Konig/build/lib/Konig/Konig.py -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/install/Konig/lib/python3.8/site-packages/Konig
+[0.872s] byte-compiling /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/install/Konig/lib/python3.8/site-packages/Konig/__init__.py to __init__.cpython-38.pyc
+[0.873s] byte-compiling /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/install/Konig/lib/python3.8/site-packages/Konig/Konig.py to Konig.cpython-38.pyc
+[0.874s] running install_data
+[0.874s] creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/install/Konig/share/ament_index
+[0.875s] creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/install/Konig/share/ament_index/resource_index
+[0.875s] creating /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/install/Konig/share/ament_index/resource_index/packages
+[0.875s] copying resource/Konig -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/install/Konig/share/ament_index/resource_index/packages
+[0.875s] copying package.xml -> /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/install/Konig/share/Konig
+[0.875s] running install_egg_info
+[0.876s] Copying build/Konig/Konig.egg-info to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/install/Konig/lib/python3.8/site-packages/Konig-0.0.0-py3.8.egg-info
+[0.877s] running install_scripts
+[0.893s] Installing Konig script to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/install/Konig/lib/Konig
+[0.893s] writing list of installed files to '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/build/Konig/install.log'
+[0.922s] Invoked command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig' returned '0': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/build/Konig/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/install/Konig/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/Konig build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/build/Konig/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig/build/Konig/install.log --install-scripts $base/lib/Konig --single-version-externally-managed
