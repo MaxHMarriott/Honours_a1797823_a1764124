@@ -1,0 +1,23 @@
+[2.068s] Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/turtlebot3_navigation': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_navigation/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/turtlebot3_navigation build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_navigation/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_navigation/install.log --install-scripts $base/lib/turtlebot3_navigation --single-version-externally-managed
+[2.530s] running egg_info
+[2.531s] writing ../build/turtlebot3_navigation/turtlebot3_navigation.egg-info/PKG-INFO
+[2.531s] writing dependency_links to ../build/turtlebot3_navigation/turtlebot3_navigation.egg-info/dependency_links.txt
+[2.532s] writing entry points to ../build/turtlebot3_navigation/turtlebot3_navigation.egg-info/entry_points.txt
+[2.532s] writing requirements to ../build/turtlebot3_navigation/turtlebot3_navigation.egg-info/requires.txt
+[2.532s] writing top-level names to ../build/turtlebot3_navigation/turtlebot3_navigation.egg-info/top_level.txt
+[2.608s] reading manifest file '../build/turtlebot3_navigation/turtlebot3_navigation.egg-info/SOURCES.txt'
+[2.611s] writing manifest file '../build/turtlebot3_navigation/turtlebot3_navigation.egg-info/SOURCES.txt'
+[2.611s] running build
+[2.611s] running build_py
+[2.612s] running install
+[2.614s] running install_lib
+[2.617s] running install_data
+[2.618s] running install_egg_info
+[2.622s] removing '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/lib/python3.8/site-packages/turtlebot3_navigation-0.0.0-py3.8.egg-info' (and everything under it)
+[2.623s] Copying ../build/turtlebot3_navigation/turtlebot3_navigation.egg-info to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/lib/python3.8/site-packages/turtlebot3_navigation-0.0.0-py3.8.egg-info
+[2.624s] running install_scripts
+[2.660s] Installing move_robot script to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/lib/turtlebot3_navigation
+[2.660s] Installing set_initial_pose script to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/lib/turtlebot3_navigation
+[2.660s] Installing zone_move script to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/lib/turtlebot3_navigation
+[2.661s] writing list of installed files to '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_navigation/install.log'
+[2.724s] Invoked command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/turtlebot3_navigation' returned '0': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_navigation/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/turtlebot3_navigation build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_navigation/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_navigation/install.log --install-scripts $base/lib/turtlebot3_navigation --single-version-externally-managed

@@ -1,0 +1,672 @@
+[0.369s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.369s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f9e94798ac0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f9e94798ac0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f9e947a3070>)
+[0.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.398s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(Konig) by extensions ['ignore', 'ignore_ament_install']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(Konig) by extension 'ignore'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(Konig) by extension 'ignore_ament_install'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(Konig) by extensions ['colcon_pkg']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(Konig) by extension 'colcon_pkg'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(Konig) by extensions ['colcon_meta']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(Konig) by extension 'colcon_meta'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(Konig) by extensions ['ros']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(Konig) by extension 'ros'
+[0.436s] DEBUG:colcon.colcon_core.package_identification:Package 'Konig' with type 'ros.ament_python' and name 'Konig'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(UAVMain) by extensions ['ignore', 'ignore_ament_install']
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(UAVMain) by extension 'ignore'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(UAVMain) by extension 'ignore_ament_install'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(UAVMain) by extensions ['colcon_pkg']
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(UAVMain) by extension 'colcon_pkg'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(UAVMain) by extensions ['colcon_meta']
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(UAVMain) by extension 'colcon_meta'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(UAVMain) by extensions ['ros']
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(UAVMain) by extension 'ros'
+[0.437s] DEBUG:colcon.colcon_core.package_identification:Package 'UAVMain' with type 'ros.ament_python' and name 'UAVMain'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(UAVProcessing) by extensions ['ignore', 'ignore_ament_install']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(UAVProcessing) by extension 'ignore'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(UAVProcessing) by extension 'ignore_ament_install'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(UAVProcessing) by extensions ['colcon_pkg']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(UAVProcessing) by extension 'colcon_pkg'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(UAVProcessing) by extensions ['colcon_meta']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(UAVProcessing) by extension 'colcon_meta'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(UAVProcessing) by extensions ['ros']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(UAVProcessing) by extension 'ros'
+[0.438s] DEBUG:colcon.colcon_core.package_identification:Package 'UAVProcessing' with type 'ros.ament_python' and name 'UAVProcessing'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(UAVVision) by extensions ['ignore', 'ignore_ament_install']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(UAVVision) by extension 'ignore'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(UAVVision) by extension 'ignore_ament_install'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(UAVVision) by extensions ['colcon_pkg']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(UAVVision) by extension 'colcon_pkg'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(UAVVision) by extensions ['colcon_meta']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(UAVVision) by extension 'colcon_meta'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(UAVVision) by extensions ['ros']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(UAVVision) by extension 'ros'
+[0.439s] DEBUG:colcon.colcon_core.package_identification:Package 'UAVVision' with type 'ros.ament_python' and name 'UAVVision'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Main) by extensions ['ignore', 'ignore_ament_install']
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Main) by extension 'ignore'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Main) by extension 'ignore_ament_install'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Main) by extensions ['colcon_pkg']
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Main) by extension 'colcon_pkg'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Main) by extensions ['colcon_meta']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Main) by extension 'colcon_meta'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Main) by extensions ['ros']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Main) by extension 'ros'
+[0.440s] DEBUG:colcon.colcon_core.package_identification:Package 'UGV1Main' with type 'ros.ament_python' and name 'UGV1Main'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Processing) by extensions ['ignore', 'ignore_ament_install']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Processing) by extension 'ignore'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Processing) by extension 'ignore_ament_install'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Processing) by extensions ['colcon_pkg']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Processing) by extension 'colcon_pkg'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Processing) by extensions ['colcon_meta']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Processing) by extension 'colcon_meta'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Processing) by extensions ['ros']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Processing) by extension 'ros'
+[0.441s] DEBUG:colcon.colcon_core.package_identification:Package 'UGV1Processing' with type 'ros.ament_python' and name 'UGV1Processing'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Vision) by extensions ['ignore', 'ignore_ament_install']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Vision) by extension 'ignore'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Vision) by extension 'ignore_ament_install'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Vision) by extensions ['colcon_pkg']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Vision) by extension 'colcon_pkg'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Vision) by extensions ['colcon_meta']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Vision) by extension 'colcon_meta'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Vision) by extensions ['ros']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(UGV1Vision) by extension 'ros'
+[0.442s] DEBUG:colcon.colcon_core.package_identification:Package 'UGV1Vision' with type 'ros.ament_python' and name 'UGV1Vision'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(cameraPub) by extensions ['ignore', 'ignore_ament_install']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(cameraPub) by extension 'ignore'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(cameraPub) by extension 'ignore_ament_install'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(cameraPub) by extensions ['colcon_pkg']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(cameraPub) by extension 'colcon_pkg'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(cameraPub) by extensions ['colcon_meta']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(cameraPub) by extension 'colcon_meta'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(cameraPub) by extensions ['ros']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(cameraPub) by extension 'ros'
+[0.443s] DEBUG:colcon.colcon_core.package_identification:Package 'cameraPub' with type 'ros.ament_python' and name 'cameraPub'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(cameraSub) by extensions ['ignore', 'ignore_ament_install']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(cameraSub) by extension 'ignore'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(cameraSub) by extension 'ignore_ament_install'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(cameraSub) by extensions ['colcon_pkg']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(cameraSub) by extension 'colcon_pkg'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(cameraSub) by extensions ['colcon_meta']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(cameraSub) by extension 'colcon_meta'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(cameraSub) by extensions ['ros']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(cameraSub) by extension 'ros'
+[0.444s] DEBUG:colcon.colcon_core.package_identification:Package 'cameraSub' with type 'ros.ament_python' and name 'cameraSub'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(custom_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(custom_msgs) by extension 'ignore'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(custom_msgs) by extension 'ignore_ament_install'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(custom_msgs) by extensions ['colcon_pkg']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(custom_msgs) by extension 'colcon_pkg'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(custom_msgs) by extensions ['colcon_meta']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(custom_msgs) by extension 'colcon_meta'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(custom_msgs) by extensions ['ros']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(custom_msgs) by extension 'ros'
+[0.445s] DEBUG:colcon.colcon_core.package_identification:Package 'custom_msgs' with type 'ros.ament_cmake' and name 'custom_msgs'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ignore', 'ignore_ament_install']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore_ament_install'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_pkg']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_pkg'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_meta']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_meta'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ros']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ros'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['cmake', 'python']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'cmake'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['python_setup_py']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python_setup_py'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ignore'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ignore_ament_install'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['colcon_pkg']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'colcon_pkg'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['colcon_meta']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'colcon_meta'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['ros']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ros'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['cmake', 'python']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'cmake'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'python'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['python_setup_py']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'python_setup_py'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation) by extension 'ignore'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation) by extension 'ignore_ament_install'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation) by extensions ['colcon_pkg']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation) by extension 'colcon_pkg'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation) by extensions ['colcon_meta']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation) by extension 'colcon_meta'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation) by extensions ['ros']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation) by extension 'ros'
+[0.448s] DEBUG:colcon.colcon_core.package_identification:Package 'turtlebot3_navigation' with type 'ros.ament_python' and name 'turtlebot3_navigation'
+[0.448s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.448s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.448s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.448s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.448s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.476s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.477s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.480s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 13 installed packages in /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install
+[0.482s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 332 installed packages in /opt/ros/foxy
+[0.487s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 268 installed packages in /opt/ros/galactic
+[0.497s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.652s] Level 5:colcon.colcon_core.verb:set package 'Konig' build argument 'cmake_args' from command line to 'None'
+[0.652s] Level 5:colcon.colcon_core.verb:set package 'Konig' build argument 'cmake_target' from command line to 'None'
+[0.652s] Level 5:colcon.colcon_core.verb:set package 'Konig' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.652s] Level 5:colcon.colcon_core.verb:set package 'Konig' build argument 'cmake_clean_cache' from command line to 'False'
+[0.652s] Level 5:colcon.colcon_core.verb:set package 'Konig' build argument 'cmake_clean_first' from command line to 'False'
+[0.652s] Level 5:colcon.colcon_core.verb:set package 'Konig' build argument 'cmake_force_configure' from command line to 'False'
+[0.652s] Level 5:colcon.colcon_core.verb:set package 'Konig' build argument 'ament_cmake_args' from command line to 'None'
+[0.652s] Level 5:colcon.colcon_core.verb:set package 'Konig' build argument 'catkin_cmake_args' from command line to 'None'
+[0.652s] Level 5:colcon.colcon_core.verb:set package 'Konig' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.652s] DEBUG:colcon.colcon_core.verb:Building package 'Konig' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig', 'merge_install': False, 'path': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig', 'symlink_install': False, 'test_result_base': None}
+[0.653s] Level 5:colcon.colcon_core.verb:set package 'UAVMain' build argument 'cmake_args' from command line to 'None'
+[0.654s] Level 5:colcon.colcon_core.verb:set package 'UAVMain' build argument 'cmake_target' from command line to 'None'
+[0.654s] Level 5:colcon.colcon_core.verb:set package 'UAVMain' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.654s] Level 5:colcon.colcon_core.verb:set package 'UAVMain' build argument 'cmake_clean_cache' from command line to 'False'
+[0.654s] Level 5:colcon.colcon_core.verb:set package 'UAVMain' build argument 'cmake_clean_first' from command line to 'False'
+[0.654s] Level 5:colcon.colcon_core.verb:set package 'UAVMain' build argument 'cmake_force_configure' from command line to 'False'
+[0.654s] Level 5:colcon.colcon_core.verb:set package 'UAVMain' build argument 'ament_cmake_args' from command line to 'None'
+[0.654s] Level 5:colcon.colcon_core.verb:set package 'UAVMain' build argument 'catkin_cmake_args' from command line to 'None'
+[0.654s] Level 5:colcon.colcon_core.verb:set package 'UAVMain' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.654s] DEBUG:colcon.colcon_core.verb:Building package 'UAVMain' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVMain', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain', 'merge_install': False, 'path': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVMain', 'symlink_install': False, 'test_result_base': None}
+[0.655s] Level 5:colcon.colcon_core.verb:set package 'UAVProcessing' build argument 'cmake_args' from command line to 'None'
+[0.655s] Level 5:colcon.colcon_core.verb:set package 'UAVProcessing' build argument 'cmake_target' from command line to 'None'
+[0.655s] Level 5:colcon.colcon_core.verb:set package 'UAVProcessing' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.655s] Level 5:colcon.colcon_core.verb:set package 'UAVProcessing' build argument 'cmake_clean_cache' from command line to 'False'
+[0.655s] Level 5:colcon.colcon_core.verb:set package 'UAVProcessing' build argument 'cmake_clean_first' from command line to 'False'
+[0.655s] Level 5:colcon.colcon_core.verb:set package 'UAVProcessing' build argument 'cmake_force_configure' from command line to 'False'
+[0.655s] Level 5:colcon.colcon_core.verb:set package 'UAVProcessing' build argument 'ament_cmake_args' from command line to 'None'
+[0.655s] Level 5:colcon.colcon_core.verb:set package 'UAVProcessing' build argument 'catkin_cmake_args' from command line to 'None'
+[0.655s] Level 5:colcon.colcon_core.verb:set package 'UAVProcessing' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.655s] DEBUG:colcon.colcon_core.verb:Building package 'UAVProcessing' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVProcessing', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing', 'merge_install': False, 'path': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVProcessing', 'symlink_install': False, 'test_result_base': None}
+[0.656s] Level 5:colcon.colcon_core.verb:set package 'UAVVision' build argument 'cmake_args' from command line to 'None'
+[0.656s] Level 5:colcon.colcon_core.verb:set package 'UAVVision' build argument 'cmake_target' from command line to 'None'
+[0.656s] Level 5:colcon.colcon_core.verb:set package 'UAVVision' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.656s] Level 5:colcon.colcon_core.verb:set package 'UAVVision' build argument 'cmake_clean_cache' from command line to 'False'
+[0.656s] Level 5:colcon.colcon_core.verb:set package 'UAVVision' build argument 'cmake_clean_first' from command line to 'False'
+[0.657s] Level 5:colcon.colcon_core.verb:set package 'UAVVision' build argument 'cmake_force_configure' from command line to 'False'
+[0.657s] Level 5:colcon.colcon_core.verb:set package 'UAVVision' build argument 'ament_cmake_args' from command line to 'None'
+[0.657s] Level 5:colcon.colcon_core.verb:set package 'UAVVision' build argument 'catkin_cmake_args' from command line to 'None'
+[0.657s] Level 5:colcon.colcon_core.verb:set package 'UAVVision' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.657s] DEBUG:colcon.colcon_core.verb:Building package 'UAVVision' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVVision', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision', 'merge_install': False, 'path': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVVision', 'symlink_install': False, 'test_result_base': None}
+[0.658s] Level 5:colcon.colcon_core.verb:set package 'UGV1Main' build argument 'cmake_args' from command line to 'None'
+[0.658s] Level 5:colcon.colcon_core.verb:set package 'UGV1Main' build argument 'cmake_target' from command line to 'None'
+[0.658s] Level 5:colcon.colcon_core.verb:set package 'UGV1Main' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.658s] Level 5:colcon.colcon_core.verb:set package 'UGV1Main' build argument 'cmake_clean_cache' from command line to 'False'
+[0.658s] Level 5:colcon.colcon_core.verb:set package 'UGV1Main' build argument 'cmake_clean_first' from command line to 'False'
+[0.658s] Level 5:colcon.colcon_core.verb:set package 'UGV1Main' build argument 'cmake_force_configure' from command line to 'False'
+[0.658s] Level 5:colcon.colcon_core.verb:set package 'UGV1Main' build argument 'ament_cmake_args' from command line to 'None'
+[0.658s] Level 5:colcon.colcon_core.verb:set package 'UGV1Main' build argument 'catkin_cmake_args' from command line to 'None'
+[0.658s] Level 5:colcon.colcon_core.verb:set package 'UGV1Main' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.658s] DEBUG:colcon.colcon_core.verb:Building package 'UGV1Main' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Main', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main', 'merge_install': False, 'path': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main', 'symlink_install': False, 'test_result_base': None}
+[0.659s] Level 5:colcon.colcon_core.verb:set package 'UGV1Processing' build argument 'cmake_args' from command line to 'None'
+[0.659s] Level 5:colcon.colcon_core.verb:set package 'UGV1Processing' build argument 'cmake_target' from command line to 'None'
+[0.659s] Level 5:colcon.colcon_core.verb:set package 'UGV1Processing' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.659s] Level 5:colcon.colcon_core.verb:set package 'UGV1Processing' build argument 'cmake_clean_cache' from command line to 'False'
+[0.659s] Level 5:colcon.colcon_core.verb:set package 'UGV1Processing' build argument 'cmake_clean_first' from command line to 'False'
+[0.659s] Level 5:colcon.colcon_core.verb:set package 'UGV1Processing' build argument 'cmake_force_configure' from command line to 'False'
+[0.659s] Level 5:colcon.colcon_core.verb:set package 'UGV1Processing' build argument 'ament_cmake_args' from command line to 'None'
+[0.659s] Level 5:colcon.colcon_core.verb:set package 'UGV1Processing' build argument 'catkin_cmake_args' from command line to 'None'
+[0.659s] Level 5:colcon.colcon_core.verb:set package 'UGV1Processing' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.659s] DEBUG:colcon.colcon_core.verb:Building package 'UGV1Processing' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Processing', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing', 'merge_install': False, 'path': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Processing', 'symlink_install': False, 'test_result_base': None}
+[0.660s] Level 5:colcon.colcon_core.verb:set package 'UGV1Vision' build argument 'cmake_args' from command line to 'None'
+[0.661s] Level 5:colcon.colcon_core.verb:set package 'UGV1Vision' build argument 'cmake_target' from command line to 'None'
+[0.661s] Level 5:colcon.colcon_core.verb:set package 'UGV1Vision' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.661s] Level 5:colcon.colcon_core.verb:set package 'UGV1Vision' build argument 'cmake_clean_cache' from command line to 'False'
+[0.661s] Level 5:colcon.colcon_core.verb:set package 'UGV1Vision' build argument 'cmake_clean_first' from command line to 'False'
+[0.661s] Level 5:colcon.colcon_core.verb:set package 'UGV1Vision' build argument 'cmake_force_configure' from command line to 'False'
+[0.661s] Level 5:colcon.colcon_core.verb:set package 'UGV1Vision' build argument 'ament_cmake_args' from command line to 'None'
+[0.661s] Level 5:colcon.colcon_core.verb:set package 'UGV1Vision' build argument 'catkin_cmake_args' from command line to 'None'
+[0.661s] Level 5:colcon.colcon_core.verb:set package 'UGV1Vision' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.661s] DEBUG:colcon.colcon_core.verb:Building package 'UGV1Vision' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision', 'merge_install': False, 'path': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Vision', 'symlink_install': False, 'test_result_base': None}
+[0.662s] Level 5:colcon.colcon_core.verb:set package 'cameraPub' build argument 'cmake_args' from command line to 'None'
+[0.662s] Level 5:colcon.colcon_core.verb:set package 'cameraPub' build argument 'cmake_target' from command line to 'None'
+[0.662s] Level 5:colcon.colcon_core.verb:set package 'cameraPub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.662s] Level 5:colcon.colcon_core.verb:set package 'cameraPub' build argument 'cmake_clean_cache' from command line to 'False'
+[0.662s] Level 5:colcon.colcon_core.verb:set package 'cameraPub' build argument 'cmake_clean_first' from command line to 'False'
+[0.662s] Level 5:colcon.colcon_core.verb:set package 'cameraPub' build argument 'cmake_force_configure' from command line to 'False'
+[0.662s] Level 5:colcon.colcon_core.verb:set package 'cameraPub' build argument 'ament_cmake_args' from command line to 'None'
+[0.662s] Level 5:colcon.colcon_core.verb:set package 'cameraPub' build argument 'catkin_cmake_args' from command line to 'None'
+[0.662s] Level 5:colcon.colcon_core.verb:set package 'cameraPub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.662s] DEBUG:colcon.colcon_core.verb:Building package 'cameraPub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub', 'merge_install': False, 'path': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub', 'symlink_install': False, 'test_result_base': None}
+[0.664s] Level 5:colcon.colcon_core.verb:set package 'cameraSub' build argument 'cmake_args' from command line to 'None'
+[0.664s] Level 5:colcon.colcon_core.verb:set package 'cameraSub' build argument 'cmake_target' from command line to 'None'
+[0.664s] Level 5:colcon.colcon_core.verb:set package 'cameraSub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.664s] Level 5:colcon.colcon_core.verb:set package 'cameraSub' build argument 'cmake_clean_cache' from command line to 'False'
+[0.664s] Level 5:colcon.colcon_core.verb:set package 'cameraSub' build argument 'cmake_clean_first' from command line to 'False'
+[0.664s] Level 5:colcon.colcon_core.verb:set package 'cameraSub' build argument 'cmake_force_configure' from command line to 'False'
+[0.664s] Level 5:colcon.colcon_core.verb:set package 'cameraSub' build argument 'ament_cmake_args' from command line to 'None'
+[0.664s] Level 5:colcon.colcon_core.verb:set package 'cameraSub' build argument 'catkin_cmake_args' from command line to 'None'
+[0.664s] Level 5:colcon.colcon_core.verb:set package 'cameraSub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.664s] DEBUG:colcon.colcon_core.verb:Building package 'cameraSub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraSub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub', 'merge_install': False, 'path': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub', 'symlink_install': False, 'test_result_base': None}
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_args' from command line to 'None'
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target' from command line to 'None'
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.665s] DEBUG:colcon.colcon_core.verb:Building package 'custom_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs', 'merge_install': False, 'path': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/custom_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation' build argument 'cmake_args' from command line to 'None'
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation' build argument 'cmake_target' from command line to 'None'
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.667s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation', 'merge_install': False, 'path': '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/turtlebot3_navigation', 'symlink_install': False, 'test_result_base': None}
+[0.668s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.673s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.673s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig' with build type 'ament_python'
+[0.674s] Level 1:colcon.colcon_core.shell:create_environment_hook('Konig', 'ament_prefix_path')
+[0.680s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.680s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig/share/Konig/hook/ament_prefix_path.ps1'
+[0.681s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig/share/Konig/hook/ament_prefix_path.dsv'
+[0.681s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig/share/Konig/hook/ament_prefix_path.sh'
+[0.684s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.684s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.694s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVMain' with build type 'ament_python'
+[0.694s] Level 1:colcon.colcon_core.shell:create_environment_hook('UAVMain', 'ament_prefix_path')
+[0.697s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/share/UAVMain/hook/ament_prefix_path.ps1'
+[0.698s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/share/UAVMain/hook/ament_prefix_path.dsv'
+[0.698s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/share/UAVMain/hook/ament_prefix_path.sh'
+[0.700s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.700s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.710s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVProcessing' with build type 'ament_python'
+[0.711s] Level 1:colcon.colcon_core.shell:create_environment_hook('UAVProcessing', 'ament_prefix_path')
+[0.712s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/share/UAVProcessing/hook/ament_prefix_path.ps1'
+[0.713s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/share/UAVProcessing/hook/ament_prefix_path.dsv'
+[0.714s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/share/UAVProcessing/hook/ament_prefix_path.sh'
+[0.716s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.716s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.726s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVVision' with build type 'ament_python'
+[0.727s] Level 1:colcon.colcon_core.shell:create_environment_hook('UAVVision', 'ament_prefix_path')
+[0.729s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/share/UAVVision/hook/ament_prefix_path.ps1'
+[0.730s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/share/UAVVision/hook/ament_prefix_path.dsv'
+[0.730s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/share/UAVVision/hook/ament_prefix_path.sh'
+[0.733s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.733s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.743s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main' with build type 'ament_python'
+[0.743s] Level 1:colcon.colcon_core.shell:create_environment_hook('UGV1Main', 'ament_prefix_path')
+[0.745s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main/share/UGV1Main/hook/ament_prefix_path.ps1'
+[0.746s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main/share/UGV1Main/hook/ament_prefix_path.dsv'
+[0.746s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main/share/UGV1Main/hook/ament_prefix_path.sh'
+[0.748s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.748s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.758s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Processing' with build type 'ament_python'
+[0.759s] Level 1:colcon.colcon_core.shell:create_environment_hook('UGV1Processing', 'ament_prefix_path')
+[0.762s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing/share/UGV1Processing/hook/ament_prefix_path.ps1'
+[0.763s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing/share/UGV1Processing/hook/ament_prefix_path.dsv'
+[0.763s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing/share/UGV1Processing/hook/ament_prefix_path.sh'
+[0.766s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.766s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.776s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Vision' with build type 'ament_python'
+[0.777s] Level 1:colcon.colcon_core.shell:create_environment_hook('UGV1Vision', 'ament_prefix_path')
+[0.779s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/share/UGV1Vision/hook/ament_prefix_path.ps1'
+[0.780s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/share/UGV1Vision/hook/ament_prefix_path.dsv'
+[0.781s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/share/UGV1Vision/hook/ament_prefix_path.sh'
+[0.783s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.783s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.793s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub' with build type 'ament_python'
+[0.794s] Level 1:colcon.colcon_core.shell:create_environment_hook('cameraPub', 'ament_prefix_path')
+[0.796s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/share/cameraPub/hook/ament_prefix_path.ps1'
+[0.797s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/share/cameraPub/hook/ament_prefix_path.dsv'
+[0.797s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/share/cameraPub/hook/ament_prefix_path.sh'
+[0.800s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.800s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.101s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig'
+[1.103s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.103s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.391s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVMain'
+[1.393s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.393s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.673s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVProcessing'
+[1.676s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.676s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.989s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVVision'
+[1.992s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.992s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.284s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main'
+[2.286s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.286s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.575s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Processing'
+[2.577s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.577s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.865s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Vision'
+[2.867s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.867s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.177s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub'
+[3.179s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.179s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.824s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Vision': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UGV1Vision build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/install.log --install-scripts $base/lib/UGV1Vision --single-version-externally-managed
+[3.845s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVVision': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVVision/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UAVVision build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVVision/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVVision/install.log --install-scripts $base/lib/UAVVision --single-version-externally-managed
+[3.866s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVProcessing': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVProcessing/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UAVProcessing build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVProcessing/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVProcessing/install.log --install-scripts $base/lib/UAVProcessing --single-version-externally-managed
+[3.923s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Processing': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Processing/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UGV1Processing build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Processing/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Processing/install.log --install-scripts $base/lib/UGV1Processing --single-version-externally-managed
+[3.965s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/Konig build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig/install.log --install-scripts $base/lib/Konig --single-version-externally-managed
+[3.992s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Main/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UGV1Main build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Main/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Main/install.log --install-scripts $base/lib/UGV1Main --single-version-externally-managed
+[4.046s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/cameraPub build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/install.log --install-scripts $base/lib/cameraPub --single-version-externally-managed
+[4.141s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVMain': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVMain/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UAVMain build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVMain/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVMain/install.log --install-scripts $base/lib/UAVMain --single-version-externally-managed
+[4.304s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Vision' returned '0': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UGV1Vision build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/install.log --install-scripts $base/lib/UGV1Vision --single-version-externally-managed
+[4.306s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision' for CMake module files
+[4.307s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision' for CMake config files
+[4.308s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/lib'
+[4.308s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/bin'
+[4.308s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/lib/pkgconfig/UGV1Vision.pc'
+[4.309s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/lib/python3.8/site-packages'
+[4.309s] Level 1:colcon.colcon_core.shell:create_environment_hook('UGV1Vision', 'pythonpath')
+[4.311s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/share/UGV1Vision/hook/pythonpath.ps1'
+[4.311s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/share/UGV1Vision/hook/pythonpath.dsv'
+[4.312s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/share/UGV1Vision/hook/pythonpath.sh'
+[4.312s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/bin'
+[4.312s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(UGV1Vision)
+[4.315s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/share/UGV1Vision/package.ps1'
+[4.316s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/share/UGV1Vision/package.dsv'
+[4.317s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/share/UGV1Vision/package.sh'
+[4.318s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/share/UGV1Vision/package.bash'
+[4.318s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/share/UGV1Vision/package.zsh'
+[4.319s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/share/colcon-core/packages/UGV1Vision)
+[4.321s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub' with build type 'ament_python'
+[4.321s] Level 1:colcon.colcon_core.shell:create_environment_hook('cameraSub', 'ament_prefix_path')
+[4.324s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub/share/cameraSub/hook/ament_prefix_path.ps1'
+[4.325s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub/share/cameraSub/hook/ament_prefix_path.dsv'
+[4.326s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub/share/cameraSub/hook/ament_prefix_path.sh'
+[4.329s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.329s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.380s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision' for CMake module files
+[4.381s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVVision' returned '0': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVVision/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UAVVision build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVVision/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVVision/install.log --install-scripts $base/lib/UAVVision --single-version-externally-managed
+[4.382s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision' for CMake config files
+[4.383s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/lib'
+[4.383s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/bin'
+[4.383s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/lib/pkgconfig/UAVVision.pc'
+[4.383s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/lib/python3.8/site-packages'
+[4.383s] Level 1:colcon.colcon_core.shell:create_environment_hook('UAVVision', 'pythonpath')
+[4.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/share/UAVVision/hook/pythonpath.ps1'
+[4.386s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/share/UAVVision/hook/pythonpath.dsv'
+[4.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/share/UAVVision/hook/pythonpath.sh'
+[4.387s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/bin'
+[4.387s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(UAVVision)
+[4.389s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/share/UAVVision/package.ps1'
+[4.390s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/share/UAVVision/package.dsv'
+[4.390s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/share/UAVVision/package.sh'
+[4.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/share/UAVVision/package.bash'
+[4.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/share/UAVVision/package.zsh'
+[4.392s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/share/colcon-core/packages/UAVVision)
+[4.394s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/custom_msgs' with build type 'ament_cmake'
+[4.394s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/custom_msgs'
+[4.397s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.397s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.757s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub'
+[4.759s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.759s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.774s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing' for CMake module files
+[4.775s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Processing' returned '0': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Processing/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UGV1Processing build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Processing/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Processing/install.log --install-scripts $base/lib/UGV1Processing --single-version-externally-managed
+[4.776s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing' for CMake config files
+[4.776s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing/lib'
+[4.776s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing/bin'
+[4.776s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing/lib/pkgconfig/UGV1Processing.pc'
+[4.777s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing/lib/python3.8/site-packages'
+[4.777s] Level 1:colcon.colcon_core.shell:create_environment_hook('UGV1Processing', 'pythonpath')
+[4.779s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing/share/UGV1Processing/hook/pythonpath.ps1'
+[4.780s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing/share/UGV1Processing/hook/pythonpath.dsv'
+[4.780s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing/share/UGV1Processing/hook/pythonpath.sh'
+[4.781s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing/bin'
+[4.781s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(UGV1Processing)
+[4.783s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing/share/UGV1Processing/package.ps1'
+[4.783s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing/share/UGV1Processing/package.dsv'
+[4.784s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing/share/UGV1Processing/package.sh'
+[4.784s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing/share/UGV1Processing/package.bash'
+[4.785s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing/share/UGV1Processing/package.zsh'
+[4.785s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing/share/colcon-core/packages/UGV1Processing)
+[4.788s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main' for CMake module files
+[4.789s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main' for CMake config files
+[4.789s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main' returned '0': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Main/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UGV1Main build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Main/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Main/install.log --install-scripts $base/lib/UGV1Main --single-version-externally-managed
+[4.790s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main/lib'
+[4.790s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main/bin'
+[4.790s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main/lib/pkgconfig/UGV1Main.pc'
+[4.790s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main/lib/python3.8/site-packages'
+[4.790s] Level 1:colcon.colcon_core.shell:create_environment_hook('UGV1Main', 'pythonpath')
+[4.792s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main/share/UGV1Main/hook/pythonpath.ps1'
+[4.792s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main/share/UGV1Main/hook/pythonpath.dsv'
+[4.793s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main/share/UGV1Main/hook/pythonpath.sh'
+[4.794s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main/bin'
+[4.794s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(UGV1Main)
+[4.797s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main/share/UGV1Main/package.ps1'
+[4.797s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main/share/UGV1Main/package.dsv'
+[4.798s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main/share/UGV1Main/package.sh'
+[4.799s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main/share/UGV1Main/package.bash'
+[4.799s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main/share/UGV1Main/package.zsh'
+[4.800s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main/share/colcon-core/packages/UGV1Main)
+[4.803s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing' for CMake module files
+[4.804s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing' for CMake config files
+[4.805s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVProcessing' returned '0': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVProcessing/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UAVProcessing build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVProcessing/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVProcessing/install.log --install-scripts $base/lib/UAVProcessing --single-version-externally-managed
+[4.806s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/lib'
+[4.806s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/bin'
+[4.806s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/lib/pkgconfig/UAVProcessing.pc'
+[4.806s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/lib/python3.8/site-packages'
+[4.806s] Level 1:colcon.colcon_core.shell:create_environment_hook('UAVProcessing', 'pythonpath')
+[4.808s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/share/UAVProcessing/hook/pythonpath.ps1'
+[4.808s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/share/UAVProcessing/hook/pythonpath.dsv'
+[4.809s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/share/UAVProcessing/hook/pythonpath.sh'
+[4.810s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/bin'
+[4.810s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(UAVProcessing)
+[4.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/share/UAVProcessing/package.ps1'
+[4.812s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/share/UAVProcessing/package.dsv'
+[4.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/share/UAVProcessing/package.sh'
+[4.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/share/UAVProcessing/package.bash'
+[4.814s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/share/UAVProcessing/package.zsh'
+[4.814s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/share/colcon-core/packages/UAVProcessing)
+[4.817s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig' for CMake module files
+[4.818s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig' returned '0': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/Konig build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig/install.log --install-scripts $base/lib/Konig --single-version-externally-managed
+[4.819s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig' for CMake config files
+[4.819s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig/lib'
+[4.819s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig/bin'
+[4.819s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig/lib/pkgconfig/Konig.pc'
+[4.820s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig/lib/python3.8/site-packages'
+[4.820s] Level 1:colcon.colcon_core.shell:create_environment_hook('Konig', 'pythonpath')
+[4.822s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig/share/Konig/hook/pythonpath.ps1'
+[4.823s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig/share/Konig/hook/pythonpath.dsv'
+[4.823s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig/share/Konig/hook/pythonpath.sh'
+[4.824s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig/bin'
+[4.824s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(Konig)
+[4.826s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig/share/Konig/package.ps1'
+[4.826s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig/share/Konig/package.dsv'
+[4.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig/share/Konig/package.sh'
+[4.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig/share/Konig/package.bash'
+[4.828s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig/share/Konig/package.zsh'
+[4.828s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig/share/colcon-core/packages/Konig)
+[4.831s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain' for CMake module files
+[4.832s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVMain' returned '0': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVMain/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UAVMain build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVMain/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVMain/install.log --install-scripts $base/lib/UAVMain --single-version-externally-managed
+[4.832s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain' for CMake config files
+[4.833s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/lib'
+[4.833s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/bin'
+[4.833s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/lib/pkgconfig/UAVMain.pc'
+[4.833s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/lib/python3.8/site-packages'
+[4.834s] Level 1:colcon.colcon_core.shell:create_environment_hook('UAVMain', 'pythonpath')
+[4.835s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/share/UAVMain/hook/pythonpath.ps1'
+[4.836s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/share/UAVMain/hook/pythonpath.dsv'
+[4.836s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/share/UAVMain/hook/pythonpath.sh'
+[4.837s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/bin'
+[4.837s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(UAVMain)
+[4.839s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/share/UAVMain/package.ps1'
+[4.839s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/share/UAVMain/package.dsv'
+[4.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/share/UAVMain/package.sh'
+[4.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/share/UAVMain/package.bash'
+[4.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/share/UAVMain/package.zsh'
+[4.841s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/share/colcon-core/packages/UAVMain)
+[4.844s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub' for CMake module files
+[4.846s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub' returned '0': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/cameraPub build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/install.log --install-scripts $base/lib/cameraPub --single-version-externally-managed
+[4.846s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub' for CMake config files
+[4.846s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/lib'
+[4.846s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/bin'
+[4.846s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/lib/pkgconfig/cameraPub.pc'
+[4.847s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/lib/python3.8/site-packages'
+[4.847s] Level 1:colcon.colcon_core.shell:create_environment_hook('cameraPub', 'pythonpath')
+[4.849s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/share/cameraPub/hook/pythonpath.ps1'
+[4.849s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/share/cameraPub/hook/pythonpath.dsv'
+[4.850s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/share/cameraPub/hook/pythonpath.sh'
+[4.851s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/bin'
+[4.851s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cameraPub)
+[4.852s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/share/cameraPub/package.ps1'
+[4.853s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/share/cameraPub/package.dsv'
+[4.854s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/share/cameraPub/package.sh'
+[4.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/share/cameraPub/package.bash'
+[4.856s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/share/cameraPub/package.zsh'
+[4.856s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/share/colcon-core/packages/cameraPub)
+[4.862s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/turtlebot3_navigation' with build type 'ament_python'
+[4.863s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig:/opt/ros/foxy:/opt/ros/galactic /usr/bin/cmake --build /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs -- -j8 -l8
+[4.863s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_navigation', 'ament_prefix_path')
+[4.865s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/share/turtlebot3_navigation/hook/ament_prefix_path.ps1'
+[4.866s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/share/turtlebot3_navigation/hook/ament_prefix_path.dsv'
+[4.866s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/share/turtlebot3_navigation/hook/ament_prefix_path.sh'
+[4.868s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.868s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.221s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/turtlebot3_navigation'
+[5.224s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.224s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.237s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig:/opt/ros/foxy:/opt/ros/galactic /usr/bin/cmake --build /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs -- -j8 -l8
+[5.304s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig:/opt/ros/foxy:/opt/ros/galactic /usr/bin/cmake --install /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs
+[5.375s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[5.378s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs' for CMake module files
+[5.379s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig:/opt/ros/foxy:/opt/ros/galactic /usr/bin/cmake --install /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs
+[5.380s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs' for CMake config files
+[5.380s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[5.382s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[5.383s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[5.383s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[5.384s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib'
+[5.384s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[5.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[5.386s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[5.387s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[5.387s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/bin'
+[5.387s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[5.388s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/python3.8/site-packages'
+[5.388s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'pythonpath')
+[5.390s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/hook/pythonpath.ps1'
+[5.391s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/hook/pythonpath.dsv'
+[5.391s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/hook/pythonpath.sh'
+[5.392s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/bin'
+[5.395s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/package.ps1'
+[5.396s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/package.dsv'
+[5.397s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/package.sh'
+[5.397s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/package.bash'
+[5.398s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/package.zsh'
+[5.398s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[5.460s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[5.463s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs' for CMake module files
+[5.464s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs' for CMake config files
+[5.464s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[5.467s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[5.468s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[5.468s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[5.469s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib'
+[5.469s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[5.470s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[5.471s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[5.471s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[5.471s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/bin'
+[5.472s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[5.472s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/python3.8/site-packages'
+[5.472s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'pythonpath')
+[5.474s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/hook/pythonpath.ps1'
+[5.475s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/hook/pythonpath.dsv'
+[5.475s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/hook/pythonpath.sh'
+[5.475s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/bin'
+[5.477s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/package.ps1'
+[5.478s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/package.dsv'
+[5.479s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/package.sh'
+[5.479s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/package.bash'
+[5.480s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/custom_msgs/package.zsh'
+[5.480s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[5.486s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraSub/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/cameraSub build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraSub/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraSub/install.log --install-scripts $base/lib/cameraPub --single-version-externally-managed
+[5.780s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/turtlebot3_navigation': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_navigation/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/turtlebot3_navigation build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_navigation/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_navigation/install.log --install-scripts $base/lib/turtlebot3_navigation --single-version-externally-managed
+[5.877s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub' for CMake module files
+[5.877s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/cameraSub' returned '0': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraSub/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/cameraSub build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraSub/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraSub/install.log --install-scripts $base/lib/cameraPub --single-version-externally-managed
+[5.878s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub' for CMake config files
+[5.879s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub/lib'
+[5.879s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub/bin'
+[5.879s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub/lib/pkgconfig/cameraSub.pc'
+[5.879s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub/lib/python3.8/site-packages'
+[5.879s] Level 1:colcon.colcon_core.shell:create_environment_hook('cameraSub', 'pythonpath')
+[5.881s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub/share/cameraSub/hook/pythonpath.ps1'
+[5.882s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub/share/cameraSub/hook/pythonpath.dsv'
+[5.882s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub/share/cameraSub/hook/pythonpath.sh'
+[5.882s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub/bin'
+[5.883s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cameraSub)
+[5.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub/share/cameraSub/package.ps1'
+[5.885s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub/share/cameraSub/package.dsv'
+[5.886s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub/share/cameraSub/package.sh'
+[5.886s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub/share/cameraSub/package.bash'
+[5.887s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub/share/cameraSub/package.zsh'
+[5.887s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub/share/colcon-core/packages/cameraSub)
+[6.180s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation' for CMake module files
+[6.181s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/turtlebot3_navigation' returned '0': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_navigation/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/turtlebot3_navigation build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_navigation/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_navigation/install.log --install-scripts $base/lib/turtlebot3_navigation --single-version-externally-managed
+[6.181s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation' for CMake config files
+[6.182s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/lib'
+[6.182s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/bin'
+[6.182s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/lib/pkgconfig/turtlebot3_navigation.pc'
+[6.182s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/lib/python3.8/site-packages'
+[6.182s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_navigation', 'pythonpath')
+[6.184s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/share/turtlebot3_navigation/hook/pythonpath.ps1'
+[6.184s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/share/turtlebot3_navigation/hook/pythonpath.dsv'
+[6.185s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/share/turtlebot3_navigation/hook/pythonpath.sh'
+[6.185s] Level 1:colcon.colcon_core.environment:checking '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/bin'
+[6.185s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_navigation)
+[6.187s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/share/turtlebot3_navigation/package.ps1'
+[6.188s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/share/turtlebot3_navigation/package.dsv'
+[6.188s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/share/turtlebot3_navigation/package.sh'
+[6.189s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/share/turtlebot3_navigation/package.bash'
+[6.189s] INFO:colcon.colcon_core.shell:Creating package script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/share/turtlebot3_navigation/package.zsh'
+[6.189s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation/share/colcon-core/packages/turtlebot3_navigation)
+[6.190s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.190s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.190s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.191s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.198s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.198s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.198s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.216s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.218s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/local_setup.ps1'
+[6.219s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/_local_setup_util_ps1.py'
+[6.221s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/setup.ps1'
+[6.223s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/local_setup.sh'
+[6.224s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/_local_setup_util_sh.py'
+[6.225s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/setup.sh'
+[6.227s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/local_setup.bash'
+[6.227s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/setup.bash'
+[6.229s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/local_setup.zsh'
+[6.230s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/setup.zsh'

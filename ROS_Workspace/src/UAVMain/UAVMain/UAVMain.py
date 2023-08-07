@@ -19,13 +19,17 @@ class UAVMain(Node):
         #LED1_name = '/LED1Location'
         #LED2_name = '/LED2Location'
         LED_name = '/LEDLocations'
+        self.state = String()
+        self.state.data = "Idle"
 
         #self.publisher = self.create_publisher(String,topic_name,10)
         #self.publisher = self.create_publisher(Float32MultiArray,LED1_name,10)
         #self.publisher2 = self.create_publisher(Float32MultiArray,LED2_name,10)
         self.publisher = self.create_publisher(LEDLocationsMsg,LED_name,10)
+        self.publisher2 = self.create_publisher(String,"/UAVState",10)
         self.subscription = self.create_subscription(Float32MultiArray,"/UAVDetections",self.subscribe_message_UAVDetections, qos_profile_sensor_data)
         self.UGV1StateSubscription = self.create_subscription(String,"/UGV1State",self.subscribe_message_UGV1State, qos_profile_sensor_data)
+
         self.LEDLocations = LEDLocationsMsg()
         #self.LED1Location = [0.0,0.0,0.0]
         #self.LED2Location = [0.0,0.0,0.0]
@@ -65,6 +69,7 @@ class UAVMain(Node):
         #self.publisher.publish(self.LED1)
         #self.publisher2.publish(self.LED2)
         self.publisher.publish(self.LEDLocations)
+        self.publisher2.publish(self.state)
         self.get_logger().info('Publishing LED locations')
         
     def determineLEDs(self):
@@ -118,8 +123,7 @@ class UAVMain(Node):
             return determinedLEDS
 
         return determinedLEDS
-
-        
+       
 def main (args=None):
     rclpy.init(args=args)
     

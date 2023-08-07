@@ -1,0 +1,29 @@
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/ros2_launch_tutorial
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/launch/ros2.launch.py
+-- Symlinking: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/urdf/rrbot.materials.xacro
+-- Symlinking: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/urdf/rrbot.urdf.xacro
+-- Symlinking: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/urdf/rrbot_description.urdf.xacro
+-- Symlinking: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/rviz/rrbot.rviz
+-- Symlinking: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/config/joy-params.yaml
+-- Symlinking: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ament_index/resource_index/package_run_dependencies/ros2_launch_tutorial
+-- Symlinking: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ament_index/resource_index/parent_prefix_path/ros2_launch_tutorial
+-- Symlinking: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/environment/ament_prefix_path.sh
+-- Symlinking: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/environment/ament_prefix_path.dsv
+-- Symlinking: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/environment/path.sh
+-- Symlinking: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/environment/path.dsv
+-- Symlinking: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/local_setup.bash
+-- Symlinking: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/local_setup.sh
+-- Symlinking: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/local_setup.zsh
+-- Symlinking: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/local_setup.dsv
+-- Symlinking: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/package.dsv
+-- Symlinking: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ament_index/resource_index/packages/ros2_launch_tutorial
+-- Symlinking: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/cmake/ros2_launch_tutorialConfig.cmake
+-- Symlinking: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/cmake/ros2_launch_tutorialConfig-version.cmake
+-- Symlinking: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/package.xml

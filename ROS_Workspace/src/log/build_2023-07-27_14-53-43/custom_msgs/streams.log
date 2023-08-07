@@ -1,0 +1,15 @@
+[0.141s] Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_navigation:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraSub:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Processing:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain:/opt/ros/foxy:/opt/ros/galactic /usr/bin/cmake --build /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs -- -j8 -l8
+[0.199s] [  5%] Built target custom_msgs__cpp
+[0.199s] [ 12%] Built target custom_msgs__rosidl_generator_c
+[0.232s] [ 33%] Built target custom_msgs__rosidl_typesupport_introspection_cpp
+[0.232s] [ 33%] Built target custom_msgs__rosidl_typesupport_c
+[0.232s] [ 43%] Built target custom_msgs__rosidl_typesupport_introspection_c
+[0.233s] [ 53%] Built target custom_msgs__rosidl_typesupport_cpp
+[0.237s] [ 64%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp
+[0.264s] [ 74%] Built target custom_msgs__rosidl_typesupport_fastrtps_c
+[0.284s] [ 74%] Built target custom_msgs
+[0.305s] [ 76%] Built target custom_msgs__py
+[0.330s] [ 84%] Built target custom_msgs__python
+[0.355s] [100%] Built target custom_msgs__rosidl_typesupport_c__pyext
+[0.356s] [100%] Built target custom_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.356s] [100%] Built target custom_msgs__rosidl_typesupport_introspection_c__pyext

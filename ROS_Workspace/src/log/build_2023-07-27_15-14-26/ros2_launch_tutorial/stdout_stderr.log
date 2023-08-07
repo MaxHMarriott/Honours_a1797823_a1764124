@@ -1,0 +1,46 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/ros2_launch_tutorial
+-- Install configuration: ""
+-- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/launch
+-- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/launch/ros2.launch.py
+-- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/urdf
+-- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/urdf/rrbot.materials.xacro
+-- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/urdf/rrbot_description.urdf.xacro
+-- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/urdf/rrbot.urdf.xacro
+-- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/rviz
+-- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/rviz/rrbot.rviz
+-- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/config
+-- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/config/joy-params.yaml
+-- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ament_index/resource_index/package_run_dependencies/ros2_launch_tutorial
+-- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ament_index/resource_index/parent_prefix_path/ros2_launch_tutorial
+-- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/environment/ament_prefix_path.sh
+-- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/environment/ament_prefix_path.dsv
+-- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/environment/path.sh
+-- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/environment/path.dsv
+-- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/local_setup.bash
+-- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/local_setup.sh
+-- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/local_setup.zsh
+-- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/local_setup.dsv
+-- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/package.dsv
+-- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ament_index/resource_index/packages/ros2_launch_tutorial
+-- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/cmake/ros2_launch_tutorialConfig.cmake
+-- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/cmake/ros2_launch_tutorialConfig-version.cmake
+-- Installing: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/ros2_launch_tutorial/share/ros2_launch_tutorial/package.xml

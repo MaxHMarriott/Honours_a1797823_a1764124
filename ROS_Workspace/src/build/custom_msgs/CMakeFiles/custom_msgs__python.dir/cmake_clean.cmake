@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/custom_msgs__python.dir/rosidl_generator_py/custom_msgs/msg/_fire_severity_s.c.o"
   "CMakeFiles/custom_msgs__python.dir/rosidl_generator_py/custom_msgs/msg/_led_locations_s.c.o"
   "rosidl_generator_py/custom_msgs/libcustom_msgs__python.pdb"
   "rosidl_generator_py/custom_msgs/libcustom_msgs__python.so"

@@ -1,0 +1,21 @@
+[5.411s] Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVProcessing': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVProcessing/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UAVProcessing build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVProcessing/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVProcessing/install.log --install-scripts $base/lib/UAVProcessing --single-version-externally-managed
+[5.911s] running egg_info
+[5.912s] writing ../build/UAVProcessing/UAVProcessing.egg-info/PKG-INFO
+[5.913s] writing dependency_links to ../build/UAVProcessing/UAVProcessing.egg-info/dependency_links.txt
+[5.914s] writing entry points to ../build/UAVProcessing/UAVProcessing.egg-info/entry_points.txt
+[5.914s] writing requirements to ../build/UAVProcessing/UAVProcessing.egg-info/requires.txt
+[5.915s] writing top-level names to ../build/UAVProcessing/UAVProcessing.egg-info/top_level.txt
+[6.065s] reading manifest file '../build/UAVProcessing/UAVProcessing.egg-info/SOURCES.txt'
+[6.065s] writing manifest file '../build/UAVProcessing/UAVProcessing.egg-info/SOURCES.txt'
+[6.065s] running build
+[6.066s] running build_py
+[6.066s] running install
+[6.066s] running install_lib
+[6.066s] running install_data
+[6.066s] running install_egg_info
+[6.070s] removing '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/lib/python3.8/site-packages/UAVProcessing-0.0.0-py3.8.egg-info' (and everything under it)
+[6.074s] Copying ../build/UAVProcessing/UAVProcessing.egg-info to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/lib/python3.8/site-packages/UAVProcessing-0.0.0-py3.8.egg-info
+[6.075s] running install_scripts
+[6.117s] Installing UAVProcessing script to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/lib/UAVProcessing
+[6.119s] writing list of installed files to '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVProcessing/install.log'
+[6.276s] Invoked command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVProcessing' returned '0': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVProcessing/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVProcessing/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UAVProcessing build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVProcessing/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVProcessing/install.log --install-scripts $base/lib/UAVProcessing --single-version-externally-managed

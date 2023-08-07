@@ -6,6 +6,34 @@
 
 #IncludeRegexTransform: 
 
+/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/fire_severity__type_support_c.cpp
+custom_msgs/msg/detail/fire_severity__rosidl_typesupport_fastrtps_c.h
+/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/custom_msgs/msg/detail/fire_severity__rosidl_typesupport_fastrtps_c.h
+cassert
+-
+limits
+-
+string
+-
+rosidl_typesupport_fastrtps_c/identifier.h
+/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/rosidl_typesupport_fastrtps_c/identifier.h
+rosidl_typesupport_fastrtps_c/wstring_conversion.hpp
+/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/rosidl_typesupport_fastrtps_c/wstring_conversion.hpp
+rosidl_typesupport_fastrtps_cpp/message_type_support.h
+/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/rosidl_typesupport_fastrtps_cpp/message_type_support.h
+custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+custom_msgs/msg/detail/fire_severity__struct.h
+/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/custom_msgs/msg/detail/fire_severity__struct.h
+custom_msgs/msg/detail/fire_severity__functions.h
+/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/custom_msgs/msg/detail/fire_severity__functions.h
+fastcdr/Cdr.h
+/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/fastcdr/Cdr.h
+rosidl_runtime_c/string.h
+/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/rosidl_runtime_c/string.h
+rosidl_runtime_c/string_functions.h
+/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/rosidl_runtime_c/string_functions.h
+
 /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/led_locations__type_support_c.cpp
 custom_msgs/msg/detail/led_locations__rosidl_typesupport_fastrtps_c.h
 /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/custom_msgs/msg/detail/led_locations__rosidl_typesupport_fastrtps_c.h
@@ -104,6 +132,20 @@ stddef.h
 stdint.h
 -
 
+/opt/ros/foxy/include/rosidl_runtime_c/string.h
+stddef.h
+-
+rosidl_runtime_c/primitives_sequence.h
+/opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h
+
+/opt/ros/foxy/include/rosidl_runtime_c/string_functions.h
+stddef.h
+-
+rosidl_runtime_c/string.h
+/opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/string.h
+rosidl_runtime_c/visibility_control.h
+/opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
+
 /opt/ros/foxy/include/rosidl_runtime_c/u16string.h
 stddef.h
 -
@@ -134,6 +176,28 @@ fastcdr/Cdr.h
 
 /opt/ros/foxy/include/rosidl_typesupport_interface/macros.h
 
+rosidl_generator_c/custom_msgs/msg/detail/fire_severity__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+rosidl_generator_c/custom_msgs/msg/detail/rosidl_runtime_c/visibility_control.h
+custom_msgs/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/rosidl_generator_c__visibility_control.h
+custom_msgs/msg/detail/fire_severity__struct.h
+rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/detail/fire_severity__struct.h
+
+rosidl_generator_c/custom_msgs/msg/detail/fire_severity__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+rosidl_runtime_c/string.h
+rosidl_generator_c/custom_msgs/msg/detail/rosidl_runtime_c/string.h
+
 rosidl_generator_c/custom_msgs/msg/detail/led_locations__functions.h
 stdbool.h
 -
@@ -155,6 +219,16 @@ stdint.h
 -
 
 rosidl_generator_c/custom_msgs/msg/rosidl_generator_c__visibility_control.h
+
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/fire_severity__rosidl_typesupport_fastrtps_c.h
+stddef.h
+-
+rosidl_runtime_c/message_type_support_struct.h
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/rosidl_runtime_c/message_type_support_struct.h
+rosidl_typesupport_interface/macros.h
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/rosidl_typesupport_interface/macros.h
+custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
 
 rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/led_locations__rosidl_typesupport_fastrtps_c.h
 stddef.h

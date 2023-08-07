@@ -1,0 +1,5 @@
+  File "/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig/lib/python3.8/site-packages/Konig/Konig.py", line 115
+    def Update_Times(self,data)
+                              ^
+SyntaxError: invalid syntax
+

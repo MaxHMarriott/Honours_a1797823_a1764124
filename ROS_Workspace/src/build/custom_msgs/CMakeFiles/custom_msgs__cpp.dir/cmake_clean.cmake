@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/custom_msgs__cpp"
+  "rosidl_generator_cpp/custom_msgs/msg/detail/fire_severity__builder.hpp"
+  "rosidl_generator_cpp/custom_msgs/msg/detail/fire_severity__struct.hpp"
+  "rosidl_generator_cpp/custom_msgs/msg/detail/fire_severity__traits.hpp"
   "rosidl_generator_cpp/custom_msgs/msg/detail/led_locations__builder.hpp"
   "rosidl_generator_cpp/custom_msgs/msg/detail/led_locations__struct.hpp"
   "rosidl_generator_cpp/custom_msgs/msg/detail/led_locations__traits.hpp"
+  "rosidl_generator_cpp/custom_msgs/msg/fire_severity.hpp"
   "rosidl_generator_cpp/custom_msgs/msg/led_locations.hpp"
 )
 

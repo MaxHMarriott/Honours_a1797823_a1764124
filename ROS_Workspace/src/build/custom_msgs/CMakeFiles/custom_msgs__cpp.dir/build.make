@@ -57,6 +57,10 @@ CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/led_locations.
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/led_locations__builder.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/led_locations__struct.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/led_locations__traits.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/fire_severity.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/fire_severity__builder.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/fire_severity__struct.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/fire_severity__traits.hpp
 
 
 rosidl_generator_cpp/custom_msgs/msg/led_locations.hpp: /opt/ros/foxy/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -75,6 +79,7 @@ rosidl_generator_cpp/custom_msgs/msg/led_locations.hpp: /opt/ros/foxy/share/rosi
 rosidl_generator_cpp/custom_msgs/msg/led_locations.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/custom_msgs/msg/led_locations.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/custom_msgs/msg/led_locations.hpp: rosidl_adapter/custom_msgs/msg/LEDLocations.idl
+rosidl_generator_cpp/custom_msgs/msg/led_locations.hpp: rosidl_adapter/custom_msgs/msg/FireSeverity.idl
 rosidl_generator_cpp/custom_msgs/msg/led_locations.hpp: /opt/ros/foxy/share/std_msgs/msg/Bool.idl
 rosidl_generator_cpp/custom_msgs/msg/led_locations.hpp: /opt/ros/foxy/share/std_msgs/msg/Byte.idl
 rosidl_generator_cpp/custom_msgs/msg/led_locations.hpp: /opt/ros/foxy/share/std_msgs/msg/ByteMultiArray.idl
@@ -119,11 +124,27 @@ rosidl_generator_cpp/custom_msgs/msg/detail/led_locations__struct.hpp: rosidl_ge
 rosidl_generator_cpp/custom_msgs/msg/detail/led_locations__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/led_locations.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/led_locations__traits.hpp
 
+rosidl_generator_cpp/custom_msgs/msg/fire_severity.hpp: rosidl_generator_cpp/custom_msgs/msg/led_locations.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/fire_severity.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/fire_severity__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/led_locations.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/fire_severity__builder.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/fire_severity__struct.hpp: rosidl_generator_cpp/custom_msgs/msg/led_locations.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/fire_severity__struct.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/fire_severity__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/led_locations.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/fire_severity__traits.hpp
+
 custom_msgs__cpp: CMakeFiles/custom_msgs__cpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/led_locations.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/led_locations__builder.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/led_locations__struct.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/led_locations__traits.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/fire_severity.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/fire_severity__builder.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/fire_severity__struct.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/fire_severity__traits.hpp
 custom_msgs__cpp: CMakeFiles/custom_msgs__cpp.dir/build.make
 
 .PHONY : custom_msgs__cpp

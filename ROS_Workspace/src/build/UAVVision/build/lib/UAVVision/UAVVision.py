@@ -34,7 +34,7 @@ class CameraPublisher(Node):
         #ret, frame = self.cap.read()
         #while True:
         ret, frame = self.cap.read(cv2.CAP_V4L2)
-        frame = cv2.resize(frame, (480, 360))
+        #frame = cv2.resize(frame, (480, 360))
         self.publisher.publish(self.br.cv2_to_imgmsg(frame))
         self.get_logger().info('Publishing video frame')
 

@@ -1,0 +1,3 @@
+[console_scripts]
+UGV1Main = UGV1Main.UGV1Main:main
+

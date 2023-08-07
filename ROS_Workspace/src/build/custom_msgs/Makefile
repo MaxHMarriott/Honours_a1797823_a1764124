@@ -375,6 +375,33 @@ custom_msgs__py/fast:
 	$(MAKE) -f custom_msgs__py/CMakeFiles/custom_msgs__py.dir/build.make custom_msgs__py/CMakeFiles/custom_msgs__py.dir/build
 .PHONY : custom_msgs__py/fast
 
+rosidl_generator_c/custom_msgs/msg/detail/fire_severity__functions.o: rosidl_generator_c/custom_msgs/msg/detail/fire_severity__functions.c.o
+
+.PHONY : rosidl_generator_c/custom_msgs/msg/detail/fire_severity__functions.o
+
+# target to build an object file
+rosidl_generator_c/custom_msgs/msg/detail/fire_severity__functions.c.o:
+	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_generator_c.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/fire_severity__functions.c.o
+.PHONY : rosidl_generator_c/custom_msgs/msg/detail/fire_severity__functions.c.o
+
+rosidl_generator_c/custom_msgs/msg/detail/fire_severity__functions.i: rosidl_generator_c/custom_msgs/msg/detail/fire_severity__functions.c.i
+
+.PHONY : rosidl_generator_c/custom_msgs/msg/detail/fire_severity__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/custom_msgs/msg/detail/fire_severity__functions.c.i:
+	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_generator_c.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/fire_severity__functions.c.i
+.PHONY : rosidl_generator_c/custom_msgs/msg/detail/fire_severity__functions.c.i
+
+rosidl_generator_c/custom_msgs/msg/detail/fire_severity__functions.s: rosidl_generator_c/custom_msgs/msg/detail/fire_severity__functions.c.s
+
+.PHONY : rosidl_generator_c/custom_msgs/msg/detail/fire_severity__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/custom_msgs/msg/detail/fire_severity__functions.c.s:
+	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_generator_c.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/fire_severity__functions.c.s
+.PHONY : rosidl_generator_c/custom_msgs/msg/detail/fire_severity__functions.c.s
+
 rosidl_generator_c/custom_msgs/msg/detail/led_locations__functions.o: rosidl_generator_c/custom_msgs/msg/detail/led_locations__functions.c.o
 
 .PHONY : rosidl_generator_c/custom_msgs/msg/detail/led_locations__functions.o
@@ -483,6 +510,33 @@ rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspecti
 	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c.s
 .PHONY : rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c.s
 
+rosidl_generator_py/custom_msgs/msg/_fire_severity_s.o: rosidl_generator_py/custom_msgs/msg/_fire_severity_s.c.o
+
+.PHONY : rosidl_generator_py/custom_msgs/msg/_fire_severity_s.o
+
+# target to build an object file
+rosidl_generator_py/custom_msgs/msg/_fire_severity_s.c.o:
+	$(MAKE) -f CMakeFiles/custom_msgs__python.dir/build.make CMakeFiles/custom_msgs__python.dir/rosidl_generator_py/custom_msgs/msg/_fire_severity_s.c.o
+.PHONY : rosidl_generator_py/custom_msgs/msg/_fire_severity_s.c.o
+
+rosidl_generator_py/custom_msgs/msg/_fire_severity_s.i: rosidl_generator_py/custom_msgs/msg/_fire_severity_s.c.i
+
+.PHONY : rosidl_generator_py/custom_msgs/msg/_fire_severity_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/custom_msgs/msg/_fire_severity_s.c.i:
+	$(MAKE) -f CMakeFiles/custom_msgs__python.dir/build.make CMakeFiles/custom_msgs__python.dir/rosidl_generator_py/custom_msgs/msg/_fire_severity_s.c.i
+.PHONY : rosidl_generator_py/custom_msgs/msg/_fire_severity_s.c.i
+
+rosidl_generator_py/custom_msgs/msg/_fire_severity_s.s: rosidl_generator_py/custom_msgs/msg/_fire_severity_s.c.s
+
+.PHONY : rosidl_generator_py/custom_msgs/msg/_fire_severity_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/custom_msgs/msg/_fire_severity_s.c.s:
+	$(MAKE) -f CMakeFiles/custom_msgs__python.dir/build.make CMakeFiles/custom_msgs__python.dir/rosidl_generator_py/custom_msgs/msg/_fire_severity_s.c.s
+.PHONY : rosidl_generator_py/custom_msgs/msg/_fire_severity_s.c.s
+
 rosidl_generator_py/custom_msgs/msg/_led_locations_s.o: rosidl_generator_py/custom_msgs/msg/_led_locations_s.c.o
 
 .PHONY : rosidl_generator_py/custom_msgs/msg/_led_locations_s.o
@@ -509,6 +563,33 @@ rosidl_generator_py/custom_msgs/msg/_led_locations_s.s: rosidl_generator_py/cust
 rosidl_generator_py/custom_msgs/msg/_led_locations_s.c.s:
 	$(MAKE) -f CMakeFiles/custom_msgs__python.dir/build.make CMakeFiles/custom_msgs__python.dir/rosidl_generator_py/custom_msgs/msg/_led_locations_s.c.s
 .PHONY : rosidl_generator_py/custom_msgs/msg/_led_locations_s.c.s
+
+rosidl_typesupport_c/custom_msgs/msg/fire_severity__type_support.o: rosidl_typesupport_c/custom_msgs/msg/fire_severity__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_c/custom_msgs/msg/fire_severity__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/custom_msgs/msg/fire_severity__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/fire_severity__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/custom_msgs/msg/fire_severity__type_support.cpp.o
+
+rosidl_typesupport_c/custom_msgs/msg/fire_severity__type_support.i: rosidl_typesupport_c/custom_msgs/msg/fire_severity__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_c/custom_msgs/msg/fire_severity__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/custom_msgs/msg/fire_severity__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/fire_severity__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/custom_msgs/msg/fire_severity__type_support.cpp.i
+
+rosidl_typesupport_c/custom_msgs/msg/fire_severity__type_support.s: rosidl_typesupport_c/custom_msgs/msg/fire_severity__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_c/custom_msgs/msg/fire_severity__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/custom_msgs/msg/fire_severity__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/fire_severity__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/custom_msgs/msg/fire_severity__type_support.cpp.s
 
 rosidl_typesupport_c/custom_msgs/msg/led_locations__type_support.o: rosidl_typesupport_c/custom_msgs/msg/led_locations__type_support.cpp.o
 
@@ -537,6 +618,33 @@ rosidl_typesupport_c/custom_msgs/msg/led_locations__type_support.cpp.s:
 	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/led_locations__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/custom_msgs/msg/led_locations__type_support.cpp.s
 
+rosidl_typesupport_cpp/custom_msgs/msg/fire_severity__type_support.o: rosidl_typesupport_cpp/custom_msgs/msg/fire_severity__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_cpp/custom_msgs/msg/fire_severity__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/custom_msgs/msg/fire_severity__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/fire_severity__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/custom_msgs/msg/fire_severity__type_support.cpp.o
+
+rosidl_typesupport_cpp/custom_msgs/msg/fire_severity__type_support.i: rosidl_typesupport_cpp/custom_msgs/msg/fire_severity__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_cpp/custom_msgs/msg/fire_severity__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/custom_msgs/msg/fire_severity__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/fire_severity__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/custom_msgs/msg/fire_severity__type_support.cpp.i
+
+rosidl_typesupport_cpp/custom_msgs/msg/fire_severity__type_support.s: rosidl_typesupport_cpp/custom_msgs/msg/fire_severity__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_cpp/custom_msgs/msg/fire_severity__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/custom_msgs/msg/fire_severity__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/fire_severity__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/custom_msgs/msg/fire_severity__type_support.cpp.s
+
 rosidl_typesupport_cpp/custom_msgs/msg/led_locations__type_support.o: rosidl_typesupport_cpp/custom_msgs/msg/led_locations__type_support.cpp.o
 
 .PHONY : rosidl_typesupport_cpp/custom_msgs/msg/led_locations__type_support.o
@@ -563,6 +671,33 @@ rosidl_typesupport_cpp/custom_msgs/msg/led_locations__type_support.s: rosidl_typ
 rosidl_typesupport_cpp/custom_msgs/msg/led_locations__type_support.cpp.s:
 	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/led_locations__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/custom_msgs/msg/led_locations__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/fire_severity__type_support_c.o: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/fire_severity__type_support_c.cpp.o
+
+.PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/fire_severity__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/fire_severity__type_support_c.cpp.o:
+	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/fire_severity__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/fire_severity__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/fire_severity__type_support_c.i: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/fire_severity__type_support_c.cpp.i
+
+.PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/fire_severity__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/fire_severity__type_support_c.cpp.i:
+	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/fire_severity__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/fire_severity__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/fire_severity__type_support_c.s: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/fire_severity__type_support_c.cpp.s
+
+.PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/fire_severity__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/fire_severity__type_support_c.cpp.s:
+	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/fire_severity__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/fire_severity__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/led_locations__type_support_c.o: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/led_locations__type_support_c.cpp.o
 
@@ -591,6 +726,33 @@ rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/led_locations__type_support
 	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/led_locations__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/led_locations__type_support_c.cpp.s
 
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/fire_severity__type_support.o: rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/fire_severity__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/fire_severity__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/fire_severity__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/fire_severity__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/fire_severity__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/fire_severity__type_support.i: rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/fire_severity__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/fire_severity__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/fire_severity__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/fire_severity__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/fire_severity__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/fire_severity__type_support.s: rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/fire_severity__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/fire_severity__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/fire_severity__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/fire_severity__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/fire_severity__type_support.cpp.s
+
 rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/led_locations__type_support.o: rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/led_locations__type_support.cpp.o
 
 .PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/led_locations__type_support.o
@@ -618,6 +780,33 @@ rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/led_location
 	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/led_locations__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/led_locations__type_support.cpp.s
 
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/fire_severity__type_support.o: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/fire_severity__type_support.c.o
+
+.PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/fire_severity__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/fire_severity__type_support.c.o:
+	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/fire_severity__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/fire_severity__type_support.c.o
+
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/fire_severity__type_support.i: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/fire_severity__type_support.c.i
+
+.PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/fire_severity__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/fire_severity__type_support.c.i:
+	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/fire_severity__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/fire_severity__type_support.c.i
+
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/fire_severity__type_support.s: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/fire_severity__type_support.c.s
+
+.PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/fire_severity__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/fire_severity__type_support.c.s:
+	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/fire_severity__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/fire_severity__type_support.c.s
+
 rosidl_typesupport_introspection_c/custom_msgs/msg/detail/led_locations__type_support.o: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/led_locations__type_support.c.o
 
 .PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/led_locations__type_support.o
@@ -644,6 +833,33 @@ rosidl_typesupport_introspection_c/custom_msgs/msg/detail/led_locations__type_su
 rosidl_typesupport_introspection_c/custom_msgs/msg/detail/led_locations__type_support.c.s:
 	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/led_locations__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/led_locations__type_support.c.s
+
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/fire_severity__type_support.o: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/fire_severity__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/fire_severity__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/fire_severity__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/fire_severity__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/fire_severity__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/fire_severity__type_support.i: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/fire_severity__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/fire_severity__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/fire_severity__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/fire_severity__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/fire_severity__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/fire_severity__type_support.s: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/fire_severity__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/fire_severity__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/fire_severity__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/fire_severity__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/fire_severity__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/led_locations__type_support.o: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/led_locations__type_support.cpp.o
 
@@ -701,6 +917,9 @@ help:
 	@echo "... install/strip"
 	@echo "... custom_msgs__rosidl_typesupport_cpp"
 	@echo "... custom_msgs__py"
+	@echo "... rosidl_generator_c/custom_msgs/msg/detail/fire_severity__functions.o"
+	@echo "... rosidl_generator_c/custom_msgs/msg/detail/fire_severity__functions.i"
+	@echo "... rosidl_generator_c/custom_msgs/msg/detail/fire_severity__functions.s"
 	@echo "... rosidl_generator_c/custom_msgs/msg/detail/led_locations__functions.o"
 	@echo "... rosidl_generator_c/custom_msgs/msg/detail/led_locations__functions.i"
 	@echo "... rosidl_generator_c/custom_msgs/msg/detail/led_locations__functions.s"
@@ -713,24 +932,45 @@ help:
 	@echo "... rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.o"
 	@echo "... rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.i"
 	@echo "... rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.s"
+	@echo "... rosidl_generator_py/custom_msgs/msg/_fire_severity_s.o"
+	@echo "... rosidl_generator_py/custom_msgs/msg/_fire_severity_s.i"
+	@echo "... rosidl_generator_py/custom_msgs/msg/_fire_severity_s.s"
 	@echo "... rosidl_generator_py/custom_msgs/msg/_led_locations_s.o"
 	@echo "... rosidl_generator_py/custom_msgs/msg/_led_locations_s.i"
 	@echo "... rosidl_generator_py/custom_msgs/msg/_led_locations_s.s"
+	@echo "... rosidl_typesupport_c/custom_msgs/msg/fire_severity__type_support.o"
+	@echo "... rosidl_typesupport_c/custom_msgs/msg/fire_severity__type_support.i"
+	@echo "... rosidl_typesupport_c/custom_msgs/msg/fire_severity__type_support.s"
 	@echo "... rosidl_typesupport_c/custom_msgs/msg/led_locations__type_support.o"
 	@echo "... rosidl_typesupport_c/custom_msgs/msg/led_locations__type_support.i"
 	@echo "... rosidl_typesupport_c/custom_msgs/msg/led_locations__type_support.s"
+	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/fire_severity__type_support.o"
+	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/fire_severity__type_support.i"
+	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/fire_severity__type_support.s"
 	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/led_locations__type_support.o"
 	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/led_locations__type_support.i"
 	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/led_locations__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/fire_severity__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/fire_severity__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/fire_severity__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/led_locations__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/led_locations__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/led_locations__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/fire_severity__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/fire_severity__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/fire_severity__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/led_locations__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/led_locations__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/led_locations__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/fire_severity__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/fire_severity__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/fire_severity__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/led_locations__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/led_locations__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/led_locations__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/fire_severity__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/fire_severity__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/fire_severity__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/led_locations__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/led_locations__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/led_locations__type_support.s"

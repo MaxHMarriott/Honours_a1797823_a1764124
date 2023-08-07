@@ -25,10 +25,10 @@ _colcon_prefix_chain_zsh_source_script "$COLCON_CURRENT_PREFIX/local_setup.zsh"
 COLCON_CURRENT_PREFIX="/opt/ros/foxy"
 _colcon_prefix_chain_zsh_source_script "$COLCON_CURRENT_PREFIX/local_setup.zsh"
 # setting COLCON_CURRENT_PREFIX avoids determining the prefix in the sourced script
-COLCON_CURRENT_PREFIX="/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/install"
+COLCON_CURRENT_PREFIX="/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install"
 _colcon_prefix_chain_zsh_source_script "$COLCON_CURRENT_PREFIX/local_setup.zsh"
 # setting COLCON_CURRENT_PREFIX avoids determining the prefix in the sourced script
-COLCON_CURRENT_PREFIX="/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install"
+COLCON_CURRENT_PREFIX="/opt/ros/foxy/install"
 _colcon_prefix_chain_zsh_source_script "$COLCON_CURRENT_PREFIX/local_setup.zsh"
 
 # source this prefix

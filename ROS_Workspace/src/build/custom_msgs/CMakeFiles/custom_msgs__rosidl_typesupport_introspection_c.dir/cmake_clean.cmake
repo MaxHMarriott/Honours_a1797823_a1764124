@@ -1,7 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/fire_severity__type_support.c.o"
   "CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/led_locations__type_support.c.o"
   "libcustom_msgs__rosidl_typesupport_introspection_c.pdb"
   "libcustom_msgs__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/custom_msgs/msg/detail/fire_severity__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/custom_msgs/msg/detail/fire_severity__type_support.c"
   "rosidl_typesupport_introspection_c/custom_msgs/msg/detail/led_locations__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/custom_msgs/msg/detail/led_locations__type_support.c"
 )

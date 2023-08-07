@@ -1,2 +1,4 @@
+msg/FireSeverity.idl
+msg/FireSeverity.msg
 msg/LEDLocations.idl
 msg/LEDLocations.msg

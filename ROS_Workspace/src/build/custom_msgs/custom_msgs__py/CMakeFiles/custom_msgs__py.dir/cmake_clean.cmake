@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "../rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c"
   "../rosidl_generator_py/custom_msgs/msg/__init__.py"
+  "../rosidl_generator_py/custom_msgs/msg/_fire_severity.py"
+  "../rosidl_generator_py/custom_msgs/msg/_fire_severity_s.c"
   "../rosidl_generator_py/custom_msgs/msg/_led_locations.py"
   "../rosidl_generator_py/custom_msgs/msg/_led_locations_s.c"
   "CMakeFiles/custom_msgs__py"

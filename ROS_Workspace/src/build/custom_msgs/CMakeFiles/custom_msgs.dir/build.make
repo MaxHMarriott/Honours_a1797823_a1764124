@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Wo
 include CMakeFiles/custom_msgs.dir/progress.make
 
 CMakeFiles/custom_msgs: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/custom_msgs/msg/LEDLocations.msg
+CMakeFiles/custom_msgs: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/custom_msgs/msg/FireSeverity.msg
 CMakeFiles/custom_msgs: /opt/ros/foxy/share/std_msgs/msg/Bool.idl
 CMakeFiles/custom_msgs: /opt/ros/foxy/share/std_msgs/msg/Byte.idl
 CMakeFiles/custom_msgs: /opt/ros/foxy/share/std_msgs/msg/ByteMultiArray.idl

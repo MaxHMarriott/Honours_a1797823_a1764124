@@ -19,12 +19,17 @@ class UAVMain(Node):
         #LED1_name = '/LED1Location'
         #LED2_name = '/LED2Location'
         LED_name = '/LEDLocations'
+        self.state = String()
+        self.state.data = "Idle"
 
         #self.publisher = self.create_publisher(String,topic_name,10)
         #self.publisher = self.create_publisher(Float32MultiArray,LED1_name,10)
         #self.publisher2 = self.create_publisher(Float32MultiArray,LED2_name,10)
         self.publisher = self.create_publisher(LEDLocationsMsg,LED_name,10)
-        self.subscription = self.create_subscription(Float32MultiArray,"/UAVDetections",self.subscribe_message, qos_profile_sensor_data)
+        self.publisher2 = self.create_publisher(String,"/UAVState",10)
+        self.subscription = self.create_subscription(Float32MultiArray,"/UAVDetections",self.subscribe_message_UAVDetections, qos_profile_sensor_data)
+        self.UGV1StateSubscription = self.create_subscription(String,"/UGV1State",self.subscribe_message_UGV1State, qos_profile_sensor_data)
+
         self.LEDLocations = LEDLocationsMsg()
         #self.LED1Location = [0.0,0.0,0.0]
         #self.LED2Location = [0.0,0.0,0.0]
@@ -36,16 +41,22 @@ class UAVMain(Node):
         self.i = 0
         self.timer = self.create_timer(self.timer_period,self.timer_callback)
 
+    def subscribe_message_UGV1State(self,data):
+        print("State of UGV1 Rover is: ")
+        self.UGV1State = data.data
+        print(self.UGV1State)
 
-    def subscribe_message(self,data):
+    def subscribe_message_UAVDetections(self,data):
         self.UAVDetections = data.data
         print(data)
         print("Determining state of LED")
-        #self.LEDState = self.determineLEDs()
-        self.LEDLocations.isled1 = self.LEDState[0]
+        self.LEDState = self.determineLEDs()
+        #self.LEDLocations.isled1 = self.LEDState[0]
+        self.LEDLocations.isled1 = bool(1)
         self.LEDLocations.led1x = self.LEDState[1]
         self.LEDLocations.led1y = self.LEDState[2]
-        self.LEDLocations.isled2 = self.LEDState[3]
+        #self.LEDLocations.isled2 = (self.LEDState[3])
+        self.LEDLocations.isled2 = bool(1)
         self.LEDLocations.led2x = self.LEDState[4]
         self.LEDLocations.led2y = self.LEDState[5]
         #self.LED1.data = self.LEDState[0:3]
@@ -58,6 +69,7 @@ class UAVMain(Node):
         #self.publisher.publish(self.LED1)
         #self.publisher2.publish(self.LED2)
         self.publisher.publish(self.LEDLocations)
+        self.publisher2.publish(self.state)
         self.get_logger().info('Publishing LED locations')
         
     def determineLEDs(self):
@@ -111,8 +123,7 @@ class UAVMain(Node):
             return determinedLEDS
 
         return determinedLEDS
-
-        
+       
 def main (args=None):
     rclpy.init(args=args)
     
