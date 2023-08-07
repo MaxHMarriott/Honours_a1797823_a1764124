@@ -1,9 +1,0 @@
-/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/launch/CMakeFiles/install/strip.dir
-/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/launch/CMakeFiles/install/local.dir
-/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/launch/CMakeFiles/install.dir
-/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/launch/CMakeFiles/list_install_components.dir
-/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/launch/CMakeFiles/rebuild_cache.dir
-/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/launch/CMakeFiles/edit_cache.dir
-/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/launch/CMakeFiles/test.dir
-/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/launch/CMakeFiles/launch_uninstall.dir
-/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/launch/CMakeFiles/uninstall.dir

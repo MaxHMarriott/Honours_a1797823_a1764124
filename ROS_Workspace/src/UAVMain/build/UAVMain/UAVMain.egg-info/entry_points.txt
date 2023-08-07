@@ -1,3 +1,0 @@
-[console_scripts]
-UAVMain = UAVMain.UAVMain:main
-

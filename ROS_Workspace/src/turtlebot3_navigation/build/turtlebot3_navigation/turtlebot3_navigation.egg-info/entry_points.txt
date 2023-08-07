@@ -1,3 +1,0 @@
-[console_scripts]
-move_robot = turtlebot3_navigation.move_robot:main
-
