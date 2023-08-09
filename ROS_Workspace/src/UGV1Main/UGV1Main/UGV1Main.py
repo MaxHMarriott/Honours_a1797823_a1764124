@@ -4,6 +4,7 @@ from std_msgs.msg import String
 from std_msgs.msg import Int16MultiArray
 from cv_bridge import CvBridge
 from sensor_msgs.msg import Image
+from geometry_msgs.msg import Point
 from rclpy.qos import qos_profile_sensor_data
 from custom_msgs.msg import FireSeverity as FireSeverityMsg
 from custom_msgs.msg import LEDLocations as LEDLocationsMsg
@@ -30,17 +31,19 @@ class UGV1Main(Node):
         #LED1_name = '/LED1Location'
         #LED2_name = '/LED2Location'
         Publisher_name = '/UGV1FireSeverity'
+        
         self.x = 0.0; #this will be the x coodinate of the agent retrieved from the navigation node.
         self.y = 0.0; #this will be the y coodinate of the agent retrieved from the navigation node.
         self.publisher = self.create_publisher(FireSeverityMsg,Publisher_name,10)
+        self.publisher2 = self.create_publisher(Point,"/poseOrder",10) #publisher to test the navigation system (for testing purposes)
         self.state_publisher = self.create_publisher(String,"/UGV1State",10)
         self.LEDLocationsTopic = self.create_subscription(LEDLocationsMsg,'/LEDLocations',self.LED_message, qos_profile_sensor_data)
         self.subscription = self.create_subscription(Int16MultiArray,"/UGV1Detections",self.detections_message, qos_profile_sensor_data)
         self.FireSeverity= FireSeverityMsg()
         self.timer_period = 0.5
+        self.orderCount = 0 #for testing purposes
         self.i = 0
         self.timer = self.create_timer(self.timer_period,self.timer_callback)
-
 
     def LED_message(self,data):
         self.LEDLocations = data
@@ -60,14 +63,27 @@ class UGV1Main(Node):
 
     #This function writes a frame to the camerapublisher topic every time it runs    
     def timer_callback(self):
-        #self.publisher.publish(self.LED1)
-        #self.publisher2.publish(self.LED2)
         self.publisher.publish(self.FireSeverity)
-        #self.state_publisher.publish(self.state)
         state_topic = String()
         state_topic.data = self.state
         self.state_publisher.publish(state_topic)
-        self.get_logger().info('Publishing Severity locations')
+        self.get_logger().info('Publishing Severity locations, state and movement order')
+        self.orderCount = self.orderCount + 1 #for testing purposes
+        if (self.orderCount >= 60):
+            order = Point()
+            order.x = 1.0
+            order.y = 1.0
+            order.z = 0.0
+        else:
+            order = Point()
+            order.x = -1.0
+            order.y = 1.0
+            order.z = 0.0
+        if (self.orderCount >= 120):
+            self.orderCount = 0
+        self.publisher2.publish(order)
+        print(order.x)
+
         
     def determineSeverity(self):
 
