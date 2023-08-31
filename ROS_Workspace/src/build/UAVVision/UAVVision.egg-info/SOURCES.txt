@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../build/UAVVision/UAVVision.egg-info/PKG-INFO
+../build/UAVVision/UAVVision.egg-info/SOURCES.txt
+../build/UAVVision/UAVVision.egg-info/dependency_links.txt
+../build/UAVVision/UAVVision.egg-info/entry_points.txt
+../build/UAVVision/UAVVision.egg-info/requires.txt
+../build/UAVVision/UAVVision.egg-info/top_level.txt
+../build/UAVVision/UAVVision.egg-info/zip-safe
+UAVVision/UAVVision.py
+UAVVision/__init__.py
+resource/UAVVision
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

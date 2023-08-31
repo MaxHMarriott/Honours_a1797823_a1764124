@@ -1,0 +1,20 @@
+[5.123s] Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/Konig': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/build/Konig/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/install/Konig/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/Konig build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/build/Konig/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/build/Konig/install.log --install-scripts $base/lib/Konig --single-version-externally-managed
+[5.649s] running egg_info
+[5.649s] writing ../../build/Konig/Konig.egg-info/PKG-INFO
+[5.649s] writing dependency_links to ../../build/Konig/Konig.egg-info/dependency_links.txt
+[5.650s] writing entry points to ../../build/Konig/Konig.egg-info/entry_points.txt
+[5.650s] writing requirements to ../../build/Konig/Konig.egg-info/requires.txt
+[5.650s] writing top-level names to ../../build/Konig/Konig.egg-info/top_level.txt
+[5.650s] reading manifest file '../../build/Konig/Konig.egg-info/SOURCES.txt'
+[5.650s] writing manifest file '../../build/Konig/Konig.egg-info/SOURCES.txt'
+[5.650s] running build
+[5.650s] running build_py
+[5.650s] running install
+[5.650s] running install_lib
+[5.650s] running install_data
+[5.650s] running install_egg_info
+[5.651s] removing '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/install/Konig/lib/python3.8/site-packages/Konig-0.0.0-py3.8.egg-info' (and everything under it)
+[5.651s] Copying ../../build/Konig/Konig.egg-info to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/install/Konig/lib/python3.8/site-packages/Konig-0.0.0-py3.8.egg-info
+[5.651s] running install_scripts
+[5.651s] Installing Konig script to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/install/Konig/lib/Konig
+[5.651s] writing list of installed files to '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/build/Konig/install.log'

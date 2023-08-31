@@ -1,0 +1,7 @@
+{
+  "package_name": "custom_msgs",
+  "non_idl_tuples": [
+    "/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/custom_msgs:msg/LEDLocations.msg",
+    "/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/custom_msgs:msg/FireSeverity.msg"
+  ]
+}

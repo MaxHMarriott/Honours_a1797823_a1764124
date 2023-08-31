@@ -1,0 +1,20 @@
+[5.040s] Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVMain': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/build/UAVMain/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/install/UAVMain/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/UAVMain build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/build/UAVMain/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/build/UAVMain/install.log --install-scripts $base/lib/UAVMain --single-version-externally-managed
+[5.444s] running egg_info
+[5.445s] writing ../../build/UAVMain/UAVMain.egg-info/PKG-INFO
+[5.450s] writing dependency_links to ../../build/UAVMain/UAVMain.egg-info/dependency_links.txt
+[5.452s] writing entry points to ../../build/UAVMain/UAVMain.egg-info/entry_points.txt
+[5.453s] writing requirements to ../../build/UAVMain/UAVMain.egg-info/requires.txt
+[5.453s] writing top-level names to ../../build/UAVMain/UAVMain.egg-info/top_level.txt
+[5.532s] reading manifest file '../../build/UAVMain/UAVMain.egg-info/SOURCES.txt'
+[5.533s] writing manifest file '../../build/UAVMain/UAVMain.egg-info/SOURCES.txt'
+[5.533s] running build
+[5.533s] running build_py
+[5.533s] running install
+[5.533s] running install_lib
+[5.534s] running install_data
+[5.534s] running install_egg_info
+[5.536s] removing '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/install/UAVMain/lib/python3.8/site-packages/UAVMain-0.0.0-py3.8.egg-info' (and everything under it)
+[5.536s] Copying ../../build/UAVMain/UAVMain.egg-info to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/install/UAVMain/lib/python3.8/site-packages/UAVMain-0.0.0-py3.8.egg-info
+[5.537s] running install_scripts
+[5.571s] Installing UAVMain script to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/install/UAVMain/lib/UAVMain
+[5.572s] writing list of installed files to '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/build/UAVMain/install.log'

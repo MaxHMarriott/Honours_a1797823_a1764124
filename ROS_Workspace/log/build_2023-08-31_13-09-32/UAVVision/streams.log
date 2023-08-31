@@ -1,0 +1,20 @@
+[4.993s] Invoking command in '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/UAVVision': PYTHONPATH=/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/build/UAVVision/prefix_override:/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/install/UAVVision/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/UAVVision build --build-base /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/build/UAVVision/build install --record /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/build/UAVVision/install.log --install-scripts $base/lib/UAVVision --single-version-externally-managed
+[5.389s] running egg_info
+[5.391s] writing ../../build/UAVVision/UAVVision.egg-info/PKG-INFO
+[5.409s] writing dependency_links to ../../build/UAVVision/UAVVision.egg-info/dependency_links.txt
+[5.410s] writing entry points to ../../build/UAVVision/UAVVision.egg-info/entry_points.txt
+[5.410s] writing requirements to ../../build/UAVVision/UAVVision.egg-info/requires.txt
+[5.410s] writing top-level names to ../../build/UAVVision/UAVVision.egg-info/top_level.txt
+[5.490s] reading manifest file '../../build/UAVVision/UAVVision.egg-info/SOURCES.txt'
+[5.490s] writing manifest file '../../build/UAVVision/UAVVision.egg-info/SOURCES.txt'
+[5.490s] running build
+[5.490s] running build_py
+[5.490s] running install
+[5.491s] running install_lib
+[5.491s] running install_data
+[5.492s] running install_egg_info
+[5.493s] removing '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/install/UAVVision/lib/python3.8/site-packages/UAVVision-0.0.0-py3.8.egg-info' (and everything under it)
+[5.494s] Copying ../../build/UAVVision/UAVVision.egg-info to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/install/UAVVision/lib/python3.8/site-packages/UAVVision-0.0.0-py3.8.egg-info
+[5.494s] running install_scripts
+[5.518s] Installing UAVVision script to /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/install/UAVVision/lib/UAVVision
+[5.518s] writing list of installed files to '/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/build/UAVVision/install.log'
