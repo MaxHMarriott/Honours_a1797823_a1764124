@@ -1,12 +1,21 @@
+from time import sleep
+
 class StateMachineTest:
 
     def __init__(self):
-        print("Hello world")
+        print("State Machine has been initialised")
+        #state registers:
         self.currentStateNumber = 0b00
         self.nextStateNumber = 0b00
+
         self.LEDLocationsisled1 = 0b01 #add back . between LEDLocationsisled1
         self.CommsTimeoutUAV = 0b0
         self.CommsTimeoutUGV = 0b0
+        self.LEDDetected = 0b1
+        self.FireSeverityIsDetected = 0b0
+        self.UGV2to1Ack = 0b1
+        self.UGV1Jump = 0b0
+        self.GO = 0b1
 
     def StateMachine(self):
 
@@ -45,11 +54,10 @@ class StateMachineTest:
         elif (self.currentStateNumber == 0b00001):
             self.state = "Idle"
             self.stateDescription = "Proposing Policy"
+            if ((self.LEDDetected == 1) and (self.CommsTimeoutUAV == 0)):
+                self.nextStateNumber = 0b0010
 
-            if ((self.LEDDetected == 1) and (CommsTimeoutUAV == 0)):
-                self.nextStateNumber = 0b00100
-
-            if ((self.LEDDetected == 0) and (CommsTimeoutUAV == 0)):
+            if ((self.LEDDetected == 0) and (self.CommsTimeoutUAV == 0)):
                 self.nextStateNumber = 0b00000
 
             if (self.CommsTimeoutUAV == 0b1):
@@ -68,10 +76,10 @@ class StateMachineTest:
             self.state = "Idle"
             self.stateDescription = "Receiving Policy"
 
-            if ((self.CommsTimeoutUGV == 1) or (self.CommsTimeoutUAV == 1)):
+            if ((self.CommsTimeoutUGV == 1) and (self.CommsTimeoutUAV == 1)):
                 self.nextStateNumber = 0b01100
 
-            elif ((self.CommsTimeoutUGV == 0) and (self.CommsTimeoutUAV == 0)):
+            elif ((self.CommsTimeoutUGV == 0) or (self.CommsTimeoutUAV == 0)):
                 self.nextStateNumber = 0b00011
 
         #00011
@@ -81,25 +89,23 @@ class StateMachineTest:
             #Transition to 00100:
                 #Policy Accepted by UGV1
             #Transition to 01011:
-                #Policy Rejected by UGV1 and UGV2To1Ack = yes
+                #Policy Rejected by UGV1 and self.UGV2to1Ack = yes
             #Transition to 00000:
                 #LEDDetected = 0
         elif (self.currentStateNumber == 0b00011):
             self.state = "Waiting"
             self.stateDescription = "Waiting for answer back from UGV2 (seeing if UGV2 Approves)"
-            
-            UGV2To1Ack = "yes" #service from UGV2
             acceptPolicy = 1
 
             #code block to determine if policy is approved
-            if ((UGV2To1Ack == "yes") and (LEDDetected == 1)):
+            if ((self.UGV2to1Ack == "Yes") and (self.LEDDetected == 1)):
                 if(acceptPolicy == 1):
                     self.nextStateNumber = 0b00100
                 if(acceptPolicy == 0):
                     self.nextStateNumber = 0b01011
-            elif(LEDDetected == 0):
+            elif(self.LEDDetected == 0):
                 self.nextStateNumber = self.currentStateNumber
-            elif(UGV2To1Ack == "no"):
+            elif(self.UGV2to1Ack == "No"):
                 self.nextStateNumber = 0b1
             else:
                 self.nextStateNumber = self.currentStateNumber
@@ -109,7 +115,7 @@ class StateMachineTest:
             #Description = "Received policy and content"
             #UGV1to2Ack = "Yes" 
             #Transition to 00101:
-                #UGV2to1Ack = Ack
+                #self.UGV2to1Ack = Ack
             #Transition to 01110:
                 #CommsTimeoutUGV=1
 
@@ -117,9 +123,9 @@ class StateMachineTest:
             self.state = "Waiting"
             self.stateDescription = "Received policy and content"
             UGV1to2Ack = "Yes"
-            if (UGV2to1Ack == "Ack"):
+            if (self.UGV2to1Ack == "Ack"):
                 self.nextStateNumber = 0b00101
-            elif (CommsTimeoutUGV == 1):
+            elif (self.CommsTimeoutUGV == 1):
                 self.nextStateNumber = 0b01110
 
         #00101
@@ -136,9 +142,9 @@ class StateMachineTest:
             self.stateDescription = "Moving"
             UGV1to2Ack = "Ack"
             Atwaypoint = 1 #stand in variable for transit
-            if (Atwaypoint == 1)
+            if (Atwaypoint == 1):
                 self.nextStateNumber = 0b00110
-            if (self.UGV1Jump = 1)
+            if (self.UGV1Jump == 1):
                 self.nextStateNumber = 0b01111
 
         #00110
@@ -150,7 +156,7 @@ class StateMachineTest:
         
         elif (self.currentStateNumber == 0b00110):
             self.state = "Attending"
-            self.stateDescription - "Reporting LED Intensity"
+            self.stateDescription = "Reporting LED Intensity"
             sleep(0.1) # sleep for 100 ms
             self.nextStateNumber = 0b00111
 
@@ -175,10 +181,10 @@ class StateMachineTest:
 
             if (HighestSeverity == 2):
                 self.nextStateNumber = 0b01000
-            elif:
+            else:
                 self.nextStateNumber = 0b01001
             
-            if (GO == 0):
+            if (self.GO == 0):
                 self.nextStateNumber = 0b01010
             
         #01000
@@ -192,9 +198,9 @@ class StateMachineTest:
         elif (self.currentStateNumber == 0b01000):
             self.state = "Transit"
             self.stateDescription - "Going to other fire"
-            if (GO == 0):
+            if (self.GO == 0):
                 self.nextStateNumber = 0b01010
-            if (FireSeverityIsDetected = 0)
+            if (self.FireSeverityIsDetected == 0):
                 self.nextStateNumber = 0b01001
         
         #01001
@@ -205,9 +211,13 @@ class StateMachineTest:
                 #GO = 0
         elif (self.currentStateNumber == 0b01001):
             self.state = "Attending"
-            self.stateDescription - "Waiting in zone"
-            if (GO == 0):
+            self.stateDescription = "Waiting in zone"
+            #wait
+
+            if (self.GO == 0):
                 self.nextStateNumber = 0b01010
+            else:
+                self.nextStateNumber = 0b00110
 
 
         #01010
@@ -217,7 +227,7 @@ class StateMachineTest:
             #transition to 000000
         elif (self.currentStateNumber == 0b01010):
             self.state = "Transit"
-            self.stateDescription - "Return to centre"
+            self.stateDescription = "Return to centre"
             self.nextStateNumber = 0b0000
 
         #01100
@@ -227,6 +237,9 @@ class StateMachineTest:
             #Transition to 01101:
                 #each clock cycle
         elif (self.currentStateNumber == 0b01100):
+            self.state = "Attending"
+            self.stateDescription = "Attend to other zone if not responsive"
+            self.nextStateNumber = 0b01101
 
         #01101
             #State = "Transit"
@@ -235,6 +248,9 @@ class StateMachineTest:
             #Transition to 01110:
                 #next clock cycle
         elif (self.currentStateNumber == 0b01101):
+            self.state = "Transit"
+            self.stateDescription = "Check every zone"
+            self.nextStateNumber = 0b01110
 
         #01110:
             #State = "Idle"
@@ -243,18 +259,32 @@ class StateMachineTest:
             #Transition to 00101:
                 #Next clock cycle
         elif (self.currentStateNumber == 0b01110):
+            self.state = "Idle"
+            self.stateDescription = "Create two zone policy"
+            self.nextStateNumber = 0b00101
             
         #01111:
         #State = "Attending"
         #Description = "Receive Message Interrupt"
         #UGV1to2Ack = None
         elif (self.currentStateNumber == 0b01111):
+            self.state = "Attending"
+            self.stateDescription = "Recieve Message Interrupt"
 
         #10000:
             #State = "DND"
             #Description = "DND"
         elif (self.currentStateNumber == 0b01000):
+            self.state = "DND"
+            self.stateDescription = "DND"
 
-machineinquestion = StateMachineTest()
-machineinquestion.StateMachine()
+MIQ = StateMachineTest()
 
+while(1==1):
+    MIQ.StateMachine()
+    MIQ.UGV2to1Ack = input("UGV2to1Ack?:")
+    print("The state is: " + str(MIQ.state))
+    print("With description: " + str(MIQ.stateDescription))
+    print("The state number is: " + str(MIQ.currentStateNumber))
+    print("The next state number is: " + str(MIQ.nextStateNumber))
+    print("\n \n")
