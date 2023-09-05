@@ -24,6 +24,10 @@ set(msg_files
   "msg/FireSeverity.msg"
 )
 
+set(srv_files
+  "srv/UGVAck.srv"
+)
+
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
   DEPENDENCIES std_msgs
