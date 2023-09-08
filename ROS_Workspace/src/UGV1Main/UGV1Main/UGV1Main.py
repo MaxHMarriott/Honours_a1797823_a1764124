@@ -8,6 +8,7 @@ from geometry_msgs.msg import Point
 from rclpy.qos import qos_profile_sensor_data
 from custom_msgs.msg import FireSeverity as FireSeverityMsg
 from custom_msgs.msg import LEDLocations as LEDLocationsMsg
+from custom_srvs.srv import Policy
 import numpy
 import math
 from enum import Enum
@@ -55,6 +56,14 @@ class UGV1Main(Node):
 
         #StateMachine
         self.timer = self.create_timer(self.timer_period,self.timer_callback)
+
+        #testing services: https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Custom-ROS2-Interfaces.html
+        self.srv = self.create_service(Policy, 'add_three_ints', self.UGVResponse)
+
+
+    def UGVResponse(self, request, response):
+        response.ack = "Yes"
+        return response
 
     def LED_message(self,data):
         self.LEDLocations = data

@@ -3,7 +3,7 @@
 <package format="3">
   <name>custom_srvs</name>
   <version>0.0.0</version>
-  <description>Custom Services</description>
+  <description>custom_srvs</description>
   <maintainer email="max@marriott.cc">Max Marriott</maintainer>
   <license>Apache License 2.0</license>
 
