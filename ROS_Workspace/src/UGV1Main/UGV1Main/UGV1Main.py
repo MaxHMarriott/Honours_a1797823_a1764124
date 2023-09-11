@@ -58,11 +58,12 @@ class UGV1Main(Node):
         self.timer = self.create_timer(self.timer_period,self.timer_callback)
 
         #testing services: https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Custom-ROS2-Interfaces.html
-        self.srv = self.create_service(Policy, 'add_three_ints', self.UGVResponse)
+        self.UGVAck = self.create_service(Policy, '/UGVAck', self.UGVResponse)
 
 
     def UGVResponse(self, request, response):
         response.ack = "Yes"
+        print(request)
         return response
 
     def LED_message(self,data):
