@@ -11,42 +11,58 @@ void setup()
 {
  pixels.begin(); //start the object
  pixels.setBrightness(BRIGHTNESS);
+ Serial.begin(9600); // opens serial port, sets data rate to 9600 bps
 }
 void loop()
 {
-delay(10000)
-
- int k = ceil(rand()*3)
-
- if (k == 1)
- {
+  int incomingByte = 0;
+  // send data only when you receive data:
+  if (Serial.available() > 0) {
+    // read the incoming byte:
+    incomingByte = Serial.read();
+    // say what you got:
+    Serial.print("I received: ");
+    Serial.println(incomingByte, DEC);
+    digitalWrite(LED_BUILTIN, HIGH);
+    pixels.show();
+  }
+  pixels.setBrightness(BRIGHTNESS);
+   if (incomingByte == 48)
+  {
+   for (int i = 0; i < pixels.numPixels(); i++)
+   { // For each pixel in strip...
+   pixels.setBrightness(0);
+   }
+   pixels.show(); // Update strip with new contents
+  }
+  
+  if (incomingByte == 49)
+  {
    for (int i = 0; i < pixels.numPixels(); i++)
    { // For each pixel in strip...
    int pixelHue = (20000);
    pixels.setPixelColor(i, pixels.Color(255,   0,   0));
    }
    pixels.show(); // Update strip with new contents
- }
+  }
 
- if (k == 2)
- {
-  for (int i = 0; i < pixels.numPixels(); i++)
+    if (incomingByte == 50)
+  {
+   for (int i = 0; i < pixels.numPixels(); i++)
    { // For each pixel in strip...
    int pixelHue = (10000);
    pixels.setPixelColor(i, pixels.Color(0,   255,   0));
    }
    pixels.show(); // Update strip with new contents
- }
+  }
 
-if (k == 3)
-{
-  for (int i = 0; i < pixels.numPixels(); i++)
+    if (incomingByte == 51)
+  {
+   for (int i = 0; i < pixels.numPixels(); i++)
    { // For each pixel in strip...
    int pixelHue = (10000);
-   pixels.setPixelColor(i, pixels.Color(255,   255,   0));
+   pixels.setPixelColor(i, pixels.Color(0,   0,   255));
    }
    pixels.show(); // Update strip with new contents
-}
-
- delay(10000); // Pause for a moment
+  }
 }
