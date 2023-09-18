@@ -52,6 +52,7 @@ def generate_launch_description():
             name='bt_navigator',
             output='screen',
             parameters=[{'use_sim_time': True}]
+            
         )
     ])
 
