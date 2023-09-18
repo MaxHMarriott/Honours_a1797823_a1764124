@@ -1,3 +1,0 @@
-[console_scripts]
-Konig = Konig.Konig:main
-

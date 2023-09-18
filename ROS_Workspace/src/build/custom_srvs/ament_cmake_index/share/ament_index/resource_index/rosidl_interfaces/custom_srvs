@@ -1,4 +1,0 @@
-srv/Policy.idl
-srv/Policy.srv
-srv/Policy_Request.msg
-srv/Policy_Response.msg

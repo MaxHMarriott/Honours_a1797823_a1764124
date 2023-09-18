@@ -1,2 +1,0 @@
-geometry_msgs/Point location
-float64 eta
