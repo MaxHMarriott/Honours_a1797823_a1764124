@@ -1,0 +1,38 @@
+[0.000000] (-) TimerEvent: {}
+[0.000252] (Konig) JobQueued: {'identifier': 'Konig', 'dependencies': OrderedDict()}
+[0.000329] (UAVMain) JobQueued: {'identifier': 'UAVMain', 'dependencies': OrderedDict()}
+[0.000398] (UAVProcessing) JobQueued: {'identifier': 'UAVProcessing', 'dependencies': OrderedDict()}
+[0.000510] (UAVVision) JobQueued: {'identifier': 'UAVVision', 'dependencies': OrderedDict()}
+[0.000605] (UGV1Main) JobQueued: {'identifier': 'UGV1Main', 'dependencies': OrderedDict()}
+[0.000637] (UGV1Processing) JobQueued: {'identifier': 'UGV1Processing', 'dependencies': OrderedDict()}
+[0.000668] (UGV1Vision) JobQueued: {'identifier': 'UGV1Vision', 'dependencies': OrderedDict()}
+[0.000697] (cameraPub) JobQueued: {'identifier': 'cameraPub', 'dependencies': OrderedDict()}
+[0.000727] (cameraSub) JobQueued: {'identifier': 'cameraSub', 'dependencies': OrderedDict()}
+[0.000756] (custom_msgs) JobQueued: {'identifier': 'custom_msgs', 'dependencies': OrderedDict()}
+[0.000786] (turtlebot3_navigation) JobQueued: {'identifier': 'turtlebot3_navigation', 'dependencies': OrderedDict()}
+[0.000816] (Konig) JobStarted: {'identifier': 'Konig'}
+[0.035871] (UAVMain) JobStarted: {'identifier': 'UAVMain'}
+[0.053192] (UAVProcessing) JobStarted: {'identifier': 'UAVProcessing'}
+[0.075465] (UAVVision) JobStarted: {'identifier': 'UAVVision'}
+[0.098727] (-) TimerEvent: {}
+[0.199279] (-) TimerEvent: {}
+[0.299623] (-) TimerEvent: {}
+[0.400100] (-) TimerEvent: {}
+[0.500691] (-) TimerEvent: {}
+[0.601040] (-) TimerEvent: {}
+[0.701441] (-) TimerEvent: {}
+[0.742347] (UAVProcessing) JobEnded: {'identifier': 'UAVProcessing', 'rc': 0}
+[0.801590] (-) TimerEvent: {}
+[0.902031] (-) TimerEvent: {}
+[1.002359] (-) TimerEvent: {}
+[1.034789] (Konig) JobEnded: {'identifier': 'Konig', 'rc': 'SIGINT'}
+[1.036793] (UAVMain) JobEnded: {'identifier': 'UAVMain', 'rc': 'SIGINT'}
+[1.037884] (UAVVision) JobEnded: {'identifier': 'UAVVision', 'rc': 'SIGINT'}
+[1.048911] (UGV1Main) JobSkipped: {'identifier': 'UGV1Main'}
+[1.049037] (UGV1Processing) JobSkipped: {'identifier': 'UGV1Processing'}
+[1.049116] (UGV1Vision) JobSkipped: {'identifier': 'UGV1Vision'}
+[1.049173] (cameraPub) JobSkipped: {'identifier': 'cameraPub'}
+[1.049228] (cameraSub) JobSkipped: {'identifier': 'cameraSub'}
+[1.049283] (custom_msgs) JobSkipped: {'identifier': 'custom_msgs'}
+[1.049346] (turtlebot3_navigation) JobSkipped: {'identifier': 'turtlebot3_navigation'}
+[1.049396] (-) EventReactorShutdown: {}

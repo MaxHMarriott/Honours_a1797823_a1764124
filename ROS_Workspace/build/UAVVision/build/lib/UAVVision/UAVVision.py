@@ -22,8 +22,8 @@ class CameraPublisher(Node):
         self.i = 0
         self.timer = self.create_timer(self.timer_period,self.timer_callback)
         self.cap = cv2.VideoCapture(0)
-        self.cap.set(cv2.CAP_PROP_AUTO_EXPOSURE, 1)
-        self.cap.set(cv2.CAP_PROP_EXPOSURE, 2) #debug was 10
+        self.cap.set(cv2.CAP_PROP_AUTO_EXPOSURE, 0)
+        self.cap.set(cv2.CAP_PROP_EXPOSURE, 5) #debug was 10
         print("exposure is:")
         print(self.cap.get(cv2.CAP_PROP_EXPOSURE))
         self.br = CvBridge()
@@ -34,7 +34,7 @@ class CameraPublisher(Node):
         #ret, frame = self.cap.read()
         #while True:
         ret, frame = self.cap.read(cv2.CAP_V4L2)
-        frame = cv2.resize(frame, (480, 360))
+        #frame = cv2.resize(frame, (480, 360))
         self.publisher.publish(self.br.cv2_to_imgmsg(frame))
         self.get_logger().info('Publishing video frame')
 

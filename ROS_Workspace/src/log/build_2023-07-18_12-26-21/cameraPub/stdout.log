@@ -1,0 +1,28 @@
+running egg_info
+creating ../build/cameraPub/cameraPub.egg-info
+writing ../build/cameraPub/cameraPub.egg-info/PKG-INFO
+writing dependency_links to ../build/cameraPub/cameraPub.egg-info/dependency_links.txt
+writing entry points to ../build/cameraPub/cameraPub.egg-info/entry_points.txt
+writing requirements to ../build/cameraPub/cameraPub.egg-info/requires.txt
+writing top-level names to ../build/cameraPub/cameraPub.egg-info/top_level.txt
+writing manifest file '../build/cameraPub/cameraPub.egg-info/SOURCES.txt'
+reading manifest file '../build/cameraPub/cameraPub.egg-info/SOURCES.txt'
+writing manifest file '../build/cameraPub/cameraPub.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/build
+creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/build/lib
+creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/build/lib/cameraPub
+copying cameraPub/__init__.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/build/lib/cameraPub
+copying cameraPub/cameraPublisher.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/build/lib/cameraPub
+running install
+running install_lib
+copying /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/build/lib/cameraPub/cameraPublisher.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/lib/python3.8/site-packages/cameraPub
+byte-compiling /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/lib/python3.8/site-packages/cameraPub/cameraPublisher.py to cameraPublisher.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/lib/python3.8/site-packages/cameraPub-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../build/cameraPub/cameraPub.egg-info to /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/lib/python3.8/site-packages/cameraPub-0.0.0-py3.8.egg-info
+running install_scripts
+Installing cameraPub script to /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/lib/cameraPub
+writing list of installed files to '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/install.log'

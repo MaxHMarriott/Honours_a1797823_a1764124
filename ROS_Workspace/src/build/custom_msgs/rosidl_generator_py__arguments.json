@@ -1,10 +1,10 @@
 {
   "package_name": "custom_msgs",
-  "output_dir": "/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_generator_py/custom_msgs",
+  "output_dir": "/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_generator_py/custom_msgs",
   "template_dir": "/opt/ros/foxy/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
-    "/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_adapter/custom_msgs:msg/LEDLocations.idl",
-    "/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_adapter/custom_msgs:msg/FireSeverity.idl"
+    "/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_adapter/custom_msgs:msg/LEDLocations.idl",
+    "/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_adapter/custom_msgs:msg/FireSeverity.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/foxy/share/std_msgs/msg/Bool.idl",
@@ -54,8 +54,8 @@
     "/opt/ros/foxy/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
     "/opt/ros/foxy/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
     "/opt/ros/foxy/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
-    "/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_adapter/custom_msgs/msg/LEDLocations.idl",
-    "/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_adapter/custom_msgs/msg/FireSeverity.idl",
+    "/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_adapter/custom_msgs/msg/LEDLocations.idl",
+    "/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/rosidl_adapter/custom_msgs/msg/FireSeverity.idl",
     "/opt/ros/foxy/share/std_msgs/msg/Bool.idl",
     "/opt/ros/foxy/share/std_msgs/msg/Byte.idl",
     "/opt/ros/foxy/share/std_msgs/msg/ByteMultiArray.idl",

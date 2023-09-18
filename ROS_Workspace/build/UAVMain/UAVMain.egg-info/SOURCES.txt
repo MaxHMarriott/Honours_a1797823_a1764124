@@ -11,6 +11,3 @@ setup.py
 UAVMain/UAVMain.py
 UAVMain/__init__.py
 resource/UAVMain
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py

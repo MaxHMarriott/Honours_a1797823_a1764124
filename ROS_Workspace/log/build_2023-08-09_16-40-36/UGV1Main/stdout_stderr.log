@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/UGV1Main/UGV1Main.egg-info
+writing ../../build/UGV1Main/UGV1Main.egg-info/PKG-INFO
+writing dependency_links to ../../build/UGV1Main/UGV1Main.egg-info/dependency_links.txt
+writing entry points to ../../build/UGV1Main/UGV1Main.egg-info/entry_points.txt
+writing requirements to ../../build/UGV1Main/UGV1Main.egg-info/requires.txt
+writing top-level names to ../../build/UGV1Main/UGV1Main.egg-info/top_level.txt
+writing manifest file '../../build/UGV1Main/UGV1Main.egg-info/SOURCES.txt'
+reading manifest file '../../build/UGV1Main/UGV1Main.egg-info/SOURCES.txt'
+writing manifest file '../../build/UGV1Main/UGV1Main.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/build/UGV1Main/build
+creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/build/UGV1Main/build/lib
+creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/build/UGV1Main/build/lib/UGV1Main
+copying UGV1Main/__init__.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/build/UGV1Main/build/lib/UGV1Main
+copying UGV1Main/UGV1Main.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/build/UGV1Main/build/lib/UGV1Main
+running install
+running install_lib
+creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/install/UGV1Main/lib/python3.8/site-packages/UGV1Main
+copying /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/build/UGV1Main/build/lib/UGV1Main/__init__.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/install/UGV1Main/lib/python3.8/site-packages/UGV1Main
+copying /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/build/UGV1Main/build/lib/UGV1Main/UGV1Main.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/install/UGV1Main/lib/python3.8/site-packages/UGV1Main
+byte-compiling /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/install/UGV1Main/lib/python3.8/site-packages/UGV1Main/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/install/UGV1Main/lib/python3.8/site-packages/UGV1Main/UGV1Main.py to UGV1Main.cpython-38.pyc
+running install_data
+creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/install/UGV1Main/share/ament_index
+creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/install/UGV1Main/share/ament_index/resource_index
+creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/install/UGV1Main/share/ament_index/resource_index/packages
+copying resource/UGV1Main -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/install/UGV1Main/share/ament_index/resource_index/packages
+copying package.xml -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/install/UGV1Main/share/UGV1Main
+running install_egg_info
+Copying ../../build/UGV1Main/UGV1Main.egg-info to /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/install/UGV1Main/lib/python3.8/site-packages/UGV1Main-0.0.0-py3.8.egg-info
+running install_scripts
+Installing UGV1Main script to /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/install/UGV1Main/lib/UGV1Main
+writing list of installed files to '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/build/UGV1Main/install.log'

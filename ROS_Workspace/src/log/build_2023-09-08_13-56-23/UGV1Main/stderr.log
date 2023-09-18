@@ -1,0 +1,5 @@
+  File "/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main/lib/python3.8/site-packages/UGV1Main/UGV1Main.py", line 11
+    from custom_srvs.srv import Policy.srv as PolicyMsg
+                                      ^
+SyntaxError: invalid syntax
+

@@ -1,0 +1,8 @@
+CMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+  rosidl_generate_interfaces() the passed file 'srv/MySrv.srv' doesn't exist
+  relative to the CMAKE_CURRENT_SOURCE_DIR
+  '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/custom_srvs'
+Call Stack (most recent call first):
+  CMakeLists.txt:28 (rosidl_generate_interfaces)
+
+

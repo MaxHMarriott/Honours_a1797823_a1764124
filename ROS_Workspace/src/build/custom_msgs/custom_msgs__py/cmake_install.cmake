@@ -1,8 +1,8 @@
-# Install script for directory: /home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/custom_msgs__py
+# Install script for directory: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs/custom_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/max/Desktop/VisionCode/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

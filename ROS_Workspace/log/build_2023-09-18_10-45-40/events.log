@@ -1,0 +1,14 @@
+[0.000000] (-) TimerEvent: {}
+[0.000284] (-) JobUnselected: {'identifier': 'Konig'}
+[0.000357] (-) JobUnselected: {'identifier': 'UAVMain'}
+[0.000390] (-) JobUnselected: {'identifier': 'UAVProcessing'}
+[0.000441] (-) JobUnselected: {'identifier': 'UAVVision'}
+[0.000501] (-) JobUnselected: {'identifier': 'UGV1Main'}
+[0.000622] (-) JobUnselected: {'identifier': 'UGV1Processing'}
+[0.000690] (-) JobUnselected: {'identifier': 'UGV1Vision'}
+[0.000792] (-) JobUnselected: {'identifier': 'cameraPub'}
+[0.000940] (-) JobUnselected: {'identifier': 'cameraSub'}
+[0.001081] (-) JobUnselected: {'identifier': 'custom_msgs'}
+[0.001231] (-) JobUnselected: {'identifier': 'custom_srvs'}
+[0.001336] (-) JobUnselected: {'identifier': 'turtlebot3_navigation'}
+[0.001404] (-) EventReactorShutdown: {}

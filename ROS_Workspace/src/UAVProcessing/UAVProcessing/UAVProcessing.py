@@ -36,7 +36,8 @@ class CameraSubscriber(Node):
         cv2.imshow("Camera",self.frame)
         self.UAVPipeline.process(self.frame)
         frame2 = self.UAVPipeline.cv_threshold_output
-        frame3 = visionCrop(frame2)
+        frame3 = frame2
+        #frame3 = visionCrop(frame2)
         processingOutput = visionProcessing(frame3)
         print("returns:")
         print(processingOutput)
@@ -59,7 +60,7 @@ class UAVVisionDetect:
         self.desaturate_output = None
 
         self.__cv_threshold_src = self.desaturate_output
-        self.__cv_threshold_thresh = 136.0
+        self.__cv_threshold_thresh = 250.0
         self.__cv_threshold_maxval = 255.0
         self.__cv_threshold_type = cv2.THRESH_BINARY
 

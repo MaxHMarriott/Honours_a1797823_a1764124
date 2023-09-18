@@ -11,6 +11,3 @@ setup.py
 UGV1Vision/UGV1Vision.py
 UGV1Vision/__init__.py
 resource/UGV1Vision
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py

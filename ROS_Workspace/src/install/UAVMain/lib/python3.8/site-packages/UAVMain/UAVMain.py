@@ -4,8 +4,10 @@ from std_msgs.msg import String
 from std_msgs.msg import Float32MultiArray
 from cv_bridge import CvBridge
 from sensor_msgs.msg import Image
+from geometry_msgs.msg import Point
 from rclpy.qos import qos_profile_sensor_data
 from custom_msgs.msg import LEDLocations as LEDLocationsMsg
+from custom_srvs.srv import Policy
 import numpy
 import math
 from enum import Enum
@@ -41,6 +43,12 @@ class UAVMain(Node):
         self.i = 0
         self.timer = self.create_timer(self.timer_period,self.timer_callback)
 
+        #Testing Services:
+        self.cli = self.create_client(Policy, '/UGVAck')
+        while not self.cli.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info('/UGVAck '+'service not available, waiting again...')
+        self.req = Policy.Request()
+
     def subscribe_message_UGV1State(self,data):
         print("State of UGV1 Rover is: ")
         self.UGV1State = data.data
@@ -50,19 +58,26 @@ class UAVMain(Node):
         self.UAVDetections = data.data
         print(data)
         print("Determining state of LED")
+        self.LEDLocations.isled1 = bool(0)
+        self.LEDLocations.isled2 = bool(0)
         self.LEDState = self.determineLEDs()
         #self.LEDLocations.isled1 = self.LEDState[0]
-        self.LEDLocations.isled1 = bool(1)
         self.LEDLocations.led1x = self.LEDState[1]
         self.LEDLocations.led1y = self.LEDState[2]
         #self.LEDLocations.isled2 = (self.LEDState[3])
-        self.LEDLocations.isled2 = bool(1)
         self.LEDLocations.led2x = self.LEDState[4]
         self.LEDLocations.led2y = self.LEDState[5]
         #self.LED1.data = self.LEDState[0:3]
         print("LEDs:")
         print(self.LEDState)
         #self.LED2.data = self.LEDState[3:6]        
+
+    def send_request(self, a, b):
+        self.req.location = a
+        self.req.eta = b
+        self.future = self.cli.call_async(self.req)
+        #rclpy.spin_until_future_complete(self, self.future)
+        return self.future.result()
 
     #This function writes a frame to the camerapublisher topic every time it runs    
     def timer_callback(self):
@@ -71,6 +86,17 @@ class UAVMain(Node):
         self.publisher.publish(self.LEDLocations)
         self.publisher2.publish(self.state)
         self.get_logger().info('Publishing LED locations')
+
+
+        #write to topic
+        point_msg = Point()
+        point_msg.x = 0.0
+        point_msg.y = 0.0
+        point_msg.z = 0.0
+
+        float_msg = 1.1
+
+        self.send_request(point_msg, float(float_msg))
         
     def determineLEDs(self):
 
@@ -82,7 +108,7 @@ class UAVMain(Node):
         #Q4 = [0.5,-1]
 
         determinedLEDS = [0.0,0.0,0.0,0.0,0.0,0.0]
-        threshold = 2500
+        threshold = 6500
 
         #returns from Processing node
         Q1 = self.UAVDetections[0]
@@ -98,6 +124,7 @@ class UAVMain(Node):
 
         #use this sorted list to get correct returns:
         if threshold <= lst[0][1]:
+            self.LEDLocations.isled1 = bool(1)
             if lst[0][0] == "Q1":
                 determinedLEDS[0:2] = [1.0,0.5,1.0]
             if lst[0][0] == "Q2":
@@ -111,6 +138,7 @@ class UAVMain(Node):
 
 
         if threshold <= lst[1][1]:
+            self.LEDLocations.isled2 = bool(1)
             if lst[1][0] == "Q1":
                 determinedLEDS[3:5] = [1.0,0.5,1.0]
             if lst[1][0] == "Q2":

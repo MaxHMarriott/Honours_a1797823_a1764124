@@ -1,0 +1,31 @@
+[2.052s] Invoking command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main': PYTHONPATH=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/build/UGV1Main/prefix_override:/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/install/UGV1Main/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/UGV1Main build --build-base /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/build/UGV1Main/build install --record /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/build/UGV1Main/install.log --install-scripts $base/lib/UGV1Main --single-version-externally-managed
+[2.192s] Traceback (most recent call last):
+[2.192s]   File "setup.py", line 1, in <module>
+[2.193s]     from setuptools import setup
+[2.193s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 17, in <module>
+[2.198s]     import setuptools.version
+[2.198s]   File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>
+[2.198s]     import pkg_resources
+[2.198s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 84, in <module>
+[2.199s]     __import__('pkg_resources.extern.packaging.requirements')
+[2.199s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/requirements.py", line 47, in <module>
+[2.199s]     VERSION_PEP440 = Regex(Specifier._regex_str, re.VERBOSE | re.IGNORECASE)
+[2.199s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/pyparsing.py", line 2792, in __init__
+[2.208s]     self.re = re.compile(self.pattern, self.flags)
+[2.208s]   File "/usr/lib/python3.8/re.py", line 252, in compile
+[2.208s]     return _compile(pattern, flags)
+[2.208s]   File "/usr/lib/python3.8/re.py", line 304, in _compile
+[2.208s]     p = sre_compile.compile(pattern, flags)
+[2.209s]   File "/usr/lib/python3.8/sre_compile.py", line 764, in compile
+[2.209s]     p = sre_parse.parse(p, flags)
+[2.209s]   File "/usr/lib/python3.8/sre_parse.py", line 948, in parse
+[2.209s]     p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+[2.209s]   File "/usr/lib/python3.8/sre_parse.py", line 443, in _parse_sub
+[2.209s]     itemsappend(_parse(source, state, verbose, nested + 1,
+[2.209s]   File "/usr/lib/python3.8/sre_parse.py", line 511, in _parse
+[2.209s]     sourceget()
+[2.209s]   File "/usr/lib/python3.8/sre_parse.py", line 256, in get
+[2.210s]     self.__next()
+[2.210s]   File "/usr/lib/python3.8/sre_parse.py", line 248, in __next
+[2.210s]     self.next = char
+[2.210s] KeyboardInterrupt

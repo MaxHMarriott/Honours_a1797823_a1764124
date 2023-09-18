@@ -1,0 +1,45 @@
+[2.377s] Invoking command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Main': PYTHONPATH=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Main/prefix_override:/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Main/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UGV1Main build --build-base /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Main/build install --record /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Main/install.log --install-scripts $base/lib/UGV1Main --single-version-externally-managed
+[2.705s] Traceback (most recent call last):
+[2.705s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2859, in get_entry_map
+[2.708s]     ep_map = self._ep_map
+[2.708s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2817, in __getattr__
+[2.710s]     raise AttributeError(attr)
+[2.710s] AttributeError: _ep_map
+[2.711s] 
+[2.711s] During handling of the above exception, another exception occurred:
+[2.711s] 
+[2.711s] Traceback (most recent call last):
+[2.711s]   File "/usr/lib/python3.8/genericpath.py", line 19, in exists
+[2.712s]     os.stat(path)
+[2.712s] FileNotFoundError: [Errno 2] No such file or directory: '/usr/lib/python3/dist-packages/dnspython-1.16.0.egg-info/entry_points.txt'
+[2.713s] 
+[2.713s] During handling of the above exception, another exception occurred:
+[2.713s] 
+[2.713s] Traceback (most recent call last):
+[2.713s]   File "setup.py", line 5, in <module>
+[2.713s]     setup(
+[2.714s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 143, in setup
+[2.714s]     _install_setup_requires(attrs)
+[2.714s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 131, in _install_setup_requires
+[2.715s]     dist = distutils.core.Distribution(dict(
+[2.715s]   File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 445, in __init__
+[2.718s]     for ep in pkg_resources.iter_entry_points('distutils.setup_keywords'):
+[2.718s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 657, in <genexpr>
+[2.718s]     for entry in dist.get_entry_map(group).values()
+[2.719s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2861, in get_entry_map
+[2.719s]     ep_map = self._ep_map = EntryPoint.parse_map(
+[2.720s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2529, in parse_map
+[2.720s]     for group, lines in data:
+[2.721s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3201, in split_sections
+[2.721s]     for line in yield_lines(s):
+[2.722s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2389, in yield_lines
+[2.722s]     for ss in strs:
+[2.723s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2768, in _get_metadata
+[2.723s]     if self.has_metadata(name):
+[2.724s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 1415, in has_metadata
+[2.724s]     return self._has(path)
+[2.724s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 1605, in _has
+[2.725s]     return os.path.exists(path)
+[2.725s]   File "/usr/lib/python3.8/genericpath.py", line 19, in exists
+[2.725s]     os.stat(path)
+[2.725s] KeyboardInterrupt

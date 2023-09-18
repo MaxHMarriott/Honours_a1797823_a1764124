@@ -122,7 +122,7 @@ PyObject * custom_msgs__msg__fire_severity__convert_to_py(void * raw_ros_message
     field = PyUnicode_DecodeUTF8(
       ros_message->severity.data,
       strlen(ros_message->severity.data),
-      "strict");
+      "replace");
     if (!field) {
       return NULL;
     }
