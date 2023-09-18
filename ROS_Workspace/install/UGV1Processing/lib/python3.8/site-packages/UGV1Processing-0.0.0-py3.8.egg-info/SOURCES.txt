@@ -11,3 +11,6 @@ setup.py
 UGV1Processing/UGV1Processing.py
 UGV1Processing/__init__.py
 resource/UGV1Processing
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

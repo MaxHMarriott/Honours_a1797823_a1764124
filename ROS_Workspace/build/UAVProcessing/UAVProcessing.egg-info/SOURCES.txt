@@ -11,3 +11,6 @@ setup.py
 UAVProcessing/UAVProcessing.py
 UAVProcessing/__init__.py
 resource/UAVProcessing
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

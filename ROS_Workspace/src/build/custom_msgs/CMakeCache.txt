@@ -381,30 +381,6 @@ ament_uncrustify_BIN:FILEPATH=/opt/ros/foxy/bin/ament_uncrustify
 //The directory containing a CMake configuration file for builtin_interfaces.
 builtin_interfaces_DIR:PATH=/opt/ros/foxy/share/builtin_interfaces/cmake
 
-//Dependencies for the target
-customSRV__python_LIB_DEPENDS:STATIC=general;customSRV__rosidl_generator_c;general;/usr/lib/x86_64-linux-gnu/libpython3.8.so;general;customSRV__rosidl_typesupport_c;
-
-//Dependencies for the target
-customSRV__rosidl_generator_c_LIB_DEPENDS:STATIC=general;rosidl_runtime_c::rosidl_runtime_c;general;rcutils::rcutils;
-
-//Dependencies for the target
-customSRV__rosidl_typesupport_c_LIB_DEPENDS:STATIC=general;rosidl_runtime_c::rosidl_runtime_c;general;rosidl_typesupport_c::rosidl_typesupport_c;
-
-//Dependencies for the target
-customSRV__rosidl_typesupport_cpp_LIB_DEPENDS:STATIC=general;rosidl_runtime_c::rosidl_runtime_c;general;rosidl_typesupport_cpp::rosidl_typesupport_cpp;
-
-//Dependencies for the target
-customSRV__rosidl_typesupport_fastrtps_c_LIB_DEPENDS:STATIC=general;rmw::rmw;general;rosidl_runtime_c::rosidl_runtime_c;general;rosidl_typesupport_fastrtps_cpp::rosidl_typesupport_fastrtps_cpp;general;rosidl_typesupport_fastrtps_c::rosidl_typesupport_fastrtps_c;general;rosidl_typesupport_fastrtps_cpp::rosidl_typesupport_fastrtps_cpp;general;rosidl_typesupport_fastrtps_c::rosidl_typesupport_fastrtps_c;general;customSRV__rosidl_generator_c;general;customSRV__rosidl_typesupport_fastrtps_cpp;
-
-//Dependencies for the target
-customSRV__rosidl_typesupport_fastrtps_cpp_LIB_DEPENDS:STATIC=general;rmw::rmw;general;rosidl_runtime_c::rosidl_runtime_c;general;rosidl_typesupport_fastrtps_cpp::rosidl_typesupport_fastrtps_cpp;general;customSRV__rosidl_generator_cpp;general;fastrtps;general;fastcdr;
-
-//Dependencies for the target
-customSRV__rosidl_typesupport_introspection_c_LIB_DEPENDS:STATIC=general;customSRV__rosidl_generator_c;general;rosidl_typesupport_introspection_c::rosidl_typesupport_introspection_c;
-
-//Dependencies for the target
-customSRV__rosidl_typesupport_introspection_cpp_LIB_DEPENDS:STATIC=general;rosidl_runtime_c::rosidl_runtime_c;general;rosidl_typesupport_introspection_cpp::rosidl_typesupport_introspection_cpp;
-
 //Value Computed by CMake
 custom_msgs_BINARY_DIR:STATIC=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_msgs
 

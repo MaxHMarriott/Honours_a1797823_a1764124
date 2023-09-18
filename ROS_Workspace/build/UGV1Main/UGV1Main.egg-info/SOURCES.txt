@@ -11,3 +11,6 @@ setup.py
 UGV1Main/UGV1Main.py
 UGV1Main/__init__.py
 resource/UGV1Main
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

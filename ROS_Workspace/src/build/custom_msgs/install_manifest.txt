@@ -1,9 +1,4 @@
 /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs
-/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/srv/detail/policy__struct.h
-/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/srv/detail/policy__functions.c
-/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/srv/detail/policy__type_support.h
-/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/srv/detail/policy__functions.h
-/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/srv/policy.h
 /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/rosidl_generator_c__visibility_control.h
 /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/led_locations__functions.h
 /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/fire_severity__type_support.h
@@ -22,7 +17,6 @@
 /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/fire_severity__rosidl_typesupport_fastrtps_c.h
 /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
 /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so
-/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/srv/detail/policy__rosidl_typesupport_fastrtps_cpp.hpp
 /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/led_locations__rosidl_typesupport_fastrtps_cpp.hpp
 /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/fire_severity__rosidl_typesupport_fastrtps_cpp.hpp
 /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
@@ -34,10 +28,6 @@
 /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
 /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so
 /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so
-/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/srv/detail/policy__struct.hpp
-/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/srv/detail/policy__traits.hpp
-/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/srv/detail/policy__builder.hpp
-/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/srv/policy.hpp
 /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/led_locations.hpp
 /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/led_locations__builder.hpp
 /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/led_locations__traits.hpp
@@ -46,8 +36,6 @@
 /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/fire_severity__builder.hpp
 /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/fire_severity__traits.hpp
 /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/fire_severity.hpp
-/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/srv/detail/policy__rosidl_typesupport_introspection_cpp.hpp
-/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/srv/detail/policy__type_support.cpp
 /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/fire_severity__rosidl_typesupport_introspection_cpp.hpp
 /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/fire_severity__type_support.cpp
 /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_msgs/include/custom_msgs/msg/detail/led_locations__type_support.cpp

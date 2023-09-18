@@ -1,3 +1,0 @@
-[console_scripts]
-UAVProcessing = UAVProcessing.UAVProcessing:main
-
