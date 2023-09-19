@@ -1,0 +1,10 @@
+The chosen protocol will be as follows:
+
+Trial 0: No LEDS on
+Trial 1: Zone 1 (High), Zone 3 (Low)
+Trial 2: Zone 2 (Medium), Zone 3 (High)
+Trial 3: Zone 4 (Medium), Zone 1 (Medium)
+Trial 4: Zone 2 (Low), Zone 1 (High)
+Trial 5: Zone 4 (Low), Zone 3 (Medium)
+
+These will correspond to the Arduino System as 0-5 over the serial line.

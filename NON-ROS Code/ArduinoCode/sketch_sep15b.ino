@@ -27,6 +27,9 @@ void loop()
     pixels.show();
   }
   pixels.setBrightness(BRIGHTNESS);
+
+// Determine state Logic: 
+// Case: recieved data is a '0'
    if (incomingByte == 48)
   {
    for (int i = 0; i < pixels.numPixels(); i++)
@@ -35,7 +38,7 @@ void loop()
    }
    pixels.show(); // Update strip with new contents
   }
-  
+// Case: recieved data is a '1'
   if (incomingByte == 49)
   {
    for (int i = 0; i < pixels.numPixels(); i++)
@@ -45,7 +48,7 @@ void loop()
    }
    pixels.show(); // Update strip with new contents
   }
-
+// Case: recieved data is a '2'
     if (incomingByte == 50)
   {
    for (int i = 0; i < pixels.numPixels(); i++)
@@ -55,7 +58,7 @@ void loop()
    }
    pixels.show(); // Update strip with new contents
   }
-
+// Case: recieved data is a '3'
     if (incomingByte == 51)
   {
    for (int i = 0; i < pixels.numPixels(); i++)
