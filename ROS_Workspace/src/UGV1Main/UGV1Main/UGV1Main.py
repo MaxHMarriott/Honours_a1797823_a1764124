@@ -9,6 +9,7 @@ from rclpy.qos import qos_profile_sensor_data
 from custom_msgs.msg import FireSeverity as FireSeverityMsg
 from custom_msgs.msg import LEDLocations as LEDLocationsMsg
 from custom_srvs.srv import Policy
+from custom_srvs.srv import MoveOrder
 import numpy
 import math
 from enum import Enum
