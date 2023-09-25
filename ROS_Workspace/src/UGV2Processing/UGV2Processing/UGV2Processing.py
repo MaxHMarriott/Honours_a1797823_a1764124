@@ -14,13 +14,13 @@ import cv2
 class CameraSubscriber(Node):	
 
         def __init__(self):
-                super().__init__("UGV1Vision")
+                super().__init__("UGV2Vision")
                 print('This has run')
-                topic_name = '/UGV1Frame'
+                topic_name = '/UGV2Frame'
                 self.subscription = self.create_subscription(Image, topic_name,self.subscribe_message, qos_profile_sensor_data)
-                self.publisher = self.create_publisher(Int16MultiArray,"/UGV1Detections",10)
-                self.UGV1Returns= Int16MultiArray()
-                self.UGV1Returns.data= [0,0,0]
+                self.publisher = self.create_publisher(Int16MultiArray,"/UGV2Detections",10)
+                self.UGV2Returns= Int16MultiArray()
+                self.UGV2Returns.data= [0,0,0]
                 self.br = CvBridge()
                 print("Creating vision pipeline")
                 self.LED_detect = VisionDetect() #creating a pipeline for finding LEDs
@@ -45,8 +45,8 @@ class CameraSubscriber(Node):
             RedCount = sum(sum(self.LED_detect.hsl_threshold_0_output))
             GreenCount = sum(sum(self.LED_detect.hsl_threshold_1_output))
             YellowCount = sum(sum(self.LED_detect.hsv_threshold_output))
-            self.UGV1Returns.data = [int(RedCount/10.0), int(GreenCount/10.0), int(YellowCount/10.0)]
-            self.publisher.publish(self.UGV1Returns)
+            self.UGV2Returns.data = [int(RedCount/10), int(GreenCount/10), int(YellowCount/10)]
+            self.publisher.publish(self.UGV2Returns)
             return image
 
 

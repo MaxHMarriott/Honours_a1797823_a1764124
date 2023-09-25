@@ -17,10 +17,10 @@ from enum import Enum
 import cv2
 
 
-class UGV1Main(Node):
+class UGV2Main(Node):
 
     def __init__(self):
-        super().__init__("UGV1Main")
+        super().__init__("UGV2Main")
 
         #define possible states of UGV:
         #self.State = Enum('State', ['Transit','Attending', 'Idle', 'Waiting','Do Not Disturb'])
@@ -30,15 +30,15 @@ class UGV1Main(Node):
         #Idle = Is stationary and not completing a given task
         #Waiting = Waiting for action of other robots
         #DND = Will not respond to other robots.
-        Publisher_name = '/UGV1FireSeverity'
+        Publisher_name = '/UGV2FireSeverity'
         
         self.x = 0.0; #this will be the x coodinate of the agent retrieved from the navigation node.
         self.y = 0.0; #this will be the y coodinate of the agent retrieved from the navigation node.
         self.publisher = self.create_publisher(FireSeverityMsg,Publisher_name,10)
-        self.publishMoveOrder = self.create_publisher(Pose,"/poseOrder0",10) #publisher to test the navigation system (for testing purposes)
-        self.state_publisher = self.create_publisher(String,"/UGV1State",10)
-        self.LEDLocationsTopic = self.create_subscription(LEDLocationsMsg,'/LEDLocations',self.LED_message, qos_profile_sensor_data)
-        self.subscription = self.create_subscription(Int16MultiArray,"/UGV1Detections",self.detections_message, qos_profile_sensor_data)
+        self.publishMoveOrder = self.create_publisher(Pose,"/poseOrder1",10) #publisher to test the navigation system (for testing purposes)
+        self.state_publisher = self.create_publisher(String,"/UGV2State",10)
+        self.LEDLocationsTopic = self.create_subscription(LEDLocationsMsg,'/LED2Locations',self.LED_message, qos_profile_sensor_data)
+        self.subscription = self.create_subscription(Int16MultiArray,"/UGV2Detections",self.detections_message, qos_profile_sensor_data)
         self.FireSeverity= FireSeverityMsg()
         self.timer_period = 0.5
         self.orderCount = 0 #for testing purposes
@@ -52,7 +52,7 @@ class UGV1Main(Node):
         self.LEDDetected = 0b1
         self.FireSeverityIsDetected = 0b0
         self.UGV2to1Ack = 0b1
-        self.UGV1Jump = 0b0
+        self.UGV2Jump = 0b0
         self.GO = 0b1
 
         #Locations:
@@ -180,7 +180,7 @@ class UGV1Main(Node):
         #00000
             #state = "Idle"
             #description = "Idle"
-            #UGV1to2Ack = None
+            #UGV2to2Ack = None
             #Transition to 00001 if:
                 #LEDDetected = 1 or CommsTimeoutUAV = 1
 
@@ -195,7 +195,7 @@ class UGV1Main(Node):
         #00001
             #state = "Idle"
             #description = "Proposing Policy"
-            #UGV1to2Ack = "Hey"
+            #UGV2to2Ack = "Hey"
             #Transition to 01100 if:
                 #CommsTimeoutUAV = 1
             #Transition to 00010 if:
@@ -219,7 +219,7 @@ class UGV1Main(Node):
         #00010
             #State = "Idle"
             #Description = "Receiving Policy"
-            #UGV1to2Ack = "Ack" 
+            #UGV2to2Ack = "Ack" 
             #Transition to 01100 if:
                 #CommsTimeoutUAV= 1 or CommsTimeoutUGV = 1
             #Transition to 00011 if:
@@ -237,11 +237,11 @@ class UGV1Main(Node):
         #00011
             #State = "Waiting"
             #Description = "Waiting for answer back from UGV2 (seeing if UGV2 Approves)"
-            #UGV1to2Ack = None 
+            #UGV2to2Ack = None 
             #Transition to 00100:
-                #Policy Accepted by UGV1
+                #Policy Accepted by UGV2
             #Transition to 01011:
-                #Policy Rejected by UGV1 and self.UGV2to1Ack = yes
+                #Policy Rejected by UGV2 and self.UGV2to1Ack = yes
             #Transition to 00000:
                 #LEDDetected = 0
         elif (self.currentStateNumber == 0b00011):
@@ -265,7 +265,7 @@ class UGV1Main(Node):
         #00100
             #State = "Waiting"
             #Description = "Received policy and content"
-            #UGV1to2Ack = "Yes" 
+            #UGV2to2Ack = "Yes" 
             #Transition to 00101:
                 #self.UGV2to1Ack = Ack
             #Transition to 01110:
@@ -274,7 +274,7 @@ class UGV1Main(Node):
         elif (self.currentStateNumber == 0b00100):
             self.state = "Waiting"
             self.stateDescription = "Received policy and content"
-            UGV1to2Ack = "Yes"
+            UGV2to2Ack = "Yes"
             if (self.UGV2to1Ack == "Ack"):
                 self.nextStateNumber = 0b00101
             elif (self.CommsTimeoutUGV == 1):
@@ -283,26 +283,26 @@ class UGV1Main(Node):
         #00101
             #State = "Transit"
             #Description = "Moving"
-            #UGV1to2Ack = "Ack"
+            #UGV2to2Ack = "Ack"
             #Transition to 00110:
                 #UGV arrives at waypoint
             #Transition to 01111:
-                #UGV1Jump = 1
+                #UGV2Jump = 1
 
         elif (self.currentStateNumber == 0b00101):
             self.state = "Transit"
             self.stateDescription = "Moving"
-            UGV1to2Ack = "Ack"
+            UGV2to2Ack = "Ack"
             Atwaypoint = 1 #stand in variable for transit
             if (Atwaypoint == 1):
                 self.nextStateNumber = 0b00110
-            if (self.UGV1Jump == 1):
+            if (self.UGV2Jump == 1):
                 self.nextStateNumber = 0b01111
 
         #00110
             #State = "Attending"
             #Description = "Reporting LED Intensity"
-            #UGV1to2Ack = None 
+            #UGV2to2Ack = None 
             #Transition to 0111:
                 #100ms delay
         
@@ -316,7 +316,7 @@ class UGV1Main(Node):
         #00111
             #State = "Attending"
             #Description = "Receiving LED Intensity"
-            #UGV1to2Ack = None
+            #UGV2to2Ack = None
             #Transition to 01000:
                 #Zone 1 Severity < Zone 2 Severity
             #Transition to 01001:
@@ -342,7 +342,7 @@ class UGV1Main(Node):
         #01000
             #State = "Transit"
             #Description = "Going to the other fire"
-            #UGV1to2Ack = None
+            #UGV2to2Ack = None
             #Transition to 01010:
                 #GO=0
             #Transition to 01001:
@@ -358,7 +358,7 @@ class UGV1Main(Node):
         #01001
             #State = "Attending"
             #Description = "Waiting in zone"
-            #UGV1to2Ack = None
+            #UGV2to2Ack = None
             #Transition to 01010:
                 #GO = 0
         elif (self.currentStateNumber == 0b01001):
@@ -375,7 +375,7 @@ class UGV1Main(Node):
         #01010
             #State = "Transit"
             #Description = "Return to centre"
-            #UGV1to2Ack = None
+            #UGV2to2Ack = None
             #transition to 000000
         elif (self.currentStateNumber == 0b01010):
             self.state = "Transit"
@@ -385,7 +385,7 @@ class UGV1Main(Node):
         #01100
             #State = "Attending"
             #Description = "Attend to the other zone if not responsive"
-            #UGV1to2Ack = None
+            #UGV2to2Ack = None
             #Transition to 01101:
                 #each clock cycle
         elif (self.currentStateNumber == 0b01100):
@@ -396,7 +396,7 @@ class UGV1Main(Node):
         #01101
             #State = "Transit"
             #Description = "Check every zone"
-            #UGV1to2Ack = None
+            #UGV2to2Ack = None
             #Transition to 01110:
                 #next clock cycle
         elif (self.currentStateNumber == 0b01101):
@@ -407,7 +407,7 @@ class UGV1Main(Node):
         #01110:
             #State = "Idle"
             #Description = "Create two zone policy"
-            #UGV1to2Ack = None
+            #UGV2to2Ack = None
             #Transition to 00101:
                 #Next clock cycle
         elif (self.currentStateNumber == 0b01110):
@@ -418,7 +418,7 @@ class UGV1Main(Node):
         #01111:
         #State = "Attending"
         #Description = "Receive Message Interrupt"
-        #UGV1to2Ack = None
+        #UGV2to2Ack = None
         elif (self.currentStateNumber == 0b01111):
             self.state = "Attending"
             self.stateDescription = "Recieve Message Interrupt"
@@ -433,9 +433,9 @@ class UGV1Main(Node):
 def main (args=None):
     rclpy.init(args=args)
     
-    UGV = UGV1Main()
+    UGV = UGV2Main()
     
-    print('Node: UGV1Main has been created')
+    print('Node: UGV2Main has been created')
 
     rclpy.spin(UGV)
 

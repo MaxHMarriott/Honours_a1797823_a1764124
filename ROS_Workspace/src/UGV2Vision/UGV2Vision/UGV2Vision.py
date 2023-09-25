@@ -12,9 +12,9 @@ import cv2
 class CameraPublisher(Node):
 
     def __init__(self):
-        super().__init__("UGV1Vision")
+        super().__init__("UGV2Vision")
         print('This has run')
-        topic_name = '/UGV1Frame'
+        topic_name = '/UGV2Frame'
         #self.publisher = self.create_publisher(String,topic_name,10)
         self.publisher = self.create_publisher(Image,topic_name,10)
         print('Topic: ' + topic_name)
