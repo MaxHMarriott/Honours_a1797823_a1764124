@@ -13,7 +13,8 @@ from std_msgs.msg import Bool
 class PosePublisherNode(Node):
     def __init__(self):
         super().__init__('pose_publisher_node')
-        self.pose_publisher = self.create_publisher(Pose, 'poseOrder', 10)
+        self.pose_publisher0 = self.create_publisher(Pose, 'poseOrder0', 10)
+        self.pose_publisher1 = self.create_publisher(Pose, 'poseOrder1', 10)
         self.rate = self.create_publisher(Int32, 'rate', 10)  # Create a rate control publisher
         self.getisLED = 1
     
@@ -27,12 +28,19 @@ class PosePublisherNode(Node):
 
         self.timer = self.create_timer(1, self.timer_callback)
 
-    def publish_pose(self, x, y, z):
-        pose_msg = Pose()
-        pose_msg.position.x = x
-        pose_msg.position.y = y
-        pose_msg.position.z = z
-        self.pose_publisher.publish(pose_msg)
+    def publish_pose0(self, x, y, z):
+        tb3_0_pose_msg = Pose()
+        tb3_0_pose_msg.position.x = x
+        tb3_0_pose_msg.position.y = y
+        tb3_0_pose_msg.position.z = z
+        self.pose_publisher0.publish(tb3_0_pose_msg)
+
+    def publish_pose1(self, x, y, z):
+        tb3_1_pose_msg = Pose()
+        tb3_1_pose_msg.position.x = x
+        tb3_1_pose_msg.position.y = y
+        tb3_1_pose_msg.position.z = z
+        self.pose_publisher1.publish(tb3_1_pose_msg)
 
     def timer_callback (self):
         self.led_status = 1
@@ -40,35 +48,36 @@ class PosePublisherNode(Node):
                 # Publish the current pose
                 time.sleep(10)
                 # Publish the first pose
-                x1 = -2.55
-                y1 = -0.05
-                z1 = 0.0
-                self.publish_pose(x1, y1, z1)
-                print('Published Pose: ',x1,y1,z1)
+                x_tb3_0 = -0.475
+                y_tb3_0 = -0.12
+                z_tb3_0 = 0.0
+                self.publish_pose0(x_tb3_0, y_tb3_0, z_tb3_0)
+                print('Published Pose0: ',x_tb3_0,y_tb3_0,z_tb3_0)
+
+                x_tb3_1 = -2.55
+                y_tb3_1 = -0.05
+                z_tb3_1 = 0.0
+                self.publish_pose1(x_tb3_1, y_tb3_1, z_tb3_1)
+                print('Published Pose1: ',x_tb3_1, y_tb3_1, z_tb3_1)
+    
                 time.sleep(20)  # Sleep for 2 minutes (120 seconds)
 
-                # # Publish the initial pose
-                # x2 = 0.0 #-2.55
-                # y2 = 0.0 #-0.05
-                # z2 = 0.0
-                # self.publish_pose(x2, y2, z2)
-                # print('Published Pose: ',x2, y2, z2)
-                # time.sleep(30)  # Sleep for 60 seconds
+
         else:
-                # time.sleep(10)
-                # x1 = -2.55
-                # y1 = -0.05
-                # z1 = 0.0
-                # self.publish_pose(x1, y1, z1)
-                # print('Published Pose: ',x1,y1,z1)
-                # time.sleep(45)  # Sleep for 2 minutes (120 seconds)
             time.sleep(10)
-            # Publish the initial pose
-            x2 = 0.0 #-2.55
-            y2 = 0.0 #-0.05
-            z2 = 0.0
-            self.publish_pose(x2, y2, z2)
-            print('Published Pose: ',x2, y2, z2)
+            # Publish the first pose
+            x_tb3_0 = 0.0
+            y_tb3_0 = 0.0
+            z_tb3_0 = 0.0
+            self.publish_pose0(x_tb3_0, y_tb3_0, z_tb3_0)
+            print('Published Pose0: ',x_tb3_0,y_tb3_0,z_tb3_0)
+
+            x_tb3_1 = 0.0
+            y_tb3_1 = 0.0
+            z_tb3_1 = 0.0
+            self.publish_pose1(x_tb3_1, y_tb3_1, z_tb3_1)
+            print('Published Pose1: ',x_tb3_1, y_tb3_1, z_tb3_1)
+            
             time.sleep(20)  # Sleep for 60 seconds
 
     def source_callback(self,msg):
@@ -84,15 +93,6 @@ class PosePublisherNode(Node):
 def main(args=None):
     rclpy.init(args=args)
     node = PosePublisherNode()
-
-    # def is_LED_on():
-    #     return random.choice([0, 1])
-
-    
-
-            # rclpy.spin(node)
-    # node.destroy_node()
-    # rclpy.shutdown()
 
     try:
             rclpy.spin(node)

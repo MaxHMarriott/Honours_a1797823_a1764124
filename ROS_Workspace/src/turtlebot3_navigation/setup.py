@@ -24,6 +24,7 @@ setup(
     entry_points={
             'console_scripts': [
         	        'move_robot = turtlebot3_navigation.move_robot:main',
+        	        'move_two_robots = turtlebot3_navigation.move_two_robots:main',
         	        'set_initial_pose = turtlebot3_navigation.set_initial_pose:main',
         	        'zone_move = turtlebot3_navigation.zone_move:main',
         	        'coordinate_transform = turtlebot3_navigation.coordinate_transform:main',

@@ -67,13 +67,13 @@ def generate_launch_description():
             default_value='false',
             description='Use simulation (Gazebo) clock if true'),
 
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource([nav2_launch_file_dir_tb3_0, '/tb3_0_bringup_launch.py']),
-            launch_arguments={
-                'map': map_dir,
-                'use_sim_time': use_sim_time,
-                'params': param_dir}.items(),
-        ),
+        # IncludeLaunchDescription(
+        #     PythonLaunchDescriptionSource([nav2_launch_file_dir_tb3_0, '/tb3_0_bringup_launch.py']),
+        #     launch_arguments={
+        #         'map': map_dir,
+        #         'use_sim_time': use_sim_time,
+        #         'params': param_dir}.items(),
+        # ),
 
        Node(
         #    namespace = 'tb3_0',

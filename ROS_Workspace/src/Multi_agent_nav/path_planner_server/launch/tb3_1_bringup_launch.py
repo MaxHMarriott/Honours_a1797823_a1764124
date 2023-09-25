@@ -99,7 +99,7 @@ def generate_launch_description():
 
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(os.path.join(launch_dir,
-                                                       'multi_localization_launch.py')),
+                                                       'tb3_1_localization_launch (copy).py')),
             condition=IfCondition(PythonExpression(['not ', slam])),
             launch_arguments={'namespace': namespace,
                               'map': map_yaml_file,
@@ -109,7 +109,7 @@ def generate_launch_description():
                               'use_lifecycle_mgr': 'false'}.items()),
 
         IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(os.path.join(launch_dir, 'multi_navigation_launch.py')),
+            PythonLaunchDescriptionSource(os.path.join(launch_dir, 'tb3_1_multi_navigation_launch (copy).py')),
             launch_arguments={'namespace': namespace,
                               'use_sim_time': use_sim_time,
                               'autostart': autostart,

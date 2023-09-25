@@ -53,13 +53,13 @@ def generate_launch_description():
                         {'autostart': True},
                         {'node_names': ['map_server']}]),
 
-        Node(
-            package = 'tf2_ros',
-            executable = 'static_transform_publisher',
-            name = 'link1_broadcaster',
-            arguments=['0','0','0','0','0','0','0','map','tb3_0/odom'],
-            output='screen',
-        ),
+        # Node(
+        #     package = 'tf2_ros',
+        #     executable = 'static_transform_publisher',
+        #     name = 'link1_broadcaster',
+        #     arguments=['0','0','0','0','0','0','0','map','tb3_0/odom'],
+        #     output='screen',
+        # ),
         
         # Node(
         #     package = 'tf2_ros',

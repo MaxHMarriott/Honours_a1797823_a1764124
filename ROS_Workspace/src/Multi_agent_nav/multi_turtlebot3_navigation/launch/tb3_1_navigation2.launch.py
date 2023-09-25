@@ -67,19 +67,20 @@ def generate_launch_description():
             default_value='false',
             description='Use simulation (Gazebo) clock if true'),
 
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource([nav2_launch_file_dir_tb3_1, '/tb3_1_bringup_launch.py']),
-            launch_arguments={
-                'map': map_dir,
-                'use_sim_time': use_sim_time,
-                'params_file': param_dir}.items(),
-        ),
+        # IncludeLaunchDescription(
+        #     PythonLaunchDescriptionSource([nav2_launch_file_dir_tb3_1, '/tb3_1_bringup_launch.py']),
+        #     launch_arguments={
+        #         'map': map_dir,
+        #         'use_sim_time': use_sim_time,
+        #         'params_file': param_dir}.items(),
+        # ),
 
-#        Node(
- #           package='rviz2',
-  #          executable='rviz2',
-   #         name='rviz2',
-    #        arguments=['-d', rviz_config_dir],
-     #       parameters=[{'use_sim_time': use_sim_time}],
-      #      output='screen'),
+        # Node(
+        # #    namespace = 'tb3_0',
+        #    package='rviz2',
+        #    executable='rviz2',
+        #    name='rviz2',
+        #    arguments=['-d', rviz_config_dir],
+        #    parameters=[{'use_sim_time': use_sim_time}],
+        #    output='screen'),
     ])
