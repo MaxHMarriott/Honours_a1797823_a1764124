@@ -86,8 +86,21 @@ class UGV1Main(Node):
         self.timer = self.create_timer(self.timer_period,self.timer_callback)
 
         #testing services: https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Custom-ROS2-Interfaces.html
-        self.UGVAck = self.create_service(Policy, '/UGVAck', self.UGVResponse)
+        self.UGV2Ack = self.create_service(Policy, '/UGV1Ack', self.UGVResponse)
 
+        self.cli = self.create_client(Policy, '/UGV2Ack')
+
+        while not self.cli.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info('/UGVAck2'+'service not available, waiting again...')
+        self.req = Policy.Request()
+
+    def send_request(self, a, b):
+        self.req.location = a
+        self.req.eta = b
+        self.future = self.cli.call_async(self.req)
+        #rclpy.spin_until_future_complete(self, self.future)
+        print("Sending Request" + str(a) + " with eta: " + str(b))
+        return self.future.result()
 
     def UGVResponse(self, request, response):
         response.ack = "Yes"
@@ -137,8 +150,15 @@ class UGV1Main(Node):
             order = self.z0
         print(self.orderCount)
         self.publishMoveOrder.publish(order)
-        self.StateMachine()
 
+        #testing send policy program:
+        point_msg = Point()
+        point_msg.x = 0.0
+        point_msg.y = 0.0
+        point_msg.z = 0.0
+        float_msg = 1.1
+        self.send_request(point_msg, float(float_msg))
+        self.StateMachine()
      
     def determineSeverity(self):
 

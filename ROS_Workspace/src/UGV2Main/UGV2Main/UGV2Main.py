@@ -84,10 +84,20 @@ class UGV2Main(Node):
 
         #StateMachine
         self.timer = self.create_timer(self.timer_period,self.timer_callback)
+        #Testing Services:
+        self.UGV2Ack = self.create_service(Policy, '/UGV2Ack', self.UGVResponse)
 
-        #testing services: https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Custom-ROS2-Interfaces.html
-        self.UGVAck = self.create_service(Policy, '/UGVAck', self.UGVResponse)
+        self.cli = self.create_client(Policy, '/UGV1Ack')
+        while not self.cli.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info('/UGVAck1'+' service not available, waiting again...')
+        self.req = Policy.Request()
 
+    def send_request(self, a, b):
+        self.req.location = a
+        self.req.eta = b
+        self.future = self.cli.call_async(self.req)
+        #rclpy.spin_until_future_complete(self, self.future)
+        return self.future.result()
 
     def UGVResponse(self, request, response):
         response.ack = "Yes"
@@ -107,7 +117,6 @@ class UGV2Main(Node):
         #self.LEDLocations.isled1 = self.LEDState[0]
         self.FireSeverity.fire_x = self.x
         self.FireSeverity.fire_y = self.y
-
     #This function writes a frame to the camerapublisher topic every time it runs, this will be absorbed by the state machine    
     def timer_callback(self):
         self.publisher.publish(self.FireSeverity)
@@ -136,9 +145,18 @@ class UGV2Main(Node):
             self.orderCount = 0
             order = self.z0
         print(self.orderCount)
-        self.publishMoveOrder.publish(order)
-        self.StateMachine()
 
+        #write to topic
+        point_msg = Point()
+        point_msg.x = 0.0
+        point_msg.y = 0.0
+        point_msg.z = 0.0
+
+        float_msg = 1.1
+
+        self.send_request(point_msg, float(float_msg))
+
+        self.StateMachine()
      
     def determineSeverity(self):
 
