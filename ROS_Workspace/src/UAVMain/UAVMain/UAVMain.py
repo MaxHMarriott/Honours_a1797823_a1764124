@@ -12,6 +12,9 @@ import numpy
 import math
 from enum import Enum
 import cv2
+import serial
+from random import random
+import time
 
 
 class UAVMain(Node):
@@ -23,6 +26,7 @@ class UAVMain(Node):
         LED_name = '/LEDLocations'
         self.state = String()
         self.state.data = "Idle"
+        self.sOut = 0
 
         #self.publisher = self.create_publisher(String,topic_name,10)
         #self.publisher = self.create_publisher(Float32MultiArray,LED1_name,10)
@@ -40,14 +44,16 @@ class UAVMain(Node):
         #self.LED2 = Float32MultiArray()
         #self.LED2.data = self.LED1Location
         self.timer_period = 0.5
+        self.timer_period = 60
         self.i = 0
         self.timer = self.create_timer(self.timer_period,self.timer_callback)
-
-        #Testing Services:
-        self.cli = self.create_client(Policy, '/UGVAck')
-        while not self.cli.wait_for_service(timeout_sec=1.0):
-            self.get_logger().info('/UGVAck '+'service not available, waiting again...')
-        self.req = Policy.Request()
+        self.timer = self.create_timer(self.timer_period,self.set_scenario) #timer for determining scenario
+        try:
+            self.ser.write(f'{self.sOut}\n'.encode('utf-8'))
+            data = self.ser.readline().decode('utf-8').strip()
+            time.sleep(0.2)
+        except:
+            print("COMMS ERROR")
 
     def subscribe_message_UGV1State(self,data):
         print("State of UGV1 Rover is: ")
@@ -70,14 +76,10 @@ class UAVMain(Node):
         #self.LED1.data = self.LEDState[0:3]
         print("LEDs:")
         print(self.LEDState)
-        #self.LED2.data = self.LEDState[3:6]        
-
-    def send_request(self, a, b):
-        self.req.location = a
-        self.req.eta = b
-        self.future = self.cli.call_async(self.req)
-        #rclpy.spin_until_future_complete(self, self.future)
-        return self.future.result()
+        #self.LED2.data = self.LEDState[3:6]   
+        serial_port = 'COM4'
+        baud_rate = 9600
+        self.ser = serial.Serial(serial_port, baud_rate,timeout=1)
 
     #This function writes a frame to the camerapublisher topic every time it runs    
     def timer_callback(self):
@@ -87,16 +89,17 @@ class UAVMain(Node):
         self.publisher2.publish(self.state)
         self.get_logger().info('Publishing LED locations')
 
+    def set_scenario(self):  
+        self.sOut = self.sOut + 1
+        try:
+            self.ser.write(f'{self.sOut}\n'.encode('utf-8'))
+            data = self.ser.readline().decode('utf-8').strip()
+            time.sleep(0.2)
+        except:
+            print("COMMS ERROR") 
+        if (self.sOut >= 5):
+            self.sOut = 0
 
-        #write to topic
-        point_msg = Point()
-        point_msg.x = 0.0
-        point_msg.y = 0.0
-        point_msg.z = 0.0
-
-        float_msg = 1.1
-
-        self.send_request(point_msg, float(float_msg))
         
     def determineLEDs(self):
 
