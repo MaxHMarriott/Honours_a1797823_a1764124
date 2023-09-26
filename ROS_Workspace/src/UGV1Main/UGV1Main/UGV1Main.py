@@ -2,9 +2,10 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
 from std_msgs.msg import Int16MultiArray
+from std_msgs.msg import Int16
 from cv_bridge import CvBridge
 from sensor_msgs.msg import Image
-from geometry_msgs.msg import Point
+from geometry_msgs.msg import Pose
 from geometry_msgs.msg import Pose
 from rclpy.qos import qos_profile_sensor_data
 from custom_msgs.msg import FireSeverity as FireSeverityMsg
@@ -13,6 +14,7 @@ from custom_srvs.srv import Policy
 from custom_srvs.srv import MoveOrder
 import numpy
 import math
+import time
 from enum import Enum
 import cv2
 
@@ -37,6 +39,7 @@ class UGV1Main(Node):
         self.publisher = self.create_publisher(FireSeverityMsg,Publisher_name,10)
         self.publishMoveOrder = self.create_publisher(Pose,"/poseOrder0",10) #publisher to test the navigation system (for testing purposes)
         self.state_publisher = self.create_publisher(String,"/UGV1State",10)
+        self.GO_subscriber = self.create_subscription(Int16,'/GO',self.GO_message, qos_profile_sensor_data)        
         self.LEDLocationsTopic = self.create_subscription(LEDLocationsMsg,'/LEDLocations',self.LED_message, qos_profile_sensor_data)
         self.subscription = self.create_subscription(Int16MultiArray,"/UGV1Detections",self.detections_message, qos_profile_sensor_data)
         self.FireSeverity= FireSeverityMsg()
@@ -55,6 +58,8 @@ class UGV1Main(Node):
         self.UGV1Jump = 0b0
         self.GO = 0b1
         self.UGVCount = 0b0
+        self.UGV2to1Ack = "Null"
+        self.stateDescription = "Idle"
 
         #Locations:
 
@@ -91,9 +96,12 @@ class UGV1Main(Node):
 
         self.cli = self.create_client(Policy, '/UGV2Ack')
 
-        while not self.cli.wait_for_service(timeout_sec=1.0):
+        if not self.cli.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('/UGVAck2'+'service not available, waiting again...')
         self.req = Policy.Request()
+
+    def GO_message(self,data):
+        self.GO = data.data
 
     def send_request(self, a, b):
         self.req.location = a
@@ -104,8 +112,9 @@ class UGV1Main(Node):
         return self.future.result()
 
     def UGVResponse(self, request, response):
-        response.ack = "Ack"
-        print(request)
+        response.ack = "Yes"
+        self.UGV2to1Ack = "Yes"
+        #print(request)
         self.UGVCount = self.UGVCount+1
         return response
 
@@ -125,41 +134,37 @@ class UGV1Main(Node):
 
     #This function writes a frame to the camerapublisher topic every time it runs, this will be absorbed by the state machine    
     def timer_callback(self):
-        self.publisher.publish(self.FireSeverity)
-        state_topic = String()
-        state_topic.data = self.state
-        self.state_publisher.publish(state_topic)
         self.get_logger().info('Publishing Severity locations, state and movement order')
-        order = Pose()
-        self.orderCount = self.orderCount + 1 #for testing purposes
-        if (self.orderCount <= 80):
-            self.state = "Return to centre"
-            order = self.z0            
-        elif (self.orderCount <= 160):
-            self.state = "Transit"
-            order = self.z1
-        elif (self.orderCount <= 240):
-            self.state = "Return to centre"
-            order = self.z0
-        elif (self.orderCount <= 320):
-            self.state = "Transit"
-            order = self.z2
-        elif (self.orderCount <= 400):
-            self.state = "Return to centre"
-            order = self.z0
-        elif(self.orderCount <= 480):
-            self.orderCount = 0
-            order = self.z0
-        print(self.orderCount)
-        self.publishMoveOrder.publish(order)
+        #order = Pose()
+        #self.orderCount = self.orderCount + 1 #for testing purposes
+        #if (self.orderCount <= 80):
+        #    self.state = "Return to centre"
+        #    order = self.z0            
+        #elif (self.orderCount <= 160):
+        #    self.state = "Transit"
+        #    order = self.z1
+        #elif (self.orderCount <= 240):
+        #    self.state = "Return to centre"
+        #    order = self.z0
+        #elif (self.orderCount <= 320):
+        #    self.state = "Transit"
+        #    order = self.z2
+        #elif (self.orderCount <= 400):
+        #    self.state = "Return to centre"
+        #    order = self.z0
+        #elif(self.orderCount <= 480):
+        #    self.orderCount = 0
+        #    order = self.z0
+        #print(self.orderCount)
+        #self.publishMoveOrder.publish(order)
 
         #testing send policy program:
-        point_msg = Point()
-        point_msg.x = 0.0
-        point_msg.y = 0.0
-        point_msg.z = 0.0
-        float_msg = 1.1
-        self.send_request(point_msg, float(float_msg))
+        #self.Pose_msg = Pose()
+        #self.Pose_msg.x = 0.0
+        #self.Pose_msg.y = 0.0
+        #self.Pose_msg.z = 0.0
+        #float_msg = 1.1
+        #self.send_request(self.Pose_msg, float(float_msg))
         self.StateMachine()
      
     def determineSeverity(self):
@@ -195,14 +200,20 @@ class UGV1Main(Node):
 
         #create local counter tUAV
 
-        #This state = next state
-
+        #outputs:
+        self.publisher.publish(self.FireSeverity)
+        state_topic = String()
+        state_topic.data = self.state
+        self.state_publisher.publish(state_topic)
         self.currentStateNumber = self.nextStateNumber
-        if(self.UGVCount > 0):  
-            self.UGVCount = self.UGVCount - 1
-            UGV1to2Ack = 1
-        else:
-            UGV1to2Ack = 0
+        print(self.stateDescription)
+
+        #counters
+        #if(self.UGVCount > 0):  
+            #self.UGVCount = self.UGVCount - 1
+            #self.UGV2to1Ack = 1
+        #else:
+            #self.UGV2to1Ack = 0
 
         #00000
             #state = "Idle"
@@ -214,6 +225,8 @@ class UGV1Main(Node):
         if (self.currentStateNumber == 0b00000):
             self.state = "Idle"
             self.stateDescription = "Idle"
+            self.Pose_msg = self.z0
+            self.publishMoveOrder.publish(self.Pose_msg)
             if ((self.LEDLocationsisled1 == 0b1) or (self.CommsTimeoutUAV == 0b1)):
                 self.nextStateNumber = 0b01
             else:
@@ -234,6 +247,10 @@ class UGV1Main(Node):
             self.state = "Idle"
             self.stateDescription = "Proposing Policy"
             if ((self.LEDDetected == 1) and (self.CommsTimeoutUAV == 0)):
+                self.Pose_msg = Pose()
+                self.Pose_msg = self.z1
+                float_msg = 1.0 #eta
+                self.send_request(self.Pose_msg, float(float_msg))
                 self.nextStateNumber = 0b0010
 
             if ((self.LEDDetected == 0) and (self.CommsTimeoutUAV == 0)):
@@ -276,8 +293,15 @@ class UGV1Main(Node):
             self.stateDescription = "Waiting for answer back from UGV2 (seeing if UGV2 Approves)"
             acceptPolicy = 1
 
+            #keep sending policy
+            self.Pose_msg = Pose()
+            self.Pose_msg = self.z1
+            float_msg = 1.0 #eta
+            self.send_request(self.Pose_msg, float(float_msg))
+
             #code block to determine if policy is approved
             if ((self.UGV2to1Ack == "Yes") and (self.LEDDetected == 1)):
+                self.UGV2to1Ack == "Null"
                 if(acceptPolicy == 1):
                     self.nextStateNumber = 0b00100
                 if(acceptPolicy == 0):
@@ -285,6 +309,7 @@ class UGV1Main(Node):
             elif(self.LEDDetected == 0):
                 self.nextStateNumber = self.currentStateNumber
             elif(self.UGV2to1Ack == "No"):
+                self.UGV2to1Ack == "Null"
                 self.nextStateNumber = 0b1
             else:
                 self.nextStateNumber = self.currentStateNumber
@@ -302,7 +327,9 @@ class UGV1Main(Node):
             self.state = "Waiting"
             self.stateDescription = "Received policy and content"
             UGV1to2Ack = "Yes"
+            self.UGV2to1Ack = "Ack"
             if (self.UGV2to1Ack == "Ack"):
+                self.UGV2to1Ack = "Null"
                 self.nextStateNumber = 0b00101
             elif (self.CommsTimeoutUGV == 1):
                 self.nextStateNumber = 0b01110
@@ -312,7 +339,7 @@ class UGV1Main(Node):
             #Description = "Moving"
             #UGV1to2Ack = "Ack"
             #Transition to 00110:
-                #UGV arrives at waypoint
+                #UGV arrives at wayPose
             #Transition to 01111:
                 #UGV1Jump = 1
 
@@ -320,8 +347,10 @@ class UGV1Main(Node):
             self.state = "Transit"
             self.stateDescription = "Moving"
             UGV1to2Ack = "Ack"
-            Atwaypoint = 1 #stand in variable for transit
-            if (Atwaypoint == 1):
+            self.publishMoveOrder.publish(self.Pose_msg)
+            time.sleep(10)
+            AtwayPose = 1 #stand in variable for transit
+            if (AtwayPose == 1):
                 self.nextStateNumber = 0b00110
             if (self.UGV1Jump == 1):
                 self.nextStateNumber = 0b01111
@@ -336,7 +365,7 @@ class UGV1Main(Node):
         elif (self.currentStateNumber == 0b00110):
             self.state = "Attending"
             self.stateDescription = "Reporting LED Intensity"
-            sleep(0.1) # sleep for 100 ms
+            time.sleep(0.1) # sleep for 100 ms
             self.nextStateNumber = 0b00111
 
             
@@ -354,7 +383,7 @@ class UGV1Main(Node):
         elif (self.currentStateNumber == 0b00111):
             self.state = "Attending"
             self.stateDescription = "Recieving LED Intensity"
-            
+            self.publishMoveOrder.publish(self.Pose_msg) #republishing pose
             #Determine the higher severity
             HighestSeverity = 1 #either 0,1,2
 
@@ -407,7 +436,10 @@ class UGV1Main(Node):
         elif (self.currentStateNumber == 0b01010):
             self.state = "Transit"
             self.stateDescription = "Return to centre"
-            self.nextStateNumber = 0b0000
+            self.Pose_msg = self.z0
+            self.publishMoveOrder.publish(self.Pose_msg)           
+            time.sleep(30)
+            self.nextStateNumber = 0b000000
 
         #01100
             #State = "Attending"
