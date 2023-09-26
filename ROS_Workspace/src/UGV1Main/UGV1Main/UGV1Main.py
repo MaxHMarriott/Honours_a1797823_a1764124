@@ -54,6 +54,7 @@ class UGV1Main(Node):
         self.UGV2to1Ack = 0b1
         self.UGV1Jump = 0b0
         self.GO = 0b1
+        self.UGVCount = 0b0
 
         #Locations:
 
@@ -103,8 +104,9 @@ class UGV1Main(Node):
         return self.future.result()
 
     def UGVResponse(self, request, response):
-        response.ack = "Yes"
+        response.ack = "Ack"
         print(request)
+        self.UGVCount = self.UGVCount+1
         return response
 
     def LED_message(self,data):
@@ -196,6 +198,11 @@ class UGV1Main(Node):
         #This state = next state
 
         self.currentStateNumber = self.nextStateNumber
+        if(self.UGVCount > 0):  
+            self.UGVCount = self.UGVCount - 1
+            UGV1to2Ack = 1
+        else:
+            UGV1to2Ack = 0
 
         #00000
             #state = "Idle"

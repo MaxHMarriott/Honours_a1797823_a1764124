@@ -54,6 +54,7 @@ class UGV2Main(Node):
         self.UGV2to1Ack = 0b1
         self.UGV2Jump = 0b0
         self.GO = 0b1
+        self.UGVCount = 0b0
 
         #Locations:
 
@@ -88,6 +89,7 @@ class UGV2Main(Node):
         self.UGV2Ack = self.create_service(Policy, '/UGV2Ack', self.UGVResponse)
 
         self.cli = self.create_client(Policy, '/UGV1Ack')
+
         while not self.cli.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('/UGVAck1'+' service not available, waiting again...')
         self.req = Policy.Request()
@@ -96,6 +98,7 @@ class UGV2Main(Node):
         self.req.location = a
         self.req.eta = b
         self.future = self.cli.call_async(self.req)
+        self.UGVCount = self.UGVCount+1
         #rclpy.spin_until_future_complete(self, self.future)
         return self.future.result()
 
@@ -155,6 +158,7 @@ class UGV2Main(Node):
         float_msg = 1.1
 
         self.send_request(point_msg, float(float_msg))
+        self.publishMoveOrder.publish(order)
 
         self.StateMachine()
      
@@ -194,6 +198,12 @@ class UGV2Main(Node):
         #This state = next state
 
         self.currentStateNumber = self.nextStateNumber
+        if(self.UGVCount > 0):  
+            self.UGVCount = self.UGVCount - 1
+            UGV1to2Ack = 1
+        else:
+            UGV1to2Ack = 0
+
 
         #00000
             #state = "Idle"
