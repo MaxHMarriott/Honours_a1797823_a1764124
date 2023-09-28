@@ -41,9 +41,11 @@ class UGV1Main(Node):
         self.state_publisher = self.create_publisher(String,"/UGV1State",10)
         self.GO_subscriber = self.create_subscription(Int16,'/GO',self.GO_message, qos_profile_sensor_data)        
         self.LEDLocationsTopic = self.create_subscription(LEDLocationsMsg,'/LEDLocations',self.LED_message, qos_profile_sensor_data)
+        self.moveOrderSubscription = self.create_subscription(Pose,"/poseOrder1",self.UGV2PoseOrder_message, qos_profile_sensor_data) #fetches its friend's location
         self.subscription = self.create_subscription(Int16MultiArray,"/UGV1Detections",self.detections_message, qos_profile_sensor_data)
+        self.reachedGoalSubscription = self.create_subscription(Int16,"/reaching_goal0",self.reaching_goal, qos_profile_sensor_data)
         self.FireSeverity= FireSeverityMsg()
-        self.timer_period = 0.5
+        self.timer_period = 2
         self.orderCount = 0 #for testing purposes
         self.i = 0
         #EXTERNAL INPUTS FOR STATE MACHINE
@@ -60,22 +62,25 @@ class UGV1Main(Node):
         self.UGVCount = 0b0
         self.UGV2to1Ack = "Null"
         self.stateDescription = "Idle"
+        self.Z1Intensity = 3
+        self.Z2Intensity = 2
+        self.atWayPose = 0
 
         #Locations:
 
         self.z0=Pose()
-        self.z0.position.x = -0.29
-        self.z0.position.y = -0.135
+        self.z0.position.x = 0.3
+        self.z0.position.y = 0.0
         self.z0.position.z = 0.0
 
         self.z1=Pose()
-        self.z1.position.x = -0.815
-        self.z1.position.y = -0.43
+        self.z1.position.x = -0.765
+        self.z1.position.y = 0.45
         self.z1.position.z = 0.0
 
         self.z2=Pose()
-        self.z2.position.x = -0.815
-        self.z2.position.y = 0.22
+        self.z2.position.x = -0.765
+        self.z2.position.y = -0.88
         self.z2.position.z = 0.0
 
         self.z3=Pose()
@@ -87,6 +92,9 @@ class UGV1Main(Node):
         self.z4.position.x = 1.0
         self.z4.position.y = 2.0
         self.z4.position.z = 0.0
+
+        self.z1pose = self.z0
+        self.z2pose = self.z0
 
         #StateMachine
         self.timer = self.create_timer(self.timer_period,self.timer_callback)
@@ -102,6 +110,14 @@ class UGV1Main(Node):
 
     def GO_message(self,data):
         self.GO = data.data
+
+    def UGV2PoseOrder_message(self,data):
+        if (self.z1pose != self.z2pose):
+            self.z2pose = data
+
+    def reaching_goal(self,data):
+        self.atWayPose = data.data
+
 
     def send_request(self, a, b):
         self.req.location = a
@@ -226,6 +242,7 @@ class UGV1Main(Node):
             self.state = "Idle"
             self.stateDescription = "Idle"
             self.Pose_msg = self.z0
+            self.z1pose = self.Pose_msg
             self.publishMoveOrder.publish(self.Pose_msg)
             if ((self.LEDLocationsisled1 == 0b1) or (self.CommsTimeoutUAV == 0b1)):
                 self.nextStateNumber = 0b01
@@ -296,6 +313,7 @@ class UGV1Main(Node):
             #keep sending policy
             self.Pose_msg = Pose()
             self.Pose_msg = self.z1
+            self.z1pose = self.Pose_msg
             float_msg = 1.0 #eta
             self.send_request(self.Pose_msg, float(float_msg))
 
@@ -348,9 +366,9 @@ class UGV1Main(Node):
             self.stateDescription = "Moving"
             UGV1to2Ack = "Ack"
             self.publishMoveOrder.publish(self.Pose_msg)
-            time.sleep(10)
-            AtwayPose = 1 #stand in variable for transit
-            if (AtwayPose == 1):
+            #time.sleep(10)
+            #stand in variable for transit
+            if (self.atWayPose == 1):
                 self.nextStateNumber = 0b00110
             if (self.UGV1Jump == 1):
                 self.nextStateNumber = 0b01111
@@ -387,10 +405,15 @@ class UGV1Main(Node):
             #Determine the higher severity
             HighestSeverity = 1 #either 0,1,2
 
-            if (HighestSeverity == 2):
+            if (self.Z2Intensity > self.Z1Intensity):
                 self.nextStateNumber = 0b01000
+                self.Pose_msg = self.z2pose
+                self.publishMoveOrder.publish(self.Pose_msg)
             else:
                 self.nextStateNumber = 0b01001
+                self.Pose_msg = self.z1pose
+                self.publishMoveOrder.publish(self.Pose_msg)
+                
             
             if (self.GO == 0):
                 self.nextStateNumber = 0b01010
@@ -405,10 +428,10 @@ class UGV1Main(Node):
                 #Fire is extinguished
         elif (self.currentStateNumber == 0b01000):
             self.state = "Transit"
-            self.stateDescription - "Going to other fire"
+            self.stateDescription = "Going to other fire"
             if (self.GO == 0):
                 self.nextStateNumber = 0b01010
-            if (self.FireSeverityIsDetected == 0):
+            if (self.atWayPose == 1):
                 self.nextStateNumber = 0b01001
         
         #01001
@@ -438,8 +461,9 @@ class UGV1Main(Node):
             self.stateDescription = "Return to centre"
             self.Pose_msg = self.z0
             self.publishMoveOrder.publish(self.Pose_msg)           
-            time.sleep(30)
-            self.nextStateNumber = 0b000000
+            #time.sleep(30)
+            if (self.atWayPose == 1):
+                self.nextStateNumber = 0b000000
 
         #01100
             #State = "Attending"

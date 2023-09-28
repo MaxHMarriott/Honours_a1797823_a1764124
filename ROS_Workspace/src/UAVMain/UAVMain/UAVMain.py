@@ -47,6 +47,10 @@ class UAVMain(Node):
         self.timer_period = 60
         self.i = 0
         self.timer = self.create_timer(self.timer_period,self.timer_callback)
+
+        serial_port = '/dev/serial/by-id/usb-1a86_USB2.0-Serial-if00-port0'
+        baud_rate = 9600
+        self.ser = serial.Serial(serial_port, baud_rate,timeout=1)
         self.timer = self.create_timer(self.timer_period,self.set_scenario) #timer for determining scenario
         try:
             self.ser.write(f'{self.sOut}\n'.encode('utf-8'))
@@ -77,9 +81,6 @@ class UAVMain(Node):
         print("LEDs:")
         print(self.LEDState)
         #self.LED2.data = self.LEDState[3:6]   
-        serial_port = 'COM4'
-        baud_rate = 9600
-        self.ser = serial.Serial(serial_port, baud_rate,timeout=1)
 
     #This function writes a frame to the camerapublisher topic every time it runs    
     def timer_callback(self):
@@ -91,16 +92,15 @@ class UAVMain(Node):
 
     def set_scenario(self):  
         self.sOut = self.sOut + 1
-        try:
-            self.ser.write(f'{self.sOut}\n'.encode('utf-8'))
-            data = self.ser.readline().decode('utf-8').strip()
-            time.sleep(0.2)
-        except:
-            print("COMMS ERROR") 
+ #       try:
+        self.ser.write(f'{self.sOut}\n'.encode('utf-8'))
+        data = self.ser.readline().decode('utf-8').strip()
+        time.sleep(0.2)
+#        except:
+ #           print("COMMS ERROR") 
         if (self.sOut >= 5):
             self.sOut = 0
-
-        
+       
     def determineLEDs(self):
 
         #location legend:
