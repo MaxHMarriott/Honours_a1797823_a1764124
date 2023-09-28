@@ -93,8 +93,8 @@ class UGV1Main(Node):
         self.z4.position.y = 2.0
         self.z4.position.z = 0.0
 
-        self.z1pose = self.z0
-        self.z2pose = self.z0
+        self.z1pose = self.z0 #replace with detected LEDDetections.led1
+        self.z2pose = self.z0 #replace with detected LEDDetections.led2
 
         #StateMachine
         self.timer = self.create_timer(self.timer_period,self.timer_callback)
@@ -118,7 +118,6 @@ class UGV1Main(Node):
     def reaching_goal(self,data):
         self.atWayPose = data.data
 
-
     def send_request(self, a, b):
         self.req.location = a
         self.req.eta = b
@@ -137,6 +136,8 @@ class UGV1Main(Node):
     def LED_message(self,data):
         self.LEDLocations = data
         print("Recieved LED Detections are:")
+        self.LEDLocationsisled1 = data.isled1
+        #determine LED Location from here
         print(self.LEDLocations)
 
     def detections_message(self,data):
@@ -147,7 +148,6 @@ class UGV1Main(Node):
         #self.LEDLocations.isled1 = self.LEDState[0]
         self.FireSeverity.fire_x = self.x
         self.FireSeverity.fire_y = self.y
-
     #This function writes a frame to the camerapublisher topic every time it runs, this will be absorbed by the state machine    
     def timer_callback(self):
         self.get_logger().info('Publishing Severity locations, state and movement order')
@@ -242,7 +242,7 @@ class UGV1Main(Node):
             self.state = "Idle"
             self.stateDescription = "Idle"
             self.Pose_msg = self.z0
-            self.z1pose = self.Pose_msg
+            self.z1pose = self.Pose_msg #replace with detected LEDDetections.led1
             self.publishMoveOrder.publish(self.Pose_msg)
             if ((self.LEDLocationsisled1 == 0b1) or (self.CommsTimeoutUAV == 0b1)):
                 self.nextStateNumber = 0b01
@@ -313,7 +313,7 @@ class UGV1Main(Node):
             #keep sending policy
             self.Pose_msg = Pose()
             self.Pose_msg = self.z1
-            self.z1pose = self.Pose_msg
+            self.z1pose = self.Pose_msg #replace with detected LEDDetections.led1
             float_msg = 1.0 #eta
             self.send_request(self.Pose_msg, float(float_msg))
 
@@ -411,7 +411,7 @@ class UGV1Main(Node):
                 self.publishMoveOrder.publish(self.Pose_msg)
             else:
                 self.nextStateNumber = 0b01001
-                self.Pose_msg = self.z1pose
+                self.Pose_msg = self.z1pose #replace with detected LEDDetections.led1
                 self.publishMoveOrder.publish(self.Pose_msg)
                 
             

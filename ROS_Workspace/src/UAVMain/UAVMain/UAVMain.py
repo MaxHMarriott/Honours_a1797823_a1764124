@@ -2,6 +2,7 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
 from std_msgs.msg import Float32MultiArray
+from std_msgs.msg import Int16
 from cv_bridge import CvBridge
 from sensor_msgs.msg import Image
 from geometry_msgs.msg import Point
@@ -48,16 +49,16 @@ class UAVMain(Node):
         self.i = 0
         self.timer = self.create_timer(self.timer_period,self.timer_callback)
 
-        serial_port = '/dev/serial/by-id/usb-1a86_USB2.0-Serial-if00-port0'
-        baud_rate = 9600
-        self.ser = serial.Serial(serial_port, baud_rate,timeout=1)
-        self.timer = self.create_timer(self.timer_period,self.set_scenario) #timer for determining scenario
-        try:
-            self.ser.write(f'{self.sOut}\n'.encode('utf-8'))
-            data = self.ser.readline().decode('utf-8').strip()
-            time.sleep(0.2)
-        except:
-            print("COMMS ERROR")
+        #serial_port = '/dev/serial/by-id/usb-1a86_USB2.0-Serial-if00-port0'
+        #baud_rate = 9600
+        #self.ser = serial.Serial(serial_port, baud_rate,timeout=1)
+        #self.timer = self.create_timer(self.timer_period,self.set_scenario) #timer for determining scenario
+        #try:
+       #     self.ser.write(f'{self.sOut}\n'.encode('utf-8'))
+        #    data = self.ser.readline().decode('utf-8').strip()
+       #     time.sleep(0.2)
+       # except:
+       #     print("COMMS ERROR")
 
     def subscribe_message_UGV1State(self,data):
         print("State of UGV1 Rover is: ")
@@ -72,11 +73,9 @@ class UAVMain(Node):
         self.LEDLocations.isled2 = bool(0)
         self.LEDState = self.determineLEDs()
         #self.LEDLocations.isled1 = self.LEDState[0]
-        self.LEDLocations.led1x = self.LEDState[1]
-        self.LEDLocations.led1y = self.LEDState[2]
+        self.LEDLocations.led1 = self.LEDState[1]
         #self.LEDLocations.isled2 = (self.LEDState[3])
-        self.LEDLocations.led2x = self.LEDState[4]
-        self.LEDLocations.led2y = self.LEDState[5]
+        self.LEDLocations.led2 = self.LEDState[3]
         #self.LED1.data = self.LEDState[0:3]
         print("LEDs:")
         print(self.LEDState)
@@ -129,13 +128,13 @@ class UAVMain(Node):
         if threshold <= lst[0][1]:
             self.LEDLocations.isled1 = bool(1)
             if lst[0][0] == "Q1":
-                determinedLEDS[0:2] = [1.0,0.5,1.0]
+                determinedLEDS[0:1] = [1,1]
             if lst[0][0] == "Q2":
-                determinedLEDS[0:2] = [1.0,-0.5,1.0]
+                determinedLEDS[0:1] = [1,2]
             if lst[0][0] == "Q3":
-                determinedLEDS[0:2] = [1.0,-0.5,-1.0]
+                determinedLEDS[0:1] = [1,3]
             if lst[0][0] == "Q4":
-                determinedLEDS[0:2] = [1.0,0.5,-1.0]
+                determinedLEDS[0:1] = [1,4]
         else:
             return determinedLEDS
 
@@ -143,13 +142,13 @@ class UAVMain(Node):
         if threshold <= lst[1][1]:
             self.LEDLocations.isled2 = bool(1)
             if lst[1][0] == "Q1":
-                determinedLEDS[3:5] = [1.0,0.5,1.0]
+                determinedLEDS[2:3] = [1,1]
             if lst[1][0] == "Q2":
-                determinedLEDS[3:5] = [1.0,-0.5,1.0]
+                determinedLEDS[2:3] = [1,2]
             if lst[1][0] == "Q3":
-                determinedLEDS[3:5] = [1.0,-0.5,-1.0]
+                determinedLEDS[2:3] = [1,3]
             if lst[1][0] == "Q4":
-                determinedLEDS[3:5] = [1.0,0.5,-1.0]
+                determinedLEDS[2:3] = [1,4]
         else:
             return determinedLEDS
 
