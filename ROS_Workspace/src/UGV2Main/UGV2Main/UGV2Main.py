@@ -33,7 +33,7 @@ class UGV2Main(Node):
         #Idle = Is stationary and not completing a given task
         #Waiting = Waiting for action of other robots
         #DND = Will not respond to other robots.
-        Publisher_name = '/UGV2FireSeverity'
+        Publisher_name = '/Z2FireSeverity'
         
         self.x = 0.0; #this will be the x coodinate of the agent retrieved from the navigation node.
         self.y = 0.0; #this will be the y coodinate of the agent retrieved from the navigation node.
@@ -46,6 +46,7 @@ class UGV2Main(Node):
         self.moveOrderSubscription = self.create_subscription(Pose,"/poseOrder0",self.UGV1PoseOrder_message, qos_profile_sensor_data) #fetches its friend's location
         self.subscription = self.create_subscription(Int16MultiArray,"/UGV2Detections",self.detections_message, qos_profile_sensor_data)
         self.reachedGoalSubscription = self.create_subscription(Int16,"/reaching_goal1",self.reaching_goal, qos_profile_sensor_data)
+        self.subscription = self.create_subscription(FireSeverityMsg,"/Z1FireSeverity",self.Z1_detections_message, qos_profile_sensor_data)
         self.FireSeverity= FireSeverityMsg()
         self.timer_period = 2
         self.orderCount = 0 #for testing purposes
@@ -65,8 +66,8 @@ class UGV2Main(Node):
         self.UGVCount = 0b0
         self.UGV1to2Ack = "Null"
         self.stateDescription = "Idle"
-        self.Z1Intensity = 3
-        self.Z2Intensity = 2
+        self.Z1Intensity = 2
+        self.Z2Intensity = 3
 
         #Locations:
 
@@ -124,6 +125,17 @@ class UGV2Main(Node):
         if (self.z1pose != self.z2pose):
             self.z1pose = data
 
+    def Z1_detections_message(self,data):
+        Z2Sev = data.severity
+        if (Z2Sev == "Low"):
+            self.Z2Intensity = 1
+        elif (Z2Sev == "Medium"):
+            self.Z2Intensity = 2
+        elif (Z2Sev == "High"):
+            self.Z2Intensity = 3
+        else:
+            self.Z2Intensity = 0
+
     def UGVResponse(self, request, response):
         response.ack = "Yes"
         self.UGV1to2Ack = "Yes"
@@ -147,8 +159,8 @@ class UGV2Main(Node):
         print("Determining state of LED")
         self.FireSeverity.severity = self.determineSeverity()
         #self.LEDLocations.isled1 = self.LEDState[0]
-        self.FireSeverity.fire_x = self.x
-        self.FireSeverity.fire_y = self.y
+        self.FireSeverity.fire_x = self.z1.position.x
+        self.FireSeverity.fire_y = self.z1.position.x
     #This function writes a frame to the camerapublisher topic every time it runs, this will be absorbed by the state machine    
     def timer_callback(self):
         self.get_logger().info('Publishing Severity locations, state and movement order')
@@ -209,6 +221,7 @@ class UGV2Main(Node):
             if lst[0][0] == "Medium":
                 severityString = "Medium"
         else:
+            severityString = "None"
             return severityString
 
         return severityString
@@ -218,7 +231,6 @@ class UGV2Main(Node):
         #create local counter tUAV
 
         #outputs:
-        self.publisher.publish(self.FireSeverity)
         state_topic = String()
         state_topic.data = self.state
         self.state_publisher.publish(state_topic)
@@ -244,6 +256,8 @@ class UGV2Main(Node):
             a = Int16()
             a.data = 1
             self.GO_publisher.publish(a) #debug generator
+            #self.Z1Intensity = 0 commented out due to no LED
+            #self.Z2Intensity = 0
 
             self.state = "Idle"
             self.stateDescription = "Idle"
@@ -388,6 +402,9 @@ class UGV2Main(Node):
         elif (self.currentStateNumber == 0b00110):
             self.state = "Attending"
             self.stateDescription = "Reporting LED Intensity"
+            #if (self.Pose_msg == self.z2pose):
+                #self.publisher.publish(self.FireSeverity)  #commented out due to not having camera runnings
+
             time.sleep(0.1) # sleep for 100 ms
             self.nextStateNumber = 0b00111
 

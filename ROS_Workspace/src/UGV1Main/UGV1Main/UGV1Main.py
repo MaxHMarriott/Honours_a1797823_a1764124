@@ -32,7 +32,7 @@ class UGV1Main(Node):
         #Idle = Is stationary and not completing a given task
         #Waiting = Waiting for action of other robots
         #DND = Will not respond to other robots.
-        Publisher_name = '/UGV1FireSeverity'
+        Publisher_name = '/Z1FireSeverity'
         
         self.x = 0.0; #this will be the x coodinate of the agent retrieved from the navigation node.
         self.y = 0.0; #this will be the y coodinate of the agent retrieved from the navigation node.
@@ -43,6 +43,7 @@ class UGV1Main(Node):
         self.LEDLocationsTopic = self.create_subscription(LEDLocationsMsg,'/LEDLocations',self.LED_message, qos_profile_sensor_data)
         self.moveOrderSubscription = self.create_subscription(Pose,"/poseOrder1",self.UGV2PoseOrder_message, qos_profile_sensor_data) #fetches its friend's location
         self.subscription = self.create_subscription(Int16MultiArray,"/UGV1Detections",self.detections_message, qos_profile_sensor_data)
+        self.subscription = self.create_subscription(FireSeverityMsg,"/Z2FireSeverity",self.Z2_detections_message, qos_profile_sensor_data)
         self.reachedGoalSubscription = self.create_subscription(Int16,"/reaching_goal0",self.reaching_goal, qos_profile_sensor_data)
         self.FireSeverity= FireSeverityMsg()
         self.timer_period = 2
@@ -62,8 +63,8 @@ class UGV1Main(Node):
         self.UGVCount = 0b0
         self.UGV2to1Ack = "Null"
         self.stateDescription = "Idle"
-        self.Z1Intensity = 3
-        self.Z2Intensity = 2
+        self.Z1Intensity = 2
+        self.Z2Intensity = 3
         self.atWayPose = 0
 
         #Locations:
@@ -115,6 +116,17 @@ class UGV1Main(Node):
         if (self.z1pose != self.z2pose):
             self.z2pose = data
 
+    def Z2_detections_message(self,data):
+        Z2Sev = data.severity
+        if (Z2Sev == "Low"):
+            self.Z2Intensity = 1
+        elif (Z2Sev == "Medium"):
+            self.Z2Intensity = 2
+        elif (Z2Sev == "High"):
+            self.Z2Intensity = 3
+        else:
+            self.Z2Intensity = 0
+
     def reaching_goal(self,data):
         self.atWayPose = data.data
 
@@ -145,9 +157,8 @@ class UGV1Main(Node):
         print(data)
         print("Determining state of LED")
         self.FireSeverity.severity = self.determineSeverity()
-        #self.LEDLocations.isled1 = self.LEDState[0]
-        self.FireSeverity.fire_x = self.x
-        self.FireSeverity.fire_y = self.y
+        self.FireSeverity.fire_x = self.z1.position.x
+        self.FireSeverity.fire_y = self.z1.position.y
     #This function writes a frame to the camerapublisher topic every time it runs, this will be absorbed by the state machine    
     def timer_callback(self):
         self.get_logger().info('Publishing Severity locations, state and movement order')
@@ -208,6 +219,7 @@ class UGV1Main(Node):
             if lst[0][0] == "Medium":
                 severityString = "Medium"
         else:
+            severityString = "None"
             return severityString
 
         return severityString
@@ -217,11 +229,12 @@ class UGV1Main(Node):
         #create local counter tUAV
 
         #outputs:
-        self.publisher.publish(self.FireSeverity)
         state_topic = String()
         state_topic.data = self.state
         self.state_publisher.publish(state_topic)
         self.currentStateNumber = self.nextStateNumber
+        #self.Z1Intensity = 0 commented out due to no LED
+        #self.Z2Intensity = 0
         print(self.stateDescription)
 
         #counters
@@ -384,6 +397,8 @@ class UGV1Main(Node):
             self.state = "Attending"
             self.stateDescription = "Reporting LED Intensity"
             time.sleep(0.1) # sleep for 100 ms
+            #if (self.Pose_msg == self.z1pose):
+                #self.publisher.publish(self.FireSeverity)  #commented out due to not having camera running
             self.nextStateNumber = 0b00111
 
             
@@ -406,6 +421,8 @@ class UGV1Main(Node):
             HighestSeverity = 1 #either 0,1,2
 
             if (self.Z2Intensity > self.Z1Intensity):
+                print("Z2 Intensity is: " + str(self.Z2Intensity))
+                print("Z1 Intensity is: " + str(self.Z2Intensity))
                 self.nextStateNumber = 0b01000
                 self.Pose_msg = self.z2pose
                 self.publishMoveOrder.publish(self.Pose_msg)
