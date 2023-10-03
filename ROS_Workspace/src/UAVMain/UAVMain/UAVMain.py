@@ -49,16 +49,16 @@ class UAVMain(Node):
         self.i = 0
         self.timer = self.create_timer(self.timer_period,self.timer_callback)
 
-        #serial_port = '/dev/serial/by-id/usb-1a86_USB2.0-Serial-if00-port0'
-        #baud_rate = 9600
-        #self.ser = serial.Serial(serial_port, baud_rate,timeout=1)
-        #self.timer = self.create_timer(self.timer_period,self.set_scenario) #timer for determining scenario
+        serial_port = '/dev/serial/by-id/usb-1a86_USB2.0-Serial-if00-port0'
+        baud_rate = 9600
+        self.ser = serial.Serial(serial_port, baud_rate,timeout=1)
+        self.timer = self.create_timer(self.timer_period,self.set_scenario) #timer for determining scenario
         #try:
-       #     self.ser.write(f'{self.sOut}\n'.encode('utf-8'))
-        #    data = self.ser.readline().decode('utf-8').strip()
-       #     time.sleep(0.2)
+        self.ser.write(f'{self.sOut}\n'.encode('utf-8'))
+        data = self.ser.readline().decode('utf-8').strip()
+        time.sleep(0.2)
        # except:
-       #     print("COMMS ERROR")
+        print("COMMS ERROR")
 
     def subscribe_message_UGV1State(self,data):
         print("State of UGV1 Rover is: ")
