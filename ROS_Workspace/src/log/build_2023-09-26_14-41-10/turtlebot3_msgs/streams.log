@@ -1,0 +1,16 @@
+[0.052s] Invoking command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_msgs -- -j4 -l4
+[0.157s] [ 12%] Built target turtlebot3_msgs__rosidl_generator_c
+[0.158s] [ 12%] Built target turtlebot3_msgs__cpp
+[0.229s] [ 23%] Built target turtlebot3_msgs__rosidl_typesupport_introspection_c
+[0.229s] [ 45%] Built target turtlebot3_msgs__rosidl_typesupport_c
+[0.230s] [ 46%] Built target turtlebot3_msgs__rosidl_typesupport_cpp
+[0.257s] [ 57%] Built target turtlebot3_msgs__rosidl_typesupport_fastrtps_cpp
+[0.301s] [ 74%] Built target turtlebot3_msgs__rosidl_typesupport_fastrtps_c
+[0.301s] [ 80%] Built target turtlebot3_msgs__rosidl_typesupport_introspection_cpp
+[0.331s] [ 80%] Built target turtlebot3_msgs
+[0.355s] [ 81%] Built target turtlebot3_msgs__py
+[0.397s] [ 91%] Built target turtlebot3_msgs__python
+[0.481s] [ 94%] Built target turtlebot3_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.489s] [ 97%] Built target turtlebot3_msgs__rosidl_typesupport_introspection_c__pyext
+[0.515s] [100%] Built target turtlebot3_msgs__rosidl_typesupport_c__pyext
+[0.536s] Invoked command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_msgs -- -j4 -l4

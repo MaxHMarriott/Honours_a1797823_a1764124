@@ -1,0 +1,25 @@
+[1.646s] Invoking command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/UGV2Main': PYTHONPATH=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV2Main/prefix_override:/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV2Main/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UGV2Main build --build-base /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV2Main/build install --record /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV2Main/install.log --install-scripts $base/lib/UGV2Main --single-version-externally-managed
+[2.156s] running egg_info
+[2.156s] writing ../build/UGV2Main/UGV2Main.egg-info/PKG-INFO
+[2.156s] writing dependency_links to ../build/UGV2Main/UGV2Main.egg-info/dependency_links.txt
+[2.157s] writing entry points to ../build/UGV2Main/UGV2Main.egg-info/entry_points.txt
+[2.157s] writing requirements to ../build/UGV2Main/UGV2Main.egg-info/requires.txt
+[2.157s] writing top-level names to ../build/UGV2Main/UGV2Main.egg-info/top_level.txt
+[2.211s] reading manifest file '../build/UGV2Main/UGV2Main.egg-info/SOURCES.txt'
+[2.212s] writing manifest file '../build/UGV2Main/UGV2Main.egg-info/SOURCES.txt'
+[2.212s] running build
+[2.212s] running build_py
+[2.212s] copying UGV2Main/UGV2Main.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV2Main/build/lib/UGV2Main
+[2.213s] running install
+[2.214s] running install_lib
+[2.215s] copying /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV2Main/build/lib/UGV2Main/UGV2Main.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV2Main/lib/python3.8/site-packages/UGV2Main
+[2.216s] byte-compiling /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV2Main/lib/python3.8/site-packages/UGV2Main/UGV2Main.py to UGV2Main.cpython-38.pyc
+[2.219s] running install_data
+[2.220s] copying package.xml -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV2Main/share/UGV2Main
+[2.220s] running install_egg_info
+[2.232s] removing '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV2Main/lib/python3.8/site-packages/UGV2Main-0.0.0-py3.8.egg-info' (and everything under it)
+[2.233s] Copying ../build/UGV2Main/UGV2Main.egg-info to /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV2Main/lib/python3.8/site-packages/UGV2Main-0.0.0-py3.8.egg-info
+[2.234s] running install_scripts
+[2.258s] Installing UGV2Main script to /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV2Main/lib/UGV2Main
+[2.259s] writing list of installed files to '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV2Main/install.log'
+[2.295s] Invoked command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/UGV2Main' returned '0': PYTHONPATH=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV2Main/prefix_override:/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV2Main/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UGV2Main build --build-base /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV2Main/build install --record /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV2Main/install.log --install-scripts $base/lib/UGV2Main --single-version-externally-managed

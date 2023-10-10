@@ -1,0 +1,56 @@
+[0.022s] Invoking command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/tb3_1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/Multi_agent_nav/tb3_1 -DCMAKE_INSTALL_PREFIX=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/tb3_1
+[0.118s] -- The C compiler identification is GNU 9.4.0
+[0.185s] -- The CXX compiler identification is GNU 9.4.0
+[0.192s] -- Check for working C compiler: /usr/bin/cc
+[0.284s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.285s] -- Detecting C compiler ABI info
+[0.367s] -- Detecting C compiler ABI info - done
+[0.382s] -- Detecting C compile features
+[0.382s] -- Detecting C compile features - done
+[0.388s] -- Check for working CXX compiler: /usr/bin/c++
+[0.482s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.484s] -- Detecting CXX compiler ABI info
+[0.581s] -- Detecting CXX compiler ABI info - done
+[0.597s] -- Detecting CXX compile features
+[0.598s] -- Detecting CXX compile features - done
+[0.601s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.635s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.636s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.936s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.039s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.047s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.047s] -- Added test 'lint_cmake' to check CMake code style
+[1.047s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.047s] -- Added test 'xmllint' to check XML markup files
+[1.053s] -- Configuring done
+[1.053s] -- Generating done
+[1.054s] -- Build files have been written to: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/tb3_1
+[1.070s] Invoked command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/tb3_1' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/Multi_agent_nav/tb3_1 -DCMAKE_INSTALL_PREFIX=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/tb3_1
+[1.071s] Invoking command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/tb3_1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/tb3_1 -- -j4 -l4
+[1.126s] Invoked command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/tb3_1' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/tb3_1 -- -j4 -l4
+[1.187s] Invoking command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/tb3_1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/tb3_1
+[1.198s] -- Install configuration: ""
+[1.198s] -- Installing: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/tb3_1/share/tb3_1//launch
+[1.198s] -- Installing: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/tb3_1/share/tb3_1//launch/tb3_1_bringup.launch.py
+[1.198s] -- Installing: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/tb3_1/share/tb3_1//launch/ld08.launch.py
+[1.198s] -- Installing: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/tb3_1/share/tb3_1//launch/turtlebot3_state_publisher.launch.py
+[1.198s] -- Installing: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/tb3_1/share/tb3_1//launch/hlds_laser.launch.py
+[1.199s] -- Installing: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/tb3_1/share/tb3_1//param
+[1.199s] -- Installing: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/tb3_1/share/tb3_1//param/tb3_1_params_file.yaml
+[1.199s] -- Installing: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/tb3_1/share/tb3_1//param/burger.yaml
+[1.201s] -- Installing: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/tb3_1/share/ament_index/resource_index/package_run_dependencies/tb3_1
+[1.201s] -- Installing: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/tb3_1/share/ament_index/resource_index/parent_prefix_path/tb3_1
+[1.201s] -- Installing: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/tb3_1/share/tb3_1/environment/ament_prefix_path.sh
+[1.201s] -- Installing: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/tb3_1/share/tb3_1/environment/ament_prefix_path.dsv
+[1.201s] -- Installing: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/tb3_1/share/tb3_1/environment/path.sh
+[1.202s] -- Installing: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/tb3_1/share/tb3_1/environment/path.dsv
+[1.202s] -- Installing: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/tb3_1/share/tb3_1/local_setup.bash
+[1.202s] -- Installing: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/tb3_1/share/tb3_1/local_setup.sh
+[1.202s] -- Installing: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/tb3_1/share/tb3_1/local_setup.zsh
+[1.202s] -- Installing: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/tb3_1/share/tb3_1/local_setup.dsv
+[1.202s] -- Installing: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/tb3_1/share/tb3_1/package.dsv
+[1.202s] -- Installing: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/tb3_1/share/ament_index/resource_index/packages/tb3_1
+[1.202s] -- Installing: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/tb3_1/share/tb3_1/cmake/tb3_1Config.cmake
+[1.203s] -- Installing: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/tb3_1/share/tb3_1/cmake/tb3_1Config-version.cmake
+[1.203s] -- Installing: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/tb3_1/share/tb3_1/package.xml
+[1.208s] Invoked command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/tb3_1' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/tb3_1

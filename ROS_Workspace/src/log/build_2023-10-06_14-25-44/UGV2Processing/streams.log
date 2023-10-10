@@ -1,0 +1,24 @@
+[1.299s] Invoking command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/UGV2Processing': PYTHONPATH=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV2Processing/prefix_override:/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV2Processing/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UGV2Processing build --build-base /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV2Processing/build install --record /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV2Processing/install.log --install-scripts $base/lib/UGV2Processing --single-version-externally-managed
+[1.734s] running egg_info
+[1.736s] writing ../build/UGV2Processing/UGV2Processing.egg-info/PKG-INFO
+[1.737s] writing dependency_links to ../build/UGV2Processing/UGV2Processing.egg-info/dependency_links.txt
+[1.737s] writing entry points to ../build/UGV2Processing/UGV2Processing.egg-info/entry_points.txt
+[1.738s] writing requirements to ../build/UGV2Processing/UGV2Processing.egg-info/requires.txt
+[1.738s] writing top-level names to ../build/UGV2Processing/UGV2Processing.egg-info/top_level.txt
+[1.793s] reading manifest file '../build/UGV2Processing/UGV2Processing.egg-info/SOURCES.txt'
+[1.794s] writing manifest file '../build/UGV2Processing/UGV2Processing.egg-info/SOURCES.txt'
+[1.794s] running build
+[1.794s] running build_py
+[1.795s] copying UGV2Processing/UGV2Processing.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV2Processing/build/lib/UGV2Processing
+[1.795s] running install
+[1.797s] running install_lib
+[1.798s] copying /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV2Processing/build/lib/UGV2Processing/UGV2Processing.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV2Processing/lib/python3.8/site-packages/UGV2Processing
+[1.799s] byte-compiling /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV2Processing/lib/python3.8/site-packages/UGV2Processing/UGV2Processing.py to UGV2Processing.cpython-38.pyc
+[1.802s] running install_data
+[1.803s] running install_egg_info
+[1.805s] removing '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV2Processing/lib/python3.8/site-packages/UGV2Processing-0.0.0-py3.8.egg-info' (and everything under it)
+[1.806s] Copying ../build/UGV2Processing/UGV2Processing.egg-info to /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV2Processing/lib/python3.8/site-packages/UGV2Processing-0.0.0-py3.8.egg-info
+[1.807s] running install_scripts
+[1.831s] Installing UGV2Processing script to /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV2Processing/lib/UGV2Processing
+[1.832s] writing list of installed files to '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV2Processing/install.log'
+[1.941s] Invoked command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/UGV2Processing' returned '0': PYTHONPATH=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV2Processing/prefix_override:/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV2Processing/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UGV2Processing build --build-base /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV2Processing/build install --record /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV2Processing/install.log --install-scripts $base/lib/UGV2Processing --single-version-externally-managed

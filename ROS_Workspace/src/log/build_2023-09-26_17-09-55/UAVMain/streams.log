@@ -1,0 +1,29 @@
+[0.962s] Invoking command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/UAVMain': PYTHONPATH=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVMain/prefix_override:/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UAVMain build --build-base /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVMain/build install --record /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVMain/install.log --install-scripts $base/lib/UAVMain --single-version-externally-managed
+[1.292s] running egg_info
+[1.293s] writing ../build/UAVMain/UAVMain.egg-info/PKG-INFO
+[1.294s] writing dependency_links to ../build/UAVMain/UAVMain.egg-info/dependency_links.txt
+[1.294s] writing entry points to ../build/UAVMain/UAVMain.egg-info/entry_points.txt
+[1.294s] writing requirements to ../build/UAVMain/UAVMain.egg-info/requires.txt
+[1.295s] writing top-level names to ../build/UAVMain/UAVMain.egg-info/top_level.txt
+[1.347s] reading manifest file '../build/UAVMain/UAVMain.egg-info/SOURCES.txt'
+[1.348s] writing manifest file '../build/UAVMain/UAVMain.egg-info/SOURCES.txt'
+[1.348s] running build
+[1.348s] running build_py
+[1.348s] copying UAVMain/UAVMain.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVMain/build/lib/UAVMain
+[1.348s] running install
+[1.349s] running install_lib
+[1.351s] copying /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVMain/build/lib/UAVMain/UAVMain.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/lib/python3.8/site-packages/UAVMain
+[1.351s] byte-compiling /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/lib/python3.8/site-packages/UAVMain/UAVMain.py to UAVMain.cpython-38.pyc
+[1.354s]   File "/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/lib/python3.8/site-packages/UAVMain/UAVMain.py", line 57
+[1.354s]     continue
+[1.354s]     ^
+[1.354s] SyntaxError: 'continue' not properly in loop
+[1.354s] 
+[1.354s] running install_data
+[1.356s] running install_egg_info
+[1.356s] removing '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/lib/python3.8/site-packages/UAVMain-0.0.0-py3.8.egg-info' (and everything under it)
+[1.357s] Copying ../build/UAVMain/UAVMain.egg-info to /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/lib/python3.8/site-packages/UAVMain-0.0.0-py3.8.egg-info
+[1.358s] running install_scripts
+[1.379s] Installing UAVMain script to /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/lib/UAVMain
+[1.379s] writing list of installed files to '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVMain/install.log'
+[1.408s] Invoked command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/UAVMain' returned '0': PYTHONPATH=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVMain/prefix_override:/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVMain/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UAVMain build --build-base /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVMain/build install --record /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVMain/install.log --install-scripts $base/lib/UAVMain --single-version-externally-managed

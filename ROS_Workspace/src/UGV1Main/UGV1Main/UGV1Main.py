@@ -1,4 +1,5 @@
 import rclpy
+import cv2
 from rclpy.node import Node
 from std_msgs.msg import String
 from std_msgs.msg import Int16MultiArray
@@ -16,7 +17,7 @@ import numpy
 import math
 import time
 from enum import Enum
-import cv2
+
 
 
 class UGV1Main(Node):
@@ -63,8 +64,8 @@ class UGV1Main(Node):
         self.UGVCount = 0b0
         self.UGV2to1Ack = "Null"
         self.stateDescription = "Idle"
-        self.Z1Intensity = 2
-        self.Z2Intensity = 3
+        self.Z1Intensity = 0
+        self.Z2Intensity = 0
         self.atWayPose = 0
 
         #Locations:
@@ -139,6 +140,7 @@ class UGV1Main(Node):
         return self.future.result()
 
     def UGVResponse(self, request, response):
+        
         response.ack = "Yes"
         self.UGV2to1Ack = "Yes"
         #print(request)
@@ -155,10 +157,8 @@ class UGV1Main(Node):
     def detections_message(self,data):
         self.UGVDetections = data.data
         print(data)
-        print("Determining state of LED")
-        self.FireSeverity.severity = self.determineSeverity()
-        self.FireSeverity.fire_x = self.z1.position.x
-        self.FireSeverity.fire_y = self.z1.position.y
+
+
     #This function writes a frame to the camerapublisher topic every time it runs, this will be absorbed by the state machine    
     def timer_callback(self):
         self.get_logger().info('Publishing Severity locations, state and movement order')
@@ -197,15 +197,15 @@ class UGV1Main(Node):
     def determineSeverity(self):
 
         severityString = "Null"
-        threshold = 2500
+        threshold = 150
 
         #returns from Processing node
-        High = self.UGVDetections[0]
+        High = self.UGVDetections[0]*1.5
         Low = self.UGVDetections[1]
-        Medium = self.UGVDetections[2]
+        Medium = self.UGVDetections[2]*2
 
         #now we determine which LED is on:
-        lst = [["High",High],["Low",Medium],["Medium",Medium]]
+        lst = [["High",High],["Low",Low],["Medium",Medium]]
         lst.sort(key=lambda lst:lst[1])
         lst = lst[::-1]
         #print(lst)
@@ -379,9 +379,9 @@ class UGV1Main(Node):
             self.stateDescription = "Moving"
             UGV1to2Ack = "Ack"
             self.publishMoveOrder.publish(self.Pose_msg)
-            #time.sleep(10)
             #stand in variable for transit
             if (self.atWayPose == 1):
+                time.sleep(5)
                 self.nextStateNumber = 0b00110
             if (self.UGV1Jump == 1):
                 self.nextStateNumber = 0b01111
@@ -396,7 +396,21 @@ class UGV1Main(Node):
         elif (self.currentStateNumber == 0b00110):
             self.state = "Attending"
             self.stateDescription = "Reporting LED Intensity"
-            time.sleep(0.1) # sleep for 100 ms
+            if (self.Pose_msg == self.z1pose):
+                Z1Sev= self.determineSeverity()
+                print("====================================")
+                print("Detected Severity as" + str(Z1Sev))   
+                print("====================================")         
+                if (Z1Sev == "Low"):
+                    self.Z1Intensity = 1
+                elif (Z1Sev == "Medium"):
+                    self.Z1Intensity = 2
+                elif (Z1Sev == "High"):
+                    self.Z1Intensity = 3
+                else:
+                    self.Z1Intensity = 0
+                self.FireSeverity.severity = Z1Sev
+                self.publisher.publish(self.FireSeverity)
             #if (self.Pose_msg == self.z1pose):
                 #self.publisher.publish(self.FireSeverity)  #commented out due to not having camera running
             self.nextStateNumber = 0b00111
@@ -420,9 +434,12 @@ class UGV1Main(Node):
             #Determine the higher severity
             HighestSeverity = 1 #either 0,1,2
 
+            print("====================================")
+            print("Z2 Intensity is: " + str(self.Z2Intensity))
+            print("Z1 Intensity is: " + str(self.Z1Intensity))
+            print("====================================")
+
             if (self.Z2Intensity > self.Z1Intensity):
-                print("Z2 Intensity is: " + str(self.Z2Intensity))
-                print("Z1 Intensity is: " + str(self.Z2Intensity))
                 self.nextStateNumber = 0b01000
                 self.Pose_msg = self.z2pose
                 self.publishMoveOrder.publish(self.Pose_msg)

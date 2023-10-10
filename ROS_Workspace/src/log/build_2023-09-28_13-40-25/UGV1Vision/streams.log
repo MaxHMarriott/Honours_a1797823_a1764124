@@ -1,0 +1,21 @@
+[2.078s] Invoking command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Vision': PYTHONPATH=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/prefix_override:/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UGV1Vision build --build-base /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/build install --record /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/install.log --install-scripts $base/lib/UGV1Vision --single-version-externally-managed
+[2.504s] running egg_info
+[2.505s] writing ../build/UGV1Vision/UGV1Vision.egg-info/PKG-INFO
+[2.505s] writing dependency_links to ../build/UGV1Vision/UGV1Vision.egg-info/dependency_links.txt
+[2.505s] writing entry points to ../build/UGV1Vision/UGV1Vision.egg-info/entry_points.txt
+[2.506s] writing requirements to ../build/UGV1Vision/UGV1Vision.egg-info/requires.txt
+[2.506s] writing top-level names to ../build/UGV1Vision/UGV1Vision.egg-info/top_level.txt
+[2.563s] reading manifest file '../build/UGV1Vision/UGV1Vision.egg-info/SOURCES.txt'
+[2.564s] writing manifest file '../build/UGV1Vision/UGV1Vision.egg-info/SOURCES.txt'
+[2.564s] running build
+[2.564s] running build_py
+[2.564s] running install
+[2.565s] running install_lib
+[2.567s] running install_data
+[2.567s] running install_egg_info
+[2.575s] removing '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/lib/python3.8/site-packages/UGV1Vision-0.0.0-py3.8.egg-info' (and everything under it)
+[2.575s] Copying ../build/UGV1Vision/UGV1Vision.egg-info to /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/lib/python3.8/site-packages/UGV1Vision-0.0.0-py3.8.egg-info
+[2.580s] running install_scripts
+[2.616s] Installing UGV1Vision script to /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/lib/UGV1Vision
+[2.616s] writing list of installed files to '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/install.log'
+[2.663s] Invoked command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/UGV1Vision' returned '0': PYTHONPATH=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/prefix_override:/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UGV1Vision build --build-base /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/build install --record /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV1Vision/install.log --install-scripts $base/lib/UGV1Vision --single-version-externally-managed

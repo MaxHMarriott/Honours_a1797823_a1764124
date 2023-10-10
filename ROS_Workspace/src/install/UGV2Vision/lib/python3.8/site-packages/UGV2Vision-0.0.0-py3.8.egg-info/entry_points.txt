@@ -1,0 +1,3 @@
+[console_scripts]
+UGV2Vision = UGV2Vision.UGV2Vision:main
+

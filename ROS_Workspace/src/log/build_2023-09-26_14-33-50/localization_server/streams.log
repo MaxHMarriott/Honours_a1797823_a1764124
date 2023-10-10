@@ -1,0 +1,39 @@
+[1.408s] Invoking command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/Multi_agent_nav/localization_server': PYTHONPATH=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/localization_server/prefix_override:/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/localization_server/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/localization_server build --build-base /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/localization_server/build install --record /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/localization_server/install.log --install-scripts $base/lib/localization_server --single-version-externally-managed
+[1.960s] running egg_info
+[1.962s] creating ../../build/localization_server/localization_server.egg-info
+[1.963s] writing ../../build/localization_server/localization_server.egg-info/PKG-INFO
+[1.964s] writing dependency_links to ../../build/localization_server/localization_server.egg-info/dependency_links.txt
+[1.965s] writing entry points to ../../build/localization_server/localization_server.egg-info/entry_points.txt
+[1.965s] writing requirements to ../../build/localization_server/localization_server.egg-info/requires.txt
+[1.966s] writing top-level names to ../../build/localization_server/localization_server.egg-info/top_level.txt
+[1.972s] writing manifest file '../../build/localization_server/localization_server.egg-info/SOURCES.txt'
+[2.034s] reading manifest file '../../build/localization_server/localization_server.egg-info/SOURCES.txt'
+[2.036s] writing manifest file '../../build/localization_server/localization_server.egg-info/SOURCES.txt'
+[2.037s] running build
+[2.037s] running build_py
+[2.038s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/localization_server/build
+[2.039s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/localization_server/build/lib
+[2.039s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/localization_server/build/lib/localization_server
+[2.040s] copying localization_server/__init__.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/localization_server/build/lib/localization_server
+[2.040s] running install
+[2.041s] running install_lib
+[2.043s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/localization_server/lib/python3.8/site-packages/localization_server
+[2.043s] copying /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/localization_server/build/lib/localization_server/__init__.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/localization_server/lib/python3.8/site-packages/localization_server
+[2.046s] byte-compiling /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/localization_server/lib/python3.8/site-packages/localization_server/__init__.py to __init__.cpython-38.pyc
+[2.048s] running install_data
+[2.049s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/localization_server/share/ament_index
+[2.049s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/localization_server/share/ament_index/resource_index
+[2.057s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/localization_server/share/ament_index/resource_index/packages
+[2.058s] copying resource/localization_server -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/localization_server/share/ament_index/resource_index/packages
+[2.059s] copying package.xml -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/localization_server/share/localization_server
+[2.059s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/localization_server/share/localization_server/launch
+[2.060s] copying launch/localization.launch.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/localization_server/share/localization_server/launch
+[2.061s] copying launch/multi_localization_launch.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/localization_server/share/localization_server/launch
+[2.061s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/localization_server/share/localization_server/config
+[2.062s] copying config/tb3_1_nav2_params.yaml -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/localization_server/share/localization_server/config
+[2.065s] copying config/tb3_0_nav2_params.yaml -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/localization_server/share/localization_server/config
+[2.067s] running install_egg_info
+[2.070s] Copying ../../build/localization_server/localization_server.egg-info to /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/localization_server/lib/python3.8/site-packages/localization_server-0.0.0-py3.8.egg-info
+[2.071s] running install_scripts
+[2.099s] writing list of installed files to '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/localization_server/install.log'
+[2.143s] Invoked command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/Multi_agent_nav/localization_server' returned '0': PYTHONPATH=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/localization_server/prefix_override:/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/localization_server/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/localization_server build --build-base /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/localization_server/build install --record /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/localization_server/install.log --install-scripts $base/lib/localization_server --single-version-externally-managed

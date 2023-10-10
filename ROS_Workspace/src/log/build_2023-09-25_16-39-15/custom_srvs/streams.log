@@ -1,0 +1,140 @@
+[0.019s] Invoking command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_srvs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_srvs -- -j4 -l4
+[0.117s] [  2%] Built target custom_srvs__cpp
+[0.163s] [ 12%] Built target custom_srvs__rosidl_generator_c
+[0.184s] [ 23%] Built target custom_srvs__rosidl_typesupport_introspection_cpp
+[0.199s] [ 33%] Built target custom_srvs__rosidl_typesupport_cpp
+[0.211s] [ 43%] Built target custom_srvs__rosidl_typesupport_fastrtps_cpp
+[0.236s] [ 53%] Built target custom_srvs__rosidl_typesupport_c
+[0.244s] [ 64%] Built target custom_srvs__rosidl_typesupport_introspection_c
+[0.260s] [ 74%] Built target custom_srvs__rosidl_typesupport_fastrtps_c
+[0.284s] [ 74%] Built target custom_srvs
+[0.315s] [ 76%] Built target custom_srvs__py
+[0.351s] [ 84%] Built target custom_srvs__python
+[0.391s] [ 89%] Built target custom_srvs__rosidl_typesupport_fastrtps_c__pyext
+[0.401s] [ 97%] Built target custom_srvs__rosidl_typesupport_c__pyext
+[0.401s] [100%] Built target custom_srvs__rosidl_typesupport_introspection_c__pyext
+[0.545s] Invoked command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_srvs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_srvs -- -j4 -l4
+[0.669s] Invoking command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_srvs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_srvs
+[0.710s] -- Install configuration: ""
+[0.711s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/ament_index/resource_index/rosidl_interfaces/custom_srvs
+[0.711s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs
+[0.711s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv
+[0.711s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail
+[0.711s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/policy__struct.h
+[0.711s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/move_order__struct.h
+[0.711s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/move_order__type_support.h
+[0.711s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/policy__functions.c
+[0.711s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/policy__type_support.h
+[0.711s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/move_order__functions.c
+[0.712s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/policy__functions.h
+[0.712s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/move_order__functions.h
+[0.712s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/policy.h
+[0.712s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/move_order.h
+[0.712s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/msg
+[0.712s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/msg/rosidl_generator_c__visibility_control.h
+[0.712s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/environment/library_path.sh
+[0.712s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/environment/library_path.dsv
+[0.712s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/lib/libcustom_srvs__rosidl_generator_c.so
+[0.713s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs
+[0.713s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv
+[0.713s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail
+[0.713s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/policy__rosidl_typesupport_fastrtps_c.h
+[0.713s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/move_order__rosidl_typesupport_fastrtps_c.h
+[0.713s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/msg
+[0.713s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.713s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/lib/libcustom_srvs__rosidl_typesupport_fastrtps_c.so
+[0.714s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs
+[0.714s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv
+[0.714s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail
+[0.714s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/move_order__rosidl_typesupport_fastrtps_cpp.hpp
+[0.714s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/dds_fastrtps
+[0.714s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/policy__rosidl_typesupport_fastrtps_cpp.hpp
+[0.714s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/msg
+[0.714s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.714s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/lib/libcustom_srvs__rosidl_typesupport_fastrtps_cpp.so
+[0.715s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs
+[0.715s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv
+[0.715s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail
+[0.715s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/move_order__type_support.c
+[0.715s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/policy__rosidl_typesupport_introspection_c.h
+[0.715s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/policy__type_support.c
+[0.715s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/move_order__rosidl_typesupport_introspection_c.h
+[0.715s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/msg
+[0.715s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.716s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/lib/libcustom_srvs__rosidl_typesupport_introspection_c.so
+[0.716s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/lib/libcustom_srvs__rosidl_typesupport_c.so
+[0.716s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs
+[0.716s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv
+[0.720s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail
+[0.720s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/move_order__struct.hpp
+[0.720s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/policy__struct.hpp
+[0.721s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/move_order__traits.hpp
+[0.721s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/policy__traits.hpp
+[0.721s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/policy__builder.hpp
+[0.721s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/move_order__builder.hpp
+[0.721s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/policy.hpp
+[0.721s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/move_order.hpp
+[0.721s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs
+[0.721s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv
+[0.721s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail
+[0.722s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/policy__rosidl_typesupport_introspection_cpp.hpp
+[0.722s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/policy__type_support.cpp
+[0.722s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/move_order__type_support.cpp
+[0.722s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/include/custom_srvs/srv/detail/move_order__rosidl_typesupport_introspection_cpp.hpp
+[0.722s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/lib/libcustom_srvs__rosidl_typesupport_introspection_cpp.so
+[0.722s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/lib/libcustom_srvs__rosidl_typesupport_cpp.so
+[0.722s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/environment/pythonpath.sh
+[0.722s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/environment/pythonpath.dsv
+[0.722s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/lib/python3.8/site-packages/custom_srvs/__init__.py
+[0.790s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/lib/python3.8/site-packages/custom_srvs/srv
+[0.790s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/lib/python3.8/site-packages/custom_srvs/srv/__init__.py
+[0.791s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/lib/python3.8/site-packages/custom_srvs/srv/_policy.py
+[0.791s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/lib/python3.8/site-packages/custom_srvs/srv/_policy_s.c
+[0.792s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/lib/python3.8/site-packages/custom_srvs/srv/_move_order_s.c
+[0.793s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/lib/python3.8/site-packages/custom_srvs/srv/_move_order.py
+[0.794s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/lib/python3.8/site-packages/custom_srvs/custom_srvs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[0.796s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/lib/python3.8/site-packages/custom_srvs/custom_srvs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[0.798s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/lib/python3.8/site-packages/custom_srvs/custom_srvs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[0.799s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/lib/libcustom_srvs__python.so
+[0.800s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/srv/Policy.idl
+[0.801s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/srv/MoveOrder.idl
+[0.801s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/srv/Policy.srv
+[0.802s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/srv/Policy_Request.msg
+[0.803s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/srv/Policy_Response.msg
+[0.803s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/srv/MoveOrder.srv
+[0.804s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/srv/MoveOrder_Request.msg
+[0.805s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/srv/MoveOrder_Response.msg
+[0.805s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/ament_index/resource_index/package_run_dependencies/custom_srvs
+[0.806s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/ament_index/resource_index/parent_prefix_path/custom_srvs
+[0.807s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/environment/ament_prefix_path.sh
+[0.807s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/environment/ament_prefix_path.dsv
+[0.808s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/environment/path.sh
+[0.809s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/environment/path.dsv
+[0.809s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/local_setup.bash
+[0.810s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/local_setup.sh
+[0.810s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/local_setup.zsh
+[0.811s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/local_setup.dsv
+[0.812s] -- Installing: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/package.dsv
+[0.817s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/ament_index/resource_index/packages/custom_srvs
+[0.817s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/cmake/custom_srvs__rosidl_generator_cExport.cmake
+[0.818s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/cmake/custom_srvs__rosidl_generator_cExport-noconfig.cmake
+[0.818s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/cmake/custom_srvs__rosidl_typesupport_introspection_cExport.cmake
+[0.818s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/cmake/custom_srvs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.818s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/cmake/custom_srvs__rosidl_typesupport_cExport.cmake
+[0.818s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/cmake/custom_srvs__rosidl_typesupport_cExport-noconfig.cmake
+[0.818s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/cmake/custom_srvs__rosidl_generator_cppExport.cmake
+[0.818s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/cmake/custom_srvs__rosidl_typesupport_introspection_cppExport.cmake
+[0.821s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/cmake/custom_srvs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.821s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/cmake/custom_srvs__rosidl_typesupport_cppExport.cmake
+[0.822s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/cmake/custom_srvs__rosidl_typesupport_cppExport-noconfig.cmake
+[0.823s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/cmake/rosidl_cmake-extras.cmake
+[0.824s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.824s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.825s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/cmake/ament_cmake_export_targets-extras.cmake
+[0.826s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.826s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.827s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.828s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/cmake/custom_srvsConfig.cmake
+[0.829s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/cmake/custom_srvsConfig-version.cmake
+[0.829s] -- Up-to-date: /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/custom_srvs/share/custom_srvs/package.xml
+[0.837s] Invoked command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_srvs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/custom_srvs

@@ -1,0 +1,26 @@
+[1.098s] Invoking command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/UGV2Main': PYTHONPATH=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV2Main/prefix_override:/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV2Main/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UGV2Main build --build-base /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV2Main/build install --record /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV2Main/install.log --install-scripts $base/lib/UGV2Main --single-version-externally-managed
+[1.269s] Traceback (most recent call last):
+[1.270s]   File "setup.py", line 1, in <module>
+[1.270s]     from setuptools import setup
+[1.270s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 17, in <module>
+[1.274s]     import setuptools.version
+[1.275s]   File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>
+[1.275s]     import pkg_resources
+[1.275s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3254, in <module>
+[1.280s]     def _initialize_master_working_set():
+[1.281s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3237, in _call_aside
+[1.283s]     f(*args, **kwargs)
+[1.283s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3266, in _initialize_master_working_set
+[1.283s]     working_set = WorkingSet._build_master()
+[1.283s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 575, in _build_master
+[1.283s]     ws = cls()
+[1.283s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 568, in __init__
+[1.286s]     self.add_entry(entry)
+[1.286s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 624, in add_entry
+[1.287s]     for dist in find_distributions(entry, True):
+[1.287s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2066, in find_on_path
+[1.288s]     for dist in factory(fullpath):
+[1.289s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2128, in distributions_from_metadata
+[1.290s]     if len(os.listdir(path)) == 0:
+[1.290s] FileNotFoundError: [Errno 2] No such file or directory: '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV1Vision/lib/python3.8/site-packages/UGV1Vision-0.0.0-py3.8.egg-info'
+[1.306s] Invoked command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/UGV2Main' returned '1': PYTHONPATH=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV2Main/prefix_override:/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UGV2Main/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UGV2Main build --build-base /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV2Main/build install --record /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UGV2Main/install.log --install-scripts $base/lib/UGV2Main --single-version-externally-managed

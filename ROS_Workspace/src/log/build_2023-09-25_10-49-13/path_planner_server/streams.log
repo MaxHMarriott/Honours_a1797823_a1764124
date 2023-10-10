@@ -1,0 +1,55 @@
+[0.937s] Invoking command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/Multi_agent_nav/path_planner_server': PYTHONPATH=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/path_planner_server/prefix_override:/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/path_planner_server build --build-base /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/path_planner_server/build install --record /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/path_planner_server/install.log --install-scripts $base/lib/path_planner_server --single-version-externally-managed
+[1.253s] running egg_info
+[1.254s] creating ../../build/path_planner_server/path_planner_server.egg-info
+[1.255s] writing ../../build/path_planner_server/path_planner_server.egg-info/PKG-INFO
+[1.255s] writing dependency_links to ../../build/path_planner_server/path_planner_server.egg-info/dependency_links.txt
+[1.255s] writing entry points to ../../build/path_planner_server/path_planner_server.egg-info/entry_points.txt
+[1.255s] writing requirements to ../../build/path_planner_server/path_planner_server.egg-info/requires.txt
+[1.255s] writing top-level names to ../../build/path_planner_server/path_planner_server.egg-info/top_level.txt
+[1.257s] writing manifest file '../../build/path_planner_server/path_planner_server.egg-info/SOURCES.txt'
+[1.308s] reading manifest file '../../build/path_planner_server/path_planner_server.egg-info/SOURCES.txt'
+[1.309s] writing manifest file '../../build/path_planner_server/path_planner_server.egg-info/SOURCES.txt'
+[1.309s] running build
+[1.310s] running build_py
+[1.310s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/path_planner_server/build
+[1.310s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/path_planner_server/build/lib
+[1.310s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/path_planner_server/build/lib/path_planner_server
+[1.310s] copying path_planner_server/__init__.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/path_planner_server/build/lib/path_planner_server
+[1.310s] running install
+[1.311s] running install_lib
+[1.314s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/lib/python3.8/site-packages/path_planner_server
+[1.314s] copying /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/path_planner_server/build/lib/path_planner_server/__init__.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/lib/python3.8/site-packages/path_planner_server
+[1.315s] byte-compiling /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/lib/python3.8/site-packages/path_planner_server/__init__.py to __init__.cpython-38.pyc
+[1.316s] running install_data
+[1.317s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/ament_index
+[1.317s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/ament_index/resource_index
+[1.317s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/ament_index/resource_index/packages
+[1.317s] copying resource/path_planner_server -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/ament_index/resource_index/packages
+[1.318s] copying package.xml -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/path_planner_server
+[1.318s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/path_planner_server/launch
+[1.318s] copying launch/tb3_0_multi_navigation_launch (copy).py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/path_planner_server/launch
+[1.319s] copying launch/multi_localization.launch.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/path_planner_server/launch
+[1.319s] copying launch/tb3_0_localization_launch.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/path_planner_server/launch
+[1.320s] copying launch/tb3_0_localization_launch (copy).py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/path_planner_server/launch
+[1.320s] copying launch/map_server.launch.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/path_planner_server/launch
+[1.321s] copying launch/tb3_0_multi_navigation_launch.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/path_planner_server/launch
+[1.321s] copying launch/slam_launch.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/path_planner_server/launch
+[1.321s] copying launch/multi_localization_launch.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/path_planner_server/launch
+[1.322s] copying launch/tb3_1_bringup_launch.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/path_planner_server/launch
+[1.322s] copying launch/multi_navigation_launch.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/path_planner_server/launch
+[1.323s] copying launch/tb3_0_bringup_launch.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/path_planner_server/launch
+[1.323s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/path_planner_server/config
+[1.324s] copying config/tb3_1_nav2_params.yaml -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/path_planner_server/config
+[1.324s] copying config/tb3_0_nav2_params.yaml -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/path_planner_server/config
+[1.325s] copying config/map.pgm -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/path_planner_server/config
+[1.325s] copying config/map_test.yaml -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/path_planner_server/config
+[1.326s] copying config/map.yaml -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/path_planner_server/config
+[1.326s] copying config/map_test.pgm -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/path_planner_server/config
+[1.327s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/path_planner_server/maps
+[1.327s] copying maps/turtlebot3_world.pgm -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/path_planner_server/maps
+[1.330s] copying maps/turtlebot3_world.yaml -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/share/path_planner_server/maps
+[1.330s] running install_egg_info
+[1.332s] Copying ../../build/path_planner_server/path_planner_server.egg-info to /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/lib/python3.8/site-packages/path_planner_server-0.0.0-py3.8.egg-info
+[1.334s] running install_scripts
+[1.356s] writing list of installed files to '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/path_planner_server/install.log'
+[1.392s] Invoked command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/Multi_agent_nav/path_planner_server' returned '0': PYTHONPATH=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/path_planner_server/prefix_override:/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/path_planner_server/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/path_planner_server build --build-base /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/path_planner_server/build install --record /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/path_planner_server/install.log --install-scripts $base/lib/path_planner_server --single-version-externally-managed

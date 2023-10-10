@@ -1,0 +1,37 @@
+[2.583s] Invoking command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/UAVVision': PYTHONPATH=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVVision/prefix_override:/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UAVVision build --build-base /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVVision/build install --record /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVVision/install.log --install-scripts $base/lib/UAVVision --single-version-externally-managed
+[3.131s] running egg_info
+[3.132s] creating ../build/UAVVision/UAVVision.egg-info
+[3.132s] writing ../build/UAVVision/UAVVision.egg-info/PKG-INFO
+[3.132s] writing dependency_links to ../build/UAVVision/UAVVision.egg-info/dependency_links.txt
+[3.133s] writing entry points to ../build/UAVVision/UAVVision.egg-info/entry_points.txt
+[3.133s] writing requirements to ../build/UAVVision/UAVVision.egg-info/requires.txt
+[3.133s] writing top-level names to ../build/UAVVision/UAVVision.egg-info/top_level.txt
+[3.138s] writing manifest file '../build/UAVVision/UAVVision.egg-info/SOURCES.txt'
+[3.204s] reading manifest file '../build/UAVVision/UAVVision.egg-info/SOURCES.txt'
+[3.207s] writing manifest file '../build/UAVVision/UAVVision.egg-info/SOURCES.txt'
+[3.207s] running build
+[3.208s] running build_py
+[3.208s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVVision/build
+[3.208s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVVision/build/lib
+[3.208s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVVision/build/lib/UAVVision
+[3.208s] copying UAVVision/__init__.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVVision/build/lib/UAVVision
+[3.211s] copying UAVVision/UAVVision.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVVision/build/lib/UAVVision
+[3.211s] running install
+[3.211s] running install_lib
+[3.211s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/lib/python3.8/site-packages/UAVVision
+[3.211s] copying /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVVision/build/lib/UAVVision/__init__.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/lib/python3.8/site-packages/UAVVision
+[3.211s] copying /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVVision/build/lib/UAVVision/UAVVision.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/lib/python3.8/site-packages/UAVVision
+[3.211s] byte-compiling /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/lib/python3.8/site-packages/UAVVision/__init__.py to __init__.cpython-38.pyc
+[3.213s] byte-compiling /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/lib/python3.8/site-packages/UAVVision/UAVVision.py to UAVVision.cpython-38.pyc
+[3.213s] running install_data
+[3.213s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/share/ament_index
+[3.213s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/share/ament_index/resource_index
+[3.214s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/share/ament_index/resource_index/packages
+[3.214s] copying resource/UAVVision -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/share/ament_index/resource_index/packages
+[3.214s] copying package.xml -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/share/UAVVision
+[3.214s] running install_egg_info
+[3.215s] Copying ../build/UAVVision/UAVVision.egg-info to /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/lib/python3.8/site-packages/UAVVision-0.0.0-py3.8.egg-info
+[3.220s] running install_scripts
+[3.252s] Installing UAVVision script to /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/lib/UAVVision
+[3.252s] writing list of installed files to '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVVision/install.log'
+[3.295s] Invoked command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/UAVVision' returned '0': PYTHONPATH=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVVision/prefix_override:/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/UAVVision/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/UAVVision build --build-base /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVVision/build install --record /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/UAVVision/install.log --install-scripts $base/lib/UAVVision --single-version-externally-managed
