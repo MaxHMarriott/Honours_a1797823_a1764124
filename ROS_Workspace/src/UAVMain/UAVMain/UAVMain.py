@@ -1,4 +1,5 @@
 import rclpy
+import cv2
 from rclpy.node import Node
 from std_msgs.msg import String
 from std_msgs.msg import Float32MultiArray
@@ -12,7 +13,6 @@ from custom_srvs.srv import Policy
 import numpy
 import math
 from enum import Enum
-import cv2
 import serial
 from random import random
 import time
@@ -45,20 +45,15 @@ class UAVMain(Node):
         #self.LED2 = Float32MultiArray()
         #self.LED2.data = self.LED1Location
         self.timer_period = 0.5
-        self.timer_period = 60
+        self.timer_period = 1
         self.i = 0
         self.timer = self.create_timer(self.timer_period,self.timer_callback)
 
         serial_port = '/dev/serial/by-id/usb-1a86_USB2.0-Serial-if00-port0'
         baud_rate = 9600
         self.ser = serial.Serial(serial_port, baud_rate,timeout=1)
-        #self.timer = self.create_timer(20,self.set_scenario) #timer for determining scenario
-        #try:
-        self.ser.write(f'{self.sOut}\n'.encode('utf-8'))
-        data = self.ser.readline().decode('utf-8').strip()
-        time.sleep(0.2)
-       # except:
-        print("COMMS ERROR")
+        self.timer = self.create_timer(120,self.set_scenario) #timer for determining scenario
+
 
     def subscribe_message_UGV1State(self,data):
         print("State of UGV1 Rover is: ")
@@ -73,9 +68,9 @@ class UAVMain(Node):
         self.LEDLocations.isled2 = bool(0)
         self.LEDState = self.determineLEDs()
         #self.LEDLocations.isled1 = self.LEDState[0]
-        self.LEDLocations.led1 = self.LEDState[1]
+        self.LEDLocations.led1 = int(self.LEDState[1])
         #self.LEDLocations.isled2 = (self.LEDState[3])
-        self.LEDLocations.led2 = self.LEDState[3]
+        self.LEDLocations.led2 = int(self.LEDState[3])
         #self.LED1.data = self.LEDState[0:3]
         print("LEDs:")
         print(self.LEDState)
@@ -88,14 +83,13 @@ class UAVMain(Node):
         self.publisher.publish(self.LEDLocations)
         self.publisher2.publish(self.state)
         self.get_logger().info('Publishing LED locations')
-        self.set_scenario()
 
     def set_scenario(self): 
         print("Sending: " + str(self.sOut)) 
-        self.sOut = self.sOut + 1
  #       try:
         self.ser.write(f'{self.sOut}\n'.encode('utf-8'))
         data = self.ser.readline().decode('utf-8').strip()
+        self.sOut = self.sOut + 1
         time.sleep(0.2)
 #        except:
  #           print("COMMS ERROR") 

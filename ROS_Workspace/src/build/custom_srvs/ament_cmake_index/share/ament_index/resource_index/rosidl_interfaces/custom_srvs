@@ -1,8 +1,0 @@
-srv/MoveOrder.idl
-srv/MoveOrder.srv
-srv/MoveOrder_Request.msg
-srv/MoveOrder_Response.msg
-srv/Policy.idl
-srv/Policy.srv
-srv/Policy_Request.msg
-srv/Policy_Response.msg

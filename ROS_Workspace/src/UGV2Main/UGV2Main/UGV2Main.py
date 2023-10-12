@@ -46,7 +46,8 @@ class UGV2Main(Node):
         self.moveOrderSubscription = self.create_subscription(Pose,"/poseOrder0",self.UGV1PoseOrder_message, qos_profile_sensor_data) #fetches its friend's location
         self.subscription = self.create_subscription(Int16MultiArray,"/UGV2Detections",self.detections_message, qos_profile_sensor_data)
         self.reachedGoalSubscription = self.create_subscription(Int16,"/reaching_goal1",self.reaching_goal, qos_profile_sensor_data)
-        self.subscription = self.create_subscription(FireSeverityMsg,"/Z1FireSeverity",self.Z1_detections_message, qos_profile_sensor_data)
+        self.subscription2 = self.create_subscription(FireSeverityMsg,"/Z1FireSeverity",self.Z1_detections_message, qos_profile_sensor_data)
+        self.subscription3 = self.create_subscription(LEDLocationsMsg,"/LEDLocations",self.subscribe_message_UAVZones, qos_profile_sensor_data)
         self.FireSeverity= FireSeverityMsg()
         self.timer_period = 2
         self.orderCount = 0 #for testing purposes
@@ -145,7 +146,35 @@ class UGV2Main(Node):
     def LED_message(self,data):
         self.LEDLocations = data
         print("Recieved LED Detections are:")
-        self.LEDLocationsisled2 = data.isled1
+        self.LEDLocationsisled2 = data.isled2
+        if (data.isled1 == 1):
+            if (data.led1 == 1):
+                self.z1pose = self.z1
+            elif (data.led1 == 2):
+                self.z1pose = self.z2
+            elif (data.led1 == 3):
+                self.z1pose = self.z3
+            elif (data.led1 == 4):
+                self.z1pose = self.z4
+        else:
+            self.z1pose = self.z0
+        if (data.isled2 == 1):
+            if (data.led2 == 1):
+                self.z2pose = self.z1
+            elif (data.led2 == 2):
+                self.z2pose = self.z2
+            elif (data.led2 == 3):
+                self.z2pose = self.z3
+            elif (data.led2 == 4):
+                self.z2pose = self.z4
+        else:
+            self.z2pose = self.z0
+
+        print("==========================")
+        print("Zone 1 and 2 are:")
+        print(self.z1pose)
+        print(self.z2pose)
+        print("==========================")
         #determine LED Location from here
 
         print(self.LEDLocations)

@@ -1,9 +1,0 @@
-/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/tb3_0/CMakeFiles/install/strip.dir
-/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/tb3_0/CMakeFiles/install/local.dir
-/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/tb3_0/CMakeFiles/edit_cache.dir
-/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/tb3_0/CMakeFiles/test.dir
-/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/tb3_0/CMakeFiles/install.dir
-/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/tb3_0/CMakeFiles/list_install_components.dir
-/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/tb3_0/CMakeFiles/rebuild_cache.dir
-/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/tb3_0/CMakeFiles/tb3_0_uninstall.dir
-/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/tb3_0/CMakeFiles/uninstall.dir

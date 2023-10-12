@@ -60,7 +60,7 @@ class UAVVisionDetect:
         self.desaturate_output = None
 
         self.__cv_threshold_src = self.desaturate_output
-        self.__cv_threshold_thresh = 250.0
+        self.__cv_threshold_thresh = 50.0
         self.__cv_threshold_maxval = 255.0
         self.__cv_threshold_type = cv2.THRESH_BINARY
 

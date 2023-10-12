@@ -1,2 +1,0 @@
-geometry_msgs/Pose location
-float64 eta
