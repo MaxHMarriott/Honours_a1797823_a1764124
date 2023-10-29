@@ -1,0 +1,46 @@
+[0.000000] (-) TimerEvent: {}
+[0.000939] (-) JobUnselected: {'identifier': 'Konig'}
+[0.001009] (-) JobUnselected: {'identifier': 'UAVMain'}
+[0.001046] (-) JobUnselected: {'identifier': 'UAVProcessing'}
+[0.001079] (-) JobUnselected: {'identifier': 'UAVVision'}
+[0.001120] (-) JobUnselected: {'identifier': 'UGV1Processing'}
+[0.002590] (-) JobUnselected: {'identifier': 'UGV1Vision'}
+[0.002691] (-) JobUnselected: {'identifier': 'UGV2Main'}
+[0.002750] (-) JobUnselected: {'identifier': 'UGV2Processing'}
+[0.002804] (-) JobUnselected: {'identifier': 'UGV2Vision'}
+[0.002856] (-) JobUnselected: {'identifier': 'cameraPub'}
+[0.002908] (-) JobUnselected: {'identifier': 'cameraSub'}
+[0.002959] (-) JobUnselected: {'identifier': 'custom_msgs'}
+[0.002995] (-) JobUnselected: {'identifier': 'custom_srvs'}
+[0.003083] (-) JobUnselected: {'identifier': 'dynamixel_sdk'}
+[0.003287] (-) JobUnselected: {'identifier': 'dynamixel_sdk_custom_interfaces'}
+[0.003341] (-) JobUnselected: {'identifier': 'dynamixel_sdk_examples'}
+[0.003393] (-) JobUnselected: {'identifier': 'localization_server'}
+[0.003444] (-) JobUnselected: {'identifier': 'multi_turtlebot3_navigation'}
+[0.003495] (-) JobUnselected: {'identifier': 'path_planner_server'}
+[0.003544] (-) JobUnselected: {'identifier': 'tb3_0'}
+[0.003625] (-) JobUnselected: {'identifier': 'tb3_1'}
+[0.003680] (-) JobUnselected: {'identifier': 'turtlebot3'}
+[0.003840] (-) JobUnselected: {'identifier': 'turtlebot3_bringup'}
+[0.003909] (-) JobUnselected: {'identifier': 'turtlebot3_cartographer'}
+[0.003962] (-) JobUnselected: {'identifier': 'turtlebot3_description'}
+[0.004049] (-) JobUnselected: {'identifier': 'turtlebot3_example'}
+[0.004129] (-) JobUnselected: {'identifier': 'turtlebot3_fake_node'}
+[0.004181] (-) JobUnselected: {'identifier': 'turtlebot3_gazebo'}
+[0.004232] (-) JobUnselected: {'identifier': 'turtlebot3_msgs'}
+[0.004283] (-) JobUnselected: {'identifier': 'turtlebot3_navigation'}
+[0.004363] (-) JobUnselected: {'identifier': 'turtlebot3_navigation2'}
+[0.004414] (-) JobUnselected: {'identifier': 'turtlebot3_node'}
+[0.006753] (-) JobUnselected: {'identifier': 'turtlebot3_simulations'}
+[0.006823] (-) JobUnselected: {'identifier': 'turtlebot3_teleop'}
+[0.006866] (UGV1Main) JobQueued: {'identifier': 'UGV1Main', 'dependencies': OrderedDict()}
+[0.006908] (UGV1Main) JobStarted: {'identifier': 'UGV1Main'}
+[0.098974] (-) TimerEvent: {}
+[0.199405] (-) TimerEvent: {}
+[0.299734] (-) TimerEvent: {}
+[0.400010] (-) TimerEvent: {}
+[0.500790] (-) TimerEvent: {}
+[0.602197] (-) TimerEvent: {}
+[0.686088] (UGV1Main) StderrLine: {'line': b'Traceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_parallel_executor/executor/parallel.py", line 67, in execute\n    loop.run_until_complete(future)\n  File "/usr/lib/python3.8/asyncio/base_events.py", line 603, in run_until_complete\n    self.run_forever()\n  File "/usr/lib/python3.8/asyncio/base_events.py", line 570, in run_forever\n    self._run_once()\n  File "/usr/lib/python3.8/asyncio/base_events.py", line 1823, in _run_once\n    event_list = self._selector.select(timeout)\n  File "/usr/lib/python3.8/selectors.py", line 468, in select\n    fd_event_list = self._selector.poll(timeout, max_ev)\nKeyboardInterrupt\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__\n    rc = await self.task(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__\n    return await task_method(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_python/build.py", line 105, in build\n    return await extension.build(additional_hooks=additional_hooks)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/python/build.py", line 81, in build\n    available_commands = await self._get_available_commands(\n  File "/usr/lib/python3/dist-packages/colcon_core/task/python/build.py", line 171, in _get_available_commands\n    output = await check_output(\n  File "/usr/lib/python3/dist-packages/colcon_core/subprocess.py", line 128, in check_output\n    assert not rc, f\'Expected {args} to pass: {stderr_data}\'\nAssertionError: Expected [\'/usr/bin/python3\', \'setup.py\', \'--help-commands\'] to pass: Traceback (most recent call last):\n  File "setup.py", line 1, in <module>\n    from setuptools import setup\n  File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 17, in <module>\n    import setuptools.version\n  File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>\n    import pkg_resources\n  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 84, in <module>\n    __import__(\'pkg_resources.extern.packaging.requirements\')\n  File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/requirements.py", line 47, in <module>\n    VERSION_PEP440 = Regex(Specifier._regex_str, re.VERBOSE | re.IGNORECASE)\n  File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/pyparsing.py", line 2792, in __init__\n    self.re = re.compile(self.pattern, self.flags)\n  File "/usr/lib/python3.8/re.py", line 252, in compile\n    return _compile(pattern, flags)\n  File "/usr/lib/python3.8/re.py", line 304, in _compile\n    p = sre_compile.compile(pattern, flags)\nKeyboardInterrupt\n\n'}
+[0.687352] (UGV1Main) JobEnded: {'identifier': 'UGV1Main', 'rc': 'SIGINT'}
+[0.696761] (-) EventReactorShutdown: {}

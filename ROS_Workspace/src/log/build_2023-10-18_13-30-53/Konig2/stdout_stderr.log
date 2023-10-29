@@ -1,0 +1,38 @@
+running egg_info
+creating ../build/Konig2/Konig2.egg-info
+writing ../build/Konig2/Konig2.egg-info/PKG-INFO
+writing dependency_links to ../build/Konig2/Konig2.egg-info/dependency_links.txt
+writing entry points to ../build/Konig2/Konig2.egg-info/entry_points.txt
+writing requirements to ../build/Konig2/Konig2.egg-info/requires.txt
+writing top-level names to ../build/Konig2/Konig2.egg-info/top_level.txt
+writing manifest file '../build/Konig2/Konig2.egg-info/SOURCES.txt'
+reading manifest file '../build/Konig2/Konig2.egg-info/SOURCES.txt'
+writing manifest file '../build/Konig2/Konig2.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig2/build
+creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig2/build/lib
+creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig2/build/lib/Konig2
+copying Konig2/__init__.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig2/build/lib/Konig2
+copying Konig2/Konig2.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig2/build/lib/Konig2
+copying Konig2/Konig.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig2/build/lib/Konig2
+running install
+running install_lib
+creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig2/lib/python3.8/site-packages/Konig2
+copying /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig2/build/lib/Konig2/__init__.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig2/lib/python3.8/site-packages/Konig2
+copying /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig2/build/lib/Konig2/Konig2.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig2/lib/python3.8/site-packages/Konig2
+copying /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig2/build/lib/Konig2/Konig.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig2/lib/python3.8/site-packages/Konig2
+byte-compiling /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig2/lib/python3.8/site-packages/Konig2/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig2/lib/python3.8/site-packages/Konig2/Konig2.py to Konig2.cpython-38.pyc
+byte-compiling /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig2/lib/python3.8/site-packages/Konig2/Konig.py to Konig.cpython-38.pyc
+running install_data
+creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig2/share/ament_index
+creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig2/share/ament_index/resource_index
+creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig2/share/ament_index/resource_index/packages
+copying resource/Konig2 -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig2/share/ament_index/resource_index/packages
+copying package.xml -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig2/share/Konig2
+running install_egg_info
+Copying ../build/Konig2/Konig2.egg-info to /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig2/lib/python3.8/site-packages/Konig2-0.0.0-py3.8.egg-info
+running install_scripts
+Installing Konig2 script to /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig2/lib/Konig2
+writing list of installed files to '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig2/install.log'

@@ -45,7 +45,7 @@ class CameraSubscriber(Node):
             RedCount = sum(sum(self.LED_detect.hsl_threshold_0_output))
             GreenCount = sum(sum(self.LED_detect.hsl_threshold_1_output))
             YellowCount = sum(sum(self.LED_detect.hsv_threshold_output))
-            self.UGV1Returns.data = [int(RedCount/10.0), int(GreenCount/10.0), int(YellowCount/10.0)]
+            self.UGV1Returns.data = [int(RedCount), int(GreenCount), int(YellowCount)]
             self.publisher.publish(self.UGV1Returns)
             return image
 

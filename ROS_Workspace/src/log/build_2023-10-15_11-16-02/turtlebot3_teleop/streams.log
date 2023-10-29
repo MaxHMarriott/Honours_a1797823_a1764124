@@ -1,0 +1,42 @@
+[2.874s] Invoking command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/turtlebot3/turtlebot3_teleop': PYTHONPATH=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_teleop/prefix_override:/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/turtlebot3_teleop build --build-base /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_teleop/build install --record /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_teleop/install.log --single-version-externally-managed
+[4.584s] running egg_info
+[4.585s] creating ../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info
+[4.609s] writing ../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/PKG-INFO
+[4.609s] writing dependency_links to ../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/dependency_links.txt
+[4.609s] writing entry points to ../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/entry_points.txt
+[4.609s] writing requirements to ../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/requires.txt
+[4.609s] writing top-level names to ../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/top_level.txt
+[4.609s] writing manifest file '../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/SOURCES.txt'
+[4.814s] reading manifest file '../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/SOURCES.txt'
+[4.821s] writing manifest file '../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/SOURCES.txt'
+[4.821s] running build
+[4.821s] running build_py
+[4.821s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_teleop/build
+[4.821s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_teleop/build/lib
+[4.821s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_teleop/build/lib/turtlebot3_teleop
+[4.822s] copying turtlebot3_teleop/__init__.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_teleop/build/lib/turtlebot3_teleop
+[4.822s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script
+[4.822s] copying turtlebot3_teleop/script/__init__.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script
+[4.822s] copying turtlebot3_teleop/script/teleop_keyboard.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script
+[4.822s] running install
+[4.824s] running install_lib
+[4.829s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_teleop/lib/python3.8/site-packages/turtlebot3_teleop
+[4.830s] copying /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/__init__.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_teleop/lib/python3.8/site-packages/turtlebot3_teleop
+[4.830s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_teleop/lib/python3.8/site-packages/turtlebot3_teleop/script
+[4.830s] copying /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script/__init__.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_teleop/lib/python3.8/site-packages/turtlebot3_teleop/script
+[4.831s] copying /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script/teleop_keyboard.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_teleop/lib/python3.8/site-packages/turtlebot3_teleop/script
+[4.832s] byte-compiling /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_teleop/lib/python3.8/site-packages/turtlebot3_teleop/__init__.py to __init__.cpython-38.pyc
+[4.838s] byte-compiling /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_teleop/lib/python3.8/site-packages/turtlebot3_teleop/script/__init__.py to __init__.cpython-38.pyc
+[4.838s] byte-compiling /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_teleop/lib/python3.8/site-packages/turtlebot3_teleop/script/teleop_keyboard.py to teleop_keyboard.cpython-38.pyc
+[4.840s] running install_data
+[4.846s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_teleop/share/ament_index
+[4.847s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_teleop/share/ament_index/resource_index
+[4.847s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_teleop/share/ament_index/resource_index/packages
+[4.847s] copying resource/turtlebot3_teleop -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_teleop/share/ament_index/resource_index/packages
+[4.847s] copying package.xml -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_teleop/share/turtlebot3_teleop
+[4.847s] running install_egg_info
+[4.854s] Copying ../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info to /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_teleop/lib/python3.8/site-packages/turtlebot3_teleop-2.1.4-py3.8.egg-info
+[4.859s] running install_scripts
+[4.946s] Installing teleop_keyboard script to /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_teleop/lib/turtlebot3_teleop
+[4.947s] writing list of installed files to '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_teleop/install.log'
+[5.125s] Invoked command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/turtlebot3/turtlebot3_teleop' returned '0': PYTHONPATH=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_teleop/prefix_override:/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/turtlebot3_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/turtlebot3_teleop build --build-base /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_teleop/build install --record /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/turtlebot3_teleop/install.log --single-version-externally-managed

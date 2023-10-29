@@ -1,15 +1,15 @@
 import rclpy
+import cv2
 from rclpy.node import Node
 from std_msgs.msg import String
 from cv_bridge import CvBridge
 from sensor_msgs.msg import Image
 from rclpy.qos import qos_profile_sensor_data
-import cv2
 from std_msgs.msg import Float32MultiArray
 import numpy
 import math
-from enum import Enum
 import cv2
+from enum import Enum
 
 
 class CameraSubscriber(Node):	
@@ -37,7 +37,6 @@ class CameraSubscriber(Node):
         self.UAVPipeline.process(self.frame)
         frame2 = self.UAVPipeline.cv_threshold_output
         frame3 = frame2
-        #frame3 = visionCrop(frame2)
         processingOutput = visionProcessing(frame3)
         print("returns:")
         print(processingOutput)
@@ -155,38 +154,6 @@ class UAVVisionDetect:
                 output.append(tmp)
         return output
 
-def visionCrop(frame2):
-#this function is a calibration function that only needs to be run once for each camera setup.
-#all LEDS are to be detected, and a corresponding crop is achieved.
-    m = frame2.shape[0]
-    n = frame2.shape[1]
-    x1 = 0
-    y1 = 0
-    x2 = 0
-    y2 = 0
-    x1toggle = 0
-    y1toggle = 0
-    for x in range(m-1):
-        for y in range(n-1):
-            if (frame2[x,y] > 1):
-                if (x2<x):
-                    x2 = x
-                if (y2<y):
-                    y2 = y
-                if (0==x1toggle):
-                    x1 = x
-                    x1toggle = 1
-                if (0==y1toggle):
-                    y1 = y
-                    y1toggle = 1
-                if (x1>x):
-                    x1 = x
-                if (y1>y):
-                    y1 = y
-    print("x1: ",x1," y1: ",y1)
-    print("resizing from:",m,n,"to:",x2-x1,y2-y1)
-    frame2 = frame2[x1:x2, y1:y2]
-    return frame2
     	
 def visionProcessing(frame2):
     #determine quadrants
@@ -201,33 +168,33 @@ def visionProcessing(frame2):
     print("shape returns:",frame2.shape)
 
     for a in range(0,int(m/2 - 1),1):
+    	for b in range(int(n/2 - 1),n,1):
+    		Q1sum = Q1sum + frame2[a,b]
+    Q1sum = Q1sum/255
+    print("Q1 result is: ",Q1sum)
+		
+		
+    for a in range(0,int(m/2 - 1),1):
     	for b in range(int(n/2-1)):
             Q2sum = Q2sum + frame2[a,b]
             #print(frame2[a,b])
     Q2sum = Q2sum/255
     print("Q2 result is: ",Q2sum)
-		
-		
+
     for a in range(int(m/2 - 1),m,1):
     	for b in range(int(n/2-1)):
-    		Q1sum = Q1sum + frame2[a,b]
-    Q1sum = Q1sum/255
-    print("Q1 result is: ",Q1sum)
-    
-    
-    for a in range(int(m/2 - 1),m,1):
-    	for b in range(int(n/2 - 1),n,1):
     		Q3sum = Q3sum + frame2[a,b]
     Q3sum = Q3sum/255
     print("Q3 result is: ",Q3sum)
 
-
-    for a in range(0,int(m/2 - 1),1):
+    for a in range(int(m/2 - 1),m,1):
     	for b in range(int(n/2 - 1),n,1):
     		Q4sum = Q4sum + frame2[a,b]
     Q4sum = Q4sum/255
     print("Q4 result is: ",Q4sum)
-    return [Q1sum,Q2sum,Q3sum,Q4sum]
+    
+    
+    return [float(Q1sum),float(Q2sum),float(Q3sum),float(Q4sum)]
 
 def main (args=None):
     rclpy.init(args=args)

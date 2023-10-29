@@ -1,0 +1,37 @@
+[2.272s] Invoking command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub': PYTHONPATH=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/prefix_override:/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/cameraPub build --build-base /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/build install --record /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/install.log --install-scripts $base/lib/cameraPub --single-version-externally-managed
+[2.802s] running egg_info
+[2.804s] creating ../build/cameraPub/cameraPub.egg-info
+[2.804s] writing ../build/cameraPub/cameraPub.egg-info/PKG-INFO
+[2.805s] writing dependency_links to ../build/cameraPub/cameraPub.egg-info/dependency_links.txt
+[2.805s] writing entry points to ../build/cameraPub/cameraPub.egg-info/entry_points.txt
+[2.805s] writing requirements to ../build/cameraPub/cameraPub.egg-info/requires.txt
+[2.806s] writing top-level names to ../build/cameraPub/cameraPub.egg-info/top_level.txt
+[2.806s] writing manifest file '../build/cameraPub/cameraPub.egg-info/SOURCES.txt'
+[2.856s] reading manifest file '../build/cameraPub/cameraPub.egg-info/SOURCES.txt'
+[2.857s] writing manifest file '../build/cameraPub/cameraPub.egg-info/SOURCES.txt'
+[2.859s] running build
+[2.859s] running build_py
+[2.859s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/build
+[2.860s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/build/lib
+[2.860s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/build/lib/cameraPub
+[2.860s] copying cameraPub/__init__.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/build/lib/cameraPub
+[2.861s] copying cameraPub/cameraPublisher.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/build/lib/cameraPub
+[2.861s] running install
+[2.863s] running install_lib
+[2.865s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/lib/python3.8/site-packages/cameraPub
+[2.865s] copying /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/build/lib/cameraPub/__init__.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/lib/python3.8/site-packages/cameraPub
+[2.865s] copying /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/build/lib/cameraPub/cameraPublisher.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/lib/python3.8/site-packages/cameraPub
+[2.867s] byte-compiling /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/lib/python3.8/site-packages/cameraPub/__init__.py to __init__.cpython-38.pyc
+[2.868s] byte-compiling /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/lib/python3.8/site-packages/cameraPub/cameraPublisher.py to cameraPublisher.cpython-38.pyc
+[2.872s] running install_data
+[2.873s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/share/ament_index
+[2.873s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/share/ament_index/resource_index
+[2.873s] creating /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/share/ament_index/resource_index/packages
+[2.873s] copying resource/cameraPub -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/share/ament_index/resource_index/packages
+[2.873s] copying package.xml -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/share/cameraPub
+[2.873s] running install_egg_info
+[2.875s] Copying ../build/cameraPub/cameraPub.egg-info to /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/lib/python3.8/site-packages/cameraPub-0.0.0-py3.8.egg-info
+[2.876s] running install_scripts
+[2.902s] Installing cameraPub script to /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/lib/cameraPub
+[2.903s] writing list of installed files to '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/install.log'
+[2.944s] Invoked command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/cameraPub' returned '0': PYTHONPATH=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/prefix_override:/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/cameraPub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/cameraPub build --build-base /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/build install --record /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/cameraPub/install.log --install-scripts $base/lib/cameraPub --single-version-externally-managed

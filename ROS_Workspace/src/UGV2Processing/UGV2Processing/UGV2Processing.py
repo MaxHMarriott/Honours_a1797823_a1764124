@@ -1,14 +1,15 @@
 import rclpy
+import cv2
 from rclpy.node import Node
 from std_msgs.msg import String
-from cv_bridge import CvBridge
+from cv_bridge import CvBridge, CvBridgeError
 from sensor_msgs.msg import Image
 from rclpy.qos import qos_profile_sensor_data
 from std_msgs.msg import Int16MultiArray
 import numpy
 import math
 from enum import Enum
-import cv2
+
 
 
 class CameraSubscriber(Node):	
@@ -33,7 +34,7 @@ class CameraSubscriber(Node):
         #perform processing on captured frame
                 image = self.imageProcess(current_frame)
                 #displaying image
-                cv2.imshow("Camera",image)
+                #cv2.imshow("Camera",image)
 
                 cv2.waitKey(1)
 

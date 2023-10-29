@@ -4,6 +4,7 @@ from rclpy.node import Node
 from std_msgs.msg import String
 from std_msgs.msg import Int16MultiArray
 from std_msgs.msg import Int16
+from std_msgs.msg import Float32
 from cv_bridge import CvBridge
 from sensor_msgs.msg import Image
 from geometry_msgs.msg import Pose
@@ -13,6 +14,7 @@ from custom_msgs.msg import FireSeverity as FireSeverityMsg
 from custom_msgs.msg import LEDLocations as LEDLocationsMsg
 from custom_srvs.srv import Policy
 from custom_srvs.srv import MoveOrder
+import psutil
 import numpy
 import math
 import time
@@ -39,6 +41,8 @@ class UGV1Main(Node):
         self.y = 0.0; #this will be the y coodinate of the agent retrieved from the navigation node.
         self.publisher = self.create_publisher(FireSeverityMsg,Publisher_name,10)
         self.publishMoveOrder = self.create_publisher(Pose,"/poseOrder0",10) #publisher to test the navigation system (for testing purposes)
+        self.CPUPublisher = self.create_publisher(Float32,"/UGV1CPU",10) #publisher to test the navigation system (for testing purposes)
+        self.RAMPublisher = self.create_publisher(Float32,"/UGV1RAM",10) #publisher to test the navigation system (for testing purposes)
         self.state_publisher = self.create_publisher(String,"/UGV1State",10)
         self.GO_subscriber = self.create_subscription(Int16,'/GO',self.GO_message, qos_profile_sensor_data)        
         self.LEDLocationsTopic = self.create_subscription(LEDLocationsMsg,'/LEDLocations',self.LED_message, qos_profile_sensor_data)
@@ -46,6 +50,8 @@ class UGV1Main(Node):
         self.subscription = self.create_subscription(Int16MultiArray,"/UGV1Detections",self.detections_message, qos_profile_sensor_data)
         self.subscription2 = self.create_subscription(FireSeverityMsg,"/Z2FireSeverity",self.Z2_detections_message, qos_profile_sensor_data)
         self.reachedGoalSubscription = self.create_subscription(Int16,"/reaching_goal0",self.reaching_goal, qos_profile_sensor_data)
+        self.UGVDetections = Int16MultiArray()
+        self.UGVDetections.data = [0,0,0,0]
         self.FireSeverity= FireSeverityMsg()
         self.timer_period = 2
         self.orderCount = 0 #for testing purposes
@@ -60,7 +66,7 @@ class UGV1Main(Node):
         self.FireSeverityIsDetected = 0b0
         self.UGV2to1Ack = 0b1
         self.UGV1Jump = 0b0
-        self.GO = 0b1
+        self.GO = 0b0
         self.UGVCount = 0b0
         self.UGV2to1Ack = "Null"
         self.stateDescription = "Idle"
@@ -71,29 +77,31 @@ class UGV1Main(Node):
         #Locations:
 
         self.z0=Pose()
-        self.z0.position.x = 0.3
+        self.z0.position.x = 0.0
         self.z0.position.y = 0.0
         self.z0.position.z = 0.0
 
         self.z1=Pose()
-        self.z1.position.x = -0.765
-        self.z1.position.y = 0.45
+        self.z1.position.x = -0.7
+        self.z1.position.y = 0.23
         self.z1.position.z = 0.0
 
         self.z2=Pose()
-        self.z2.position.x = -0.765
-        self.z2.position.y = -0.88
+        self.z2.position.x = -0.6
+        self.z2.position.y = -0.7
         self.z2.position.z = 0.0
 
         self.z3=Pose()
-        self.z3.position.x = 1.0
-        self.z3.position.y = 3.0
+        self.z3.position.x = 0.65
+        self.z3.position.y = -0.69
         self.z3.position.z = 0.0
 
         self.z4=Pose()
-        self.z4.position.x = 1.0
-        self.z4.position.y = 4.0
+        self.z4.position.x = 0.65
+        self.z4.position.y = 0.23
         self.z4.position.z = 0.0
+
+        self.Pose_msg = self.z0
 
         self.z1pose = self.z0 #replace with detected LEDDetections.led1
         self.z2pose = self.z0 #replace with detected LEDDetections.led2
@@ -225,12 +233,12 @@ class UGV1Main(Node):
     def determineSeverity(self):
 
         severityString = "Null"
-        threshold = 150
+        threshold = 250
 
         #returns from Processing node
         High = self.UGVDetections[0]*1.5
         Low = self.UGVDetections[1]
-        Medium = self.UGVDetections[2]*2
+        Medium = self.UGVDetections[2]*2.5
 
         #now we determine which LED is on:
         lst = [["High",High],["Low",Low],["Medium",Medium]]
@@ -254,8 +262,6 @@ class UGV1Main(Node):
 
     def StateMachine(self):
 
-        #create local counter tUAV
-
         #outputs:
         state_topic = String()
         state_topic.data = self.state
@@ -263,7 +269,21 @@ class UGV1Main(Node):
         self.currentStateNumber = self.nextStateNumber
         #self.Z1Intensity = 0 commented out due to no LED
         #self.Z2Intensity = 0
+        process = psutil.Process()
+        cpu_usage = psutil.cpu_percent(interval=1)
+        ram_usage = psutil.virtual_memory().percent
+
+        CPUmessage = Float32()
+        CPUmessage.data = cpu_usage
+        self.CPUPublisher.publish(CPUmessage)
+
+        RAMmessage = Float32()
+        RAMmessage.data = ram_usage
+        self.RAMPublisher.publish(RAMmessage)
+
+
         print(self.stateDescription)
+
 
         #counters
         #if(self.UGVCount > 0):  
@@ -280,15 +300,19 @@ class UGV1Main(Node):
                 #LEDDetected = 1 or CommsTimeoutUAV = 1
 
         if (self.currentStateNumber == 0b00000):
+            self.ReachedFirstZone = 0
             self.state = "Idle"
             self.stateDescription = "Idle"
-            self.Pose_msg = self.z0
+            #self.Pose_msg = self.z0
             self.z1pose = self.Pose_msg #replace with detected LEDDetections.led1
             self.publishMoveOrder.publish(self.Pose_msg)
-            if ((self.LEDLocationsisled1 == 0b1) or (self.CommsTimeoutUAV == 0b1)):
+            #if (((self.LEDLocationsisled1 == 0b1) or (self.CommsTimeoutUAV == 0b1)) and (self.GO == 0b1)):
+            self.Z1Intensity = 0
+            self.Z2Intensity = 0
+            if (self.GO == 0b1):
                 self.nextStateNumber = 0b01
             else:
-                self.nextStateNumber = self.currentStateNumber
+                self.nextStateNumber = 0b0
 
         #00001
             #state = "Idle"
@@ -304,9 +328,10 @@ class UGV1Main(Node):
         elif (self.currentStateNumber == 0b00001):
             self.state = "Idle"
             self.stateDescription = "Proposing Policy"
+            time.sleep(2)
             if ((self.LEDDetected == 1) and (self.CommsTimeoutUAV == 0)):
                 self.Pose_msg = Pose()
-                self.Pose_msg = self.z1
+                self.Pose_msg = self.z1pose
                 float_msg = 1.0 #eta
                 self.send_request(self.Pose_msg, float(float_msg))
                 self.nextStateNumber = 0b0010
@@ -353,8 +378,7 @@ class UGV1Main(Node):
 
             #keep sending policy
             self.Pose_msg = Pose()
-            self.Pose_msg = self.z1
-            self.z1pose = self.Pose_msg #replace with detected LEDDetections.led1
+            self.Pose_msg = self.z1pose
             float_msg = 1.0 #eta
             self.send_request(self.Pose_msg, float(float_msg))
 
@@ -385,6 +409,8 @@ class UGV1Main(Node):
         elif (self.currentStateNumber == 0b00100):
             self.state = "Waiting"
             self.stateDescription = "Received policy and content"
+            self.Pose_msg = self.z1pose
+            self.publishMoveOrder.publish(self.Pose_msg)
             UGV1to2Ack = "Yes"
             self.UGV2to1Ack = "Ack"
             if (self.UGV2to1Ack == "Ack"):
@@ -406,10 +432,11 @@ class UGV1Main(Node):
             self.state = "Transit"
             self.stateDescription = "Moving"
             UGV1to2Ack = "Ack"
+            self.Pose_msg = self.z1pose
             self.publishMoveOrder.publish(self.Pose_msg)
             #stand in variable for transit
             if (self.atWayPose == 1):
-                time.sleep(5)
+                time.sleep(20)
                 self.nextStateNumber = 0b00110
             if (self.UGV1Jump == 1):
                 self.nextStateNumber = 0b01111
@@ -424,7 +451,7 @@ class UGV1Main(Node):
         elif (self.currentStateNumber == 0b00110):
             self.state = "Attending"
             self.stateDescription = "Reporting LED Intensity"
-            if (self.Pose_msg == self.z1pose):
+            if ((self.Pose_msg == self.z1pose) and (self.ReachedFirstZone == 0)):
                 Z1Sev= self.determineSeverity()
                 print("====================================")
                 print("Detected Severity as" + str(Z1Sev))   
@@ -441,6 +468,7 @@ class UGV1Main(Node):
                 self.publisher.publish(self.FireSeverity)
             #if (self.Pose_msg == self.z1pose):
                 #self.publisher.publish(self.FireSeverity)  #commented out due to not having camera running
+            self.ReachedFirstZone = 0
             self.nextStateNumber = 0b00111
 
             

@@ -1,0 +1,24 @@
+[1.030s] Invoking command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/Konig2': PYTHONPATH=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig2/prefix_override:/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/Konig2 build --build-base /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig2/build install --record /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig2/install.log --install-scripts $base/lib/Konig2 --single-version-externally-managed
+[1.372s] running egg_info
+[1.372s] writing ../build/Konig2/Konig2.egg-info/PKG-INFO
+[1.372s] writing dependency_links to ../build/Konig2/Konig2.egg-info/dependency_links.txt
+[1.373s] writing entry points to ../build/Konig2/Konig2.egg-info/entry_points.txt
+[1.373s] writing requirements to ../build/Konig2/Konig2.egg-info/requires.txt
+[1.373s] writing top-level names to ../build/Konig2/Konig2.egg-info/top_level.txt
+[1.423s] reading manifest file '../build/Konig2/Konig2.egg-info/SOURCES.txt'
+[1.424s] writing manifest file '../build/Konig2/Konig2.egg-info/SOURCES.txt'
+[1.424s] running build
+[1.424s] running build_py
+[1.424s] copying Konig2/Konig2.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig2/build/lib/Konig2
+[1.425s] running install
+[1.426s] running install_lib
+[1.427s] copying /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig2/build/lib/Konig2/Konig2.py -> /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig2/lib/python3.8/site-packages/Konig2
+[1.428s] byte-compiling /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig2/lib/python3.8/site-packages/Konig2/Konig2.py to Konig2.cpython-38.pyc
+[1.431s] running install_data
+[1.431s] running install_egg_info
+[1.434s] removing '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig2/lib/python3.8/site-packages/Konig2-0.0.0-py3.8.egg-info' (and everything under it)
+[1.434s] Copying ../build/Konig2/Konig2.egg-info to /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig2/lib/python3.8/site-packages/Konig2-0.0.0-py3.8.egg-info
+[1.436s] running install_scripts
+[1.459s] Installing Konig2 script to /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig2/lib/Konig2
+[1.460s] writing list of installed files to '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig2/install.log'
+[1.496s] Invoked command in '/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/Konig2' returned '0': PYTHONPATH=/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig2/prefix_override:/home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/install/Konig2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/Konig2 build --build-base /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig2/build install --record /home/teamvision/Desktop/ROS_Workspace/Honours_a1797823_a1764124/ROS_Workspace/src/build/Konig2/install.log --install-scripts $base/lib/Konig2 --single-version-externally-managed
